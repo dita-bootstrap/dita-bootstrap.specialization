@@ -15,6 +15,7 @@
 <!ENTITY % badge "badge">
 <!ENTITY % button "button">
 <!ENTITY % button-group "button-group">
+<!ENTITY % button-toolbar "button-toolbar">
 <!ENTITY % card "card">
 <!ENTITY % card-header "card-header">
 <!ENTITY % card-footer "card-footer">
@@ -39,7 +40,7 @@
 
 <!ENTITY % bootstrap-d-ph "badge | icon">
 <!ENTITY % bootstrap-d-xref "button | popover | tooltip">
-<!ENTITY % bootstrap-d-bodydiv "accordion | button-group | collapse | grid-row | grid-col | tabbed-dialog">
+<!ENTITY % bootstrap-d-bodydiv "accordion | button-group | button-toolbar | collapse | grid-row | grid-col | tabbed-dialog">
 <!ENTITY % bootstrap-d-section "accordion-item | alert | card | offcanvas | pagination">
 <!ENTITY % bootstrap-d-ul "carousel | list-group">
 <!ENTITY % bootstrap-d-li "carousel-item">

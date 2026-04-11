@@ -16,23 +16,32 @@
    color (primary | secondary | success | danger | warning | info | light | dark) #REQUIRED
    %univ-atts;">
 <!ELEMENT alert %alert.content;>
-<!ATTLIST alert %alert.attributes;>
+<!ATTLIST alert %alert.attributes;
+  border (yes | no | 1 | 2 | 3 | 4 | 5) #IMPLIED
+  bordercolor (primary | secondary | success | danger | warning | info | light | dark | white | black | primary-subtle | secondary-subtle | success-subtle | danger-subtle | warning-subtle | info-subtle | light-subtle | dark-subtle) #IMPLIED
+  rounded (yes | no | 0 | 1 | 2 | 3 | 4 | 5 | circle | pill) #IMPLIED
+  margin CDATA #IMPLIED
+  padding CDATA #IMPLIED
+  shadow (yes | no | sm | md | lg | none) #IMPLIED
+  width (25 | 50 | 75 | 100 | auto) #IMPLIED
+>
 
 <!ENTITY % accordion.content "((%accordion-item;)+)">
 <!ENTITY % accordion.attributes "outputclass CDATA 'accordion' flush (yes | no) 'no' open (yes | no) 'no' %univ-atts;">
 <!ELEMENT accordion %accordion.content;>
 <!ATTLIST accordion %accordion.attributes;
   color (primary | secondary | success | danger | warning | info | light | dark) #IMPLIED
-  border (yes | no) #IMPLIED
-  rounded (yes | no) #IMPLIED
-  margin (0 | 1 | 2 | 3 | 4 | 5 | auto) #IMPLIED
-  padding (0 | 1 | 2 | 3 | 4 | 5) #IMPLIED
-  shadow (yes | no | sm | lg | none) #IMPLIED
+  border (yes | no | 1 | 2 | 3 | 4 | 5) #IMPLIED
+  rounded (yes | no | 0 | 1 | 2 | 3 | 4 | 5 | circle | pill) #IMPLIED
+  bordercolor (primary | secondary | success | danger | warning | info | light | dark | white | black | primary-subtle | secondary-subtle | success-subtle | danger-subtle | warning-subtle | info-subtle | light-subtle | dark-subtle) #IMPLIED
+  margin CDATA #IMPLIED
+  padding CDATA #IMPLIED
+  shadow (yes | no | sm | md | lg | none) #IMPLIED
   width (25 | 50 | 75 | 100 | auto) #IMPLIED
 >
 
 <!ENTITY % accordion-item.content "((%title;), (%basic.block; | %data.elements.incl; | %draft-comment; | %fn; | %foreign.unknown.incl; | %required-cleanup; | %sectiondiv; | %txt.incl;)*)">
-<!ENTITY % accordion-item.attributes "spectitle CDATA #IMPLIED outputclass CDATA 'accordion-item' %univ-atts;">
+<!ENTITY % accordion-item.attributes "spectitle CDATA #IMPLIED outputclass CDATA 'accordion-item' open (yes | no) #IMPLIED %univ-atts;">
 <!ELEMENT accordion-item %accordion-item.content;>
 <!ATTLIST accordion-item %accordion-item.attributes;>
 
@@ -61,7 +70,20 @@
    vertical (yes | no) 'no'
    %univ-atts;">
 <!ELEMENT button-group %button-group.content;>
-<!ATTLIST button-group %button-group.attributes;>
+<!ATTLIST button-group %button-group.attributes;
+  margin CDATA #IMPLIED
+  shadow (yes | no | sm | md | lg | none) #IMPLIED
+>
+
+<!ENTITY % button-toolbar.content "(%bodydiv.cnt; | %bodydiv;)*">
+<!ENTITY % button-toolbar.attributes
+  "outputclass CDATA 'btn-toolbar'
+   %univ-atts;">
+<!ELEMENT button-toolbar %button-toolbar.content;>
+<!ATTLIST button-toolbar %button-toolbar.attributes;
+  margin CDATA #IMPLIED
+  shadow (yes | no | sm | md | lg | none) #IMPLIED
+>
 
 <!ENTITY % card.content "(%section.cnt;)*">
 <!ENTITY % card.attributes "outputclass CDATA 'card' 
@@ -69,10 +91,11 @@
    spectitle CDATA #IMPLIED %univ-atts;">
 <!ELEMENT card %card.content;>
 <!ATTLIST card %card.attributes;
-  border (yes | no) #IMPLIED
-  rounded (yes | no) #IMPLIED
-  margin (0 | 1 | 2 | 3 | 4 | 5 | auto) #IMPLIED
-  shadow (yes | no | sm | lg | none) #IMPLIED
+  border (yes | no | 1 | 2 | 3 | 4 | 5) #IMPLIED
+  rounded (yes | no | 0 | 1 | 2 | 3 | 4 | 5 | circle | pill) #IMPLIED
+  bordercolor (primary | secondary | success | danger | warning | info | light | dark | white | black | primary-subtle | secondary-subtle | success-subtle | danger-subtle | warning-subtle | info-subtle | light-subtle | dark-subtle) #IMPLIED
+  margin CDATA #IMPLIED
+  shadow (yes | no | sm | md | lg | none) #IMPLIED
   width (25 | 50 | 75 | 100 | auto) #IMPLIED
 >
 
@@ -87,19 +110,20 @@
 <!ATTLIST card-footer %card-footer.attributes;>
 
 <!ENTITY % carousel.content "(%li; | %carousel-item;)*">
-<!ENTITY % carousel.attributes "outputclass CDATA #IMPLIED indicators (yes | no) #IMPLIED interval CDATA #IMPLIED touch (yes | no) #IMPLIED autoplay (yes | no) #IMPLIED fade (yes | no) #IMPLIED %univ-atts;">
+<!ENTITY % carousel.attributes "outputclass CDATA #IMPLIED indicators (yes | no) #IMPLIED interval CDATA #IMPLIED touch (yes | no) #IMPLIED autoplay (yes | no) #IMPLIED fade (yes | no) #IMPLIED cols (1 | 2 | 3 | 4) #IMPLIED %univ-atts;">
 <!ELEMENT carousel %carousel.content;>
 <!ATTLIST carousel %carousel.attributes;
   color (primary | secondary | success | danger | warning | info | light | dark) #IMPLIED
-  border (yes | no) #IMPLIED
-  rounded (yes | no) #IMPLIED
-  margin (0 | 1 | 2 | 3 | 4 | 5 | auto) #IMPLIED
-  padding (0 | 1 | 2 | 3 | 4 | 5) #IMPLIED
-  shadow (yes | no | sm | lg | none) #IMPLIED
+  border (yes | no | 1 | 2 | 3 | 4 | 5) #IMPLIED
+  rounded (yes | no | 0 | 1 | 2 | 3 | 4 | 5 | circle | pill) #IMPLIED
+  bordercolor (primary | secondary | success | danger | warning | info | light | dark | white | black | primary-subtle | secondary-subtle | success-subtle | danger-subtle | warning-subtle | info-subtle | light-subtle | dark-subtle) #IMPLIED
+  margin CDATA #IMPLIED
+  padding CDATA #IMPLIED
+  shadow (yes | no | sm | md | lg | none) #IMPLIED
   width (25 | 50 | 75 | 100 | auto) #IMPLIED
 >
 
-<!ENTITY % carousel-item.content "(%section.cnt;)*">
+<!ENTITY % carousel-item.content "(%section.cnt; | %bodydiv;)*">
 <!ENTITY % carousel-item.attributes "outputclass CDATA #IMPLIED interval CDATA #IMPLIED %univ-atts;">
 <!ELEMENT carousel-item %carousel-item.content;>
 <!ATTLIST carousel-item %carousel-item.attributes;>
@@ -110,7 +134,7 @@
 <!ATTLIST collapse %collapse.attributes;>
 
 <!ENTITY % icon.content "(%ph.cnt;)*">
-<!ENTITY % icon.attributes "outputclass CDATA 'icon' otherprops CDATA #IMPLIED style CDATA #IMPLIED %univ-atts;">
+<!ENTITY % icon.attributes "outputclass CDATA 'icon' margin CDATA #IMPLIED padding CDATA #IMPLIED otherprops CDATA #IMPLIED style CDATA #IMPLIED %univ-atts;">
 <!ELEMENT icon %icon.content;>
 <!ATTLIST icon %icon.attributes;>
 
@@ -131,35 +155,60 @@
 <!ELEMENT list-group %list-group.content;>
 <!ATTLIST list-group %list-group.attributes;
   color (primary | secondary | success | danger | warning | info | light | dark) #IMPLIED
-  margin (0 | 1 | 2 | 3 | 4 | 5 | auto) #IMPLIED
-  shadow (yes | no | sm | lg | none) #IMPLIED
+  margin CDATA #IMPLIED
+  shadow (yes | no | sm | md | lg | none) #IMPLIED
   width (25 | 50 | 75 | 100 | auto) #IMPLIED
 >
 
 <!ENTITY % offcanvas.content "(%section.cnt;)*">
 <!ENTITY % offcanvas.attributes "outputclass CDATA #IMPLIED spectitle CDATA #IMPLIED position (top | bottom | start | end) #IMPLIED %univ-atts;">
 <!ELEMENT offcanvas %offcanvas.content;>
-<!ATTLIST offcanvas %offcanvas.attributes;>
+<!ATTLIST offcanvas %offcanvas.attributes;
+  color (primary | secondary | success | danger | warning | info | light | dark) #IMPLIED
+  margin CDATA #IMPLIED
+  shadow (yes | no | sm | md | lg | none) #IMPLIED
+  width (25 | 50 | 75 | 100 | auto) #IMPLIED
+>
 
 <!ENTITY % pagination.content "(%section.cnt;)*">
 <!ENTITY % pagination.attributes "outputclass CDATA 'pagination' spectitle CDATA #IMPLIED size (small | large) #IMPLIED %univ-atts;">
 <!ELEMENT pagination %pagination.content;>
-<!ATTLIST pagination %pagination.attributes;>
+<!ATTLIST pagination %pagination.attributes;
+  margin CDATA #IMPLIED
+  shadow (yes | no | sm | md | lg | none) #IMPLIED
+>
 
 <!ENTITY % popover.content "(%ph.cnt; | %desc;)*">
 <!ENTITY % popover.attributes "href CDATA '#' outputclass CDATA #IMPLIED position (top | bottom | left | right) #IMPLIED %univ-atts;">
 <!ELEMENT popover %popover.content;>
-<!ATTLIST popover %popover.attributes;>
+<!ATTLIST popover %popover.attributes;
+  color (primary | secondary | success | danger | warning | info | light | dark) #IMPLIED
+  margin CDATA #IMPLIED
+  size (small | large) #IMPLIED
+>
 
 <!ENTITY % tabbed-dialog.content "(%bodydiv.cnt; | %bodydiv; | %section;)*">
 <!ENTITY % tabbed-dialog.attributes "outputclass CDATA #IMPLIED style (tabs | pills | vertical-pills) 'tabs' %univ-atts;">
 <!ELEMENT tabbed-dialog %tabbed-dialog.content;>
-<!ATTLIST tabbed-dialog %tabbed-dialog.attributes;>
+<!ATTLIST tabbed-dialog %tabbed-dialog.attributes;
+  color (primary | secondary | success | danger | warning | info | light | dark) #IMPLIED
+  border (yes | no | 1 | 2 | 3 | 4 | 5) #IMPLIED
+  rounded (yes | no | 0 | 1 | 2 | 3 | 4 | 5 | circle | pill) #IMPLIED
+  bordercolor (primary | secondary | success | danger | warning | info | light | dark | white | black | primary-subtle | secondary-subtle | success-subtle | danger-subtle | warning-subtle | info-subtle | light-subtle | dark-subtle) #IMPLIED
+  margin CDATA #IMPLIED
+  padding CDATA #IMPLIED
+  shadow (yes | no | sm | md | lg | none) #IMPLIED
+  width (25 | 50 | 75 | 100 | auto) #IMPLIED
+>
 
 <!ENTITY % tooltip.content "(%ph.cnt; | %desc;)*">
 <!ENTITY % tooltip.attributes "href CDATA '#' outputclass CDATA #IMPLIED position (top | bottom | left | right) #IMPLIED %univ-atts;">
 <!ELEMENT tooltip %tooltip.content;>
-<!ATTLIST tooltip %tooltip.attributes;>
+<!ATTLIST tooltip %tooltip.attributes;
+  color (primary | secondary | success | danger | warning | info | light | dark) #IMPLIED
+  margin CDATA #IMPLIED
+  size (small | large) #IMPLIED
+>
 
 
 <!--                    PICTURE                                   -->
@@ -183,7 +232,9 @@
                                 outputclass CDATA 'img-thumbnail'
                                 %univ-atts;">
 <!ELEMENT thumbnail %thumbnail.content;>
-<!ATTLIST thumbnail %thumbnail.attributes;>
+<!ATTLIST thumbnail %thumbnail.attributes;
+                                color (primary | secondary | success | danger | warning | info | light | dark) #IMPLIED
+>
 
 <!-- ============================================================= -->
 <!--                    SPECIALIZATION ATTRIBUTE DECLARATIONS      -->
@@ -195,6 +246,7 @@
 <!ATTLIST badge class CDATA "+ topic/ph bootstrap-d/badge ">
 <!ATTLIST button class CDATA "+ topic/xref bootstrap-d/button ">
 <!ATTLIST button-group class CDATA "+ topic/bodydiv bootstrap-d/button-group ">
+<!ATTLIST button-toolbar class CDATA "+ topic/bodydiv bootstrap-d/button-toolbar ">
 <!ATTLIST card class CDATA "+ topic/section bootstrap-d/card ">
 <!ATTLIST card-header class CDATA "+ topic/div bootstrap-d/card-header ">
 <!ATTLIST card-footer class CDATA "+ topic/div bootstrap-d/card-footer ">
