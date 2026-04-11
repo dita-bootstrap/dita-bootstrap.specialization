@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://www.dita-ot.org/rng/plugin.rnc" type="application/relax-ng-compact-syntax"?>
-<plugin id="net.infotexture.dita-bootstrap.specialization">
+<plugin id="com.dita-bootstrap.specialization">
   <feature extension="package.version" value="5.3.8"/>
   <feature extension="dita.specialization.catalog.relative" file="catalog.xml"/>
 </plugin>
