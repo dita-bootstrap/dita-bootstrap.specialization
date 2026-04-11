@@ -29,8 +29,8 @@
         languages, DITA-OT must load the RTL version of the Bootstrap CSS. This is done automatically if the
           <parmname>--defaultLanguage</parmname> is set to an RTL language. Alternatively, you can manually enable RTL
         support using the <parmname>--bidi.include</parmname> parameter: </p>
-      <codeblock dir="ltr" outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath
-        >path/to/your.ditamap</filepath> \
+      <codeblock dir="ltr" outputclass="language-bash small"><cmdname>dita</cmdname> <parmname
+        >--input</parmname>=<filepath>path/to/your.ditamap</filepath> \
      <parmname>--format</parmname>=<option>html5-bootstrap</option> \
      <parmname>--bidi.include</parmname>=<option>yes</option></codeblock>
     </section>
@@ -39,11 +39,11 @@
       <p>The overall layout is always defined by the <parmname>--defaultLanguage</parmname> parameter.</p>
       <p>To render an article as RTL across the page, set the <xmlelement>topic xml:lang=".."</xmlelement> to an RTL
         language.</p>
-      <codeblock dir="ltr" outputclass="language-xml">&lt;topic id="..." xml:lang="ar"&gt;</codeblock>
+      <codeblock dir="ltr" outputclass="language-xml small">&lt;topic id="..." xml:lang="ar"&gt;</codeblock>
       <p>Additionally, within any <xmlelement>topic</xmlelement>, setting the <xmlatt>dir</xmlatt> attribute on any DITA
         element thereafter will cause the layout to be recalculated for the enclosed block only.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv border="yes" padding="3">
       <grid-row dir="rtl">
         <grid-col>
           <card xml:lang="ar">
@@ -55,7 +55,10 @@
         </grid-col>
       </grid-row>
     </bodydiv>
-    <codeblock>&lt;grid-row dir="rtl"&gt;
+    <tabbed-dialog style="pills" margin="t3">
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;grid-row dir="rtl"&gt;
   &lt;grid-col&gt;
     &lt;card xml:lang="ar"&gt;
       &lt;title&gt;عنوان البطاقة&lt;/title&gt;
@@ -65,5 +68,20 @@
     &lt;/card&gt;
   &lt;/grid-col&gt;
 &lt;/grid-row&gt;</codeblock>
+      </section>
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;bodydiv outputclass="row" dir="rtl"&gt;
+  &lt;bodydiv outputclass="col"&gt;
+    &lt;section outputclass="card" xml:lang="ar"&gt;
+      &lt;title outputclass="h5"&gt;عنوان البطاقة&lt;/title&gt;
+      &lt;image outputclass="card-img-top" href="..." /&gt;
+      &lt;p&gt;بعض الأمثلة السريعة للنص الذي سيتم بناؤه على عنوان البطاقة وتشكيل الجزء الأكبر من محتوى البطاقة.&lt;/p&gt;
+      &lt;xref href="#" outputclass="btn-primary"&gt;اذهب لمكان ما&lt;/xref&gt;
+    &lt;/section&gt;
+  &lt;/bodydiv&gt;
+&lt;/bodydiv&gt;</codeblock>
+      </section>
+    </tabbed-dialog>
   </body>
 </topic>

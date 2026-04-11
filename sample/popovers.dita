@@ -51,25 +51,39 @@
       <p>Keep reading to see how popovers work with some examples.</p>
     </section>
 
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv border="yes" padding="3" deliveryTarget="html">
       <popover outputclass="btn-lg btn-danger">
         <data name="title">Popover title</data>
         <desc>And here’s some amazing content. It’s very engaging. Right?</desc> Click to toggle popover </popover>
     </bodydiv>
-    <codeblock> &lt;popover outputclass="btn-lg btn-danger"&gt;
-  &lt;data name="title">&gt;Popover title&lt;/data&gt;
+    <tabbed-dialog style="pills" margin="t3">
+      <section>
+        <title>Specialization</title>
+          <codeblock> &lt;popover outputclass="btn-lg btn-danger"&gt;
+  &lt;data name="title"&gt;Popover title&lt;/data&gt;
   &lt;desc&gt;And here’s some amazing content. It’s very engaging. Right?&lt;/desc&gt;
   Click to toggle popover
 &lt;/popover&gt;</codeblock>
+        </section>
+         <section>
+          <title><xmlatt>outputclass</xmlatt></title>
+          <codeblock> &lt;xref href="#" outputclass="btn-lg btn-danger popover-top"&gt;
+  &lt;data name="title"&gt;Popover title&lt;/data&gt;
+  &lt;desc&gt;And here’s some amazing content. It’s very engaging. Right?&lt;/desc&gt;
+  Click to toggle popover
+&lt;/xref&gt;</codeblock>
+        </section>
+      </tabbed-dialog>
 
     <section>
       <title>Four directions</title>
       <p>Four options are available: <codeph>top</codeph>, <codeph>right</codeph>, <codeph>bottom</codeph>, and
           <codeph>left</codeph> aligned. Directions are mirrored when using Bootstrap in RTL. To enable popovers, add
-          <xmlatt>output-class="popover-*"</xmlatt> to the enclosing <xmlelement>xref</xmlelement>. For the <xmlelement>popover</xmlelement> element use the <xmlatt>position</xmlatt> attribute. The direction of the
+          <xmlatt>output-class="popover-*"</xmlatt> to the enclosing <xmlelement>xref</xmlelement>. For the <xmlelement
+        >popover</xmlelement> element use the <xmlatt>position</xmlatt> attribute. The direction of the
         popover is appended to the <xmlatt>output-class</xmlatt> or taken from the attribute.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv border="yes" padding="3" deliveryTarget="html">
       <popover outputclass="btn-secondary" position="top">
         <desc>Top popover</desc> Popover on top </popover>
       <popover outputclass="btn-secondary" position="right">
@@ -79,7 +93,10 @@
       <popover outputclass="btn-secondary" position="left">
         <desc>Left popover</desc> Popover on left </popover>
     </bodydiv>
-    <codeblock>&lt;popover outputclass="btn-secondary" position="top"&gt;
+    <tabbed-dialog style="pills" margin="t3">
+      <section>
+        <title>Specialization</title>
+          <codeblock>&lt;popover outputclass="btn-secondary" position="top"&gt;
   &lt;desc&gt;Top popover&lt;/desc&gt;
   Popover on top
 &lt;/popover&gt;
@@ -95,6 +112,27 @@
   &lt;desc&gt;Left popover&lt;/desc&gt;
   Popover on left
 &lt;/popover&gt;</codeblock>
+        </section>
+         <section>
+          <title><xmlatt>outputclass</xmlatt></title>
+          <codeblock>&lt;xref href="#" outputclass="btn-secondary popover-top"&gt;
+  &lt;desc&gt;Top popover&lt;/desc&gt;
+  Popover on top
+&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-secondary popover-right"&gt;
+  &lt;desc&gt;Right Popover&lt;/desc&gt;
+  Popover on right
+&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-secondary popover-bottom"&gt;
+  &lt;desc&gt;Bottom popover&lt;/desc&gt;
+  Popover on bottom
+&lt;/xref&gt;
+&lt;xref href="#" outputclass="btn-secondary popover-left"&gt;
+  &lt;desc&gt;Left popover&lt;/desc&gt;
+  Popover on left
+&lt;/xref&gt;</codeblock>
+        </section>
+      </tabbed-dialog>
     <section>
       <title>Custom popovers</title>
       <p>You can customize the appearance of popovers using CSS variables.
@@ -110,17 +148,31 @@
   --bs-popover-body-padding-y: .5rem;
 }</codeblock>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv border="yes" padding="3" deliveryTarget="html">
         <popover outputclass="btn-lg btn-danger">
           <data name="title">Popover title</data>
           <data name="class">custom-popover</data>
           <desc>And here’s some amazing content. It’s very engaging. Right?</desc>Custom popover</popover>
     </bodydiv>
-    <codeblock>&lt;popover outputclass="btn-lg btn-danger"&gt;
+    <tabbed-dialog style="pills" margin="t3">
+      <section>
+        <title>Specialization</title>
+          <codeblock>&lt;popover outputclass="btn-lg btn-danger"&gt;
   &lt;data name="title"&gt;Popover title&lt;/data&gt;
   &lt;data name="class"&gt;custom-popover&lt;/data&gt;
   &lt;desc&gt;And here’s some amazing content. It’s very engaging. Right?&lt;/desc&gt;
   Custom popover
 &lt;/popover&gt;</codeblock>
+        </section>
+         <section>
+          <title><xmlatt>outputclass</xmlatt></title>
+          <codeblock>&lt;xref href="#" outputclass="btn-lg btn-danger popover-top"&gt;
+  &lt;data name="title"&gt;Popover title&lt;/data&gt;
+  &lt;data name="class"&gt;custom-popover&lt;/data&gt;
+  &lt;desc&gt;And here’s some amazing content. It’s very engaging. Right?&lt;/desc&gt;
+  Custom popover
+&lt;/xref&gt;</codeblock>
+        </section>
+      </tabbed-dialog>
   </body>
 </topic>

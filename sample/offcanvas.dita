@@ -48,14 +48,17 @@
           <xmlatt>props="offcanvas-toggle"</xmlatt> to an <xmlelement>xref</xmlelement> element to associate a button to
         an offcanvas</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv border="yes" padding="3" deliveryTarget="html">
             <button props="offcanvas-toggle" href="#offcanvas1">Click here to display offcanvas</button>
       <offcanvas id="offcanvas1" position="start">
         <title>Offcanvas</title>
         <p>Content for the offcanvas goes here. You can place just about any section elements here.</p>
       </offcanvas>
     </bodydiv>
-    <codeblock>&lt;button props="offcanvas-toggle" href="#offcanvas1"&gt;
+    <tabbed-dialog style="pills" margin="t3">
+      <section>
+        <title>Specialization</title>
+          <codeblock>&lt;button props="offcanvas-toggle" href="#offcanvas1"&gt;
   Click here
 &lt;/button&gt;
 &lt;offcanvas id="offcanvas1" position="start"&gt;
@@ -64,41 +67,81 @@
     Content for the offcanvas goes here. You can place just about any section elements here.
   &lt;/p&gt;
 &lt;/offcanvas&gt;</codeblock>
+        </section>
+         <section>
+          <title><xmlatt>outputclass</xmlatt></title>
+          <codeblock>&lt;xref outputclass="btn-primary" props="offcanvas-toggle" href="#offcanvas1"&gt;
+  Click here
+&lt;/xref&gt;
+&lt;section outputclass="offcanvas-start" id="offcanvas1"&gt;
+  &lt;title&gt;Offcanvas&lt;/title&gt;
+  &lt;p&gt;
+    Content for the offcanvas goes here. You can place just about any section elements here.
+  &lt;/p&gt;
+&lt;/section&gt;</codeblock>
+        </section>
+      </tabbed-dialog>
     <section>
       <title>Placement</title>
       <p>There’s no default placement for offcanvas components, so you must add one of the modifier outputclasses
         below</p>
       <ul>
-        <li>Setting <xmlatt>position="start"</xmlatt> or <xmlatt>outputclass="offcanvas-start"</xmlatt> places offcanvas on the left of the
+        <li>Setting <xmlatt>position="start"</xmlatt> or <xmlatt
+          >outputclass="offcanvas-start"</xmlatt> places offcanvas on the left of the
           viewport (shown above)</li>
-        <li>Setting <xmlatt>position="end"</xmlatt> or <xmlatt>outputclass="offcanvas-end"</xmlatt> places offcanvas on the right of the
+        <li>Setting <xmlatt>position="end"</xmlatt> or <xmlatt
+          >outputclass="offcanvas-end"</xmlatt> places offcanvas on the right of the
           viewport</li>
-        <li>Setting <xmlatt>position="bottom"</xmlatt> or <xmlatt>outputclass="offcanvas-bottom"</xmlatt> places offcanvas on the bottom of
+        <li>Setting <xmlatt>position="bottom"</xmlatt> or <xmlatt
+          >outputclass="offcanvas-bottom"</xmlatt> places offcanvas on the bottom of
           the viewport</li>
-        <li>Setting <xmlatt>position="top"</xmlatt> or <xmlatt>outputclass="offcanvas-top"</xmlatt> places offcanvas on the top of
+        <li>Setting <xmlatt>position="top"</xmlatt> or <xmlatt
+          >outputclass="offcanvas-top"</xmlatt> places offcanvas on the top of
           the viewport</li>
       </ul>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv border="yes" padding="3" deliveryTarget="html">
             <button props="offcanvas-toggle" href="#offcanvas2">Toggle right offcanvas</button>
       <offcanvas position="end" id="offcanvas2">
         <title>Offcanvas</title>
         <p>Content for the offcanvas goes here. You can place just about any section elements here.</p>
       </offcanvas>
     </bodydiv>
-    <codeblock>&lt;offcanvas position="end"&gt;
+    <tabbed-dialog style="pills" margin="t3">
+      <section>
+        <title>Specialization</title>
+          <codeblock>&lt;offcanvas position="end"&gt;
   ...etc
 &lt;/offcanvas&gt;</codeblock>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+        </section>
+         <section>
+          <title><xmlatt>outputclass</xmlatt></title>
+          <codeblock>&lt;section outputclass="offcanvas-end" id="offcanvas2"&gt;
+  ...etc
+&lt;/section&gt;</codeblock>
+        </section>
+      </tabbed-dialog>
+    <bodydiv border="yes" padding="3" deliveryTarget="html">
             <button props="offcanvas-toggle" href="#offcanvas3">Toggle bottom offcanvas</button>
       <offcanvas position="bottom" id="offcanvas3">
         <title>Offcanvas</title>
         <p>Content for the offcanvas goes here. You can place just about any section elements here.</p>
       </offcanvas>
     </bodydiv>
-    <codeblock>&lt;offcanvas position="bottom"&gt;
+    <tabbed-dialog style="pills" margin="t3">
+      <section>
+        <title>Specialization</title>
+          <codeblock>&lt;offcanvas position="bottom"&gt;
   ...etc
 &lt;/offcanvas&gt;</codeblock>
+        </section>
+         <section>
+          <title><xmlatt>outputclass</xmlatt></title>
+          <codeblock>&lt;section outputclass="offcanvas-bottom" id="offcanvas3"&gt;
+  ...etc
+&lt;/section&gt;</codeblock>
+        </section>
+      </tabbed-dialog>
     <section>
       <title>Responsive</title>
       <p
@@ -106,9 +149,10 @@
         >outputclass="offcanvas-lg"</xmlatt> hides content in an offcanvas below the <codeph
         >lg</codeph> breakpoint, but shows the content above the <codeph>lg</codeph> breakpoint.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv border="yes" padding="3" deliveryTarget="html">
       <note
-        outputclass="alert-info d-none d-lg-block"
+        color="info"
+        outputclass="d-none d-lg-block"
       >Resize your browser to show the responsive offcanvas toggle.</note>
             <button outputclass="d-lg-none" props="offcanvas-toggle" href="#offcanvas4">Toggle offcanvas</button>
       <offcanvas outputclass="offcanvas-lg" id="offcanvas4">
@@ -125,7 +169,10 @@
       <li><xmlatt>outputclass="offcanvas-xl"</xmlatt></li>
       <li><xmlatt>outputclass="offcanvas-xxl"</xmlatt></li>
     </ul>
-    <codeblock>&lt;note outputclass="alert-info d-none d-lg-block"&gt;
+    <tabbed-dialog style="pills" margin="t3">
+      <section>
+        <title>Specialization</title>
+          <codeblock>&lt;note color="info" outputclass="d-none d-lg-block"&gt;
   Resize your browser to show the responsive offcanvas toggle.
 &lt;/note&gt;
 &lt;button outputclass="d-lg-none" props="offcanvas-toggle" href="#offcanvas4"&gt;
@@ -137,5 +184,22 @@
     This is content within an &lt;xmlatt&gt;outputclass="offcanvas-lg"&lt;/xmlatt&gt;.
   &lt;/p&gt;
 &lt;/offcanvas&gt;</codeblock>
+        </section>
+         <section>
+          <title><xmlatt>outputclass</xmlatt></title>
+          <codeblock>&lt;note outputclass="alert-info d-none d-lg-block"&gt;
+  Resize your browser to show the responsive offcanvas toggle.
+&lt;/note&gt;
+&lt;xref outputclass="btn-primary d-lg-none" props="offcanvas-toggle" href="#offcanvas4"&gt;
+  Toggle offcanvas
+&lt;/xref&gt;
+&lt;section outputclass="offcanvas-lg" id="offcanvas4"&gt;
+  &lt;title&gt;Offcanvas&lt;/title&gt;
+  &lt;p&gt;
+    This is content within an &lt;xmlatt&gt;outputclass="offcanvas-lg"&lt;/xmlatt&gt;.
+  &lt;/p&gt;
+&lt;/section&gt;</codeblock>
+        </section>
+      </tabbed-dialog>
   </body>
 </topic>

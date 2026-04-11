@@ -34,15 +34,15 @@
           format="html"
           scope="external"
         >collapse</xref> internally to make it collapsible. To render an accordion that’s expanded, add
-        <xmlatt>outputclass="show"</xmlatt> to expand the relevant <xmlelement>accordion-item</xmlelement> .</p>
+        <xmlatt>open="yes"</xmlatt> to expand the relevant <xmlelement>accordion-item</xmlelement> .</p>
     </section>
     <section>
       <title>Example</title>
       <p>Click the accordions below to expand/collapse the accordion content.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv border="yes" padding="3">
       <accordion>
-        <accordion-item id="accordion1" outputclass="show">
+        <accordion-item id="accordion1" open="yes">
           <title>Accordion Item #1</title>
           <p>
             <b>This is the first item’s accordion body.</b> It is shown by default, until the collapse plugin adds the
@@ -68,8 +68,11 @@
         </accordion-item>
       </accordion>
     </bodydiv>
-    <codeblock>&lt;accordion&gt;
-  &lt;accordion-item id="accordion1" outputclass="show"&gt;
+    <tabbed-dialog style="pills" margin="t3">
+      <section>
+        <title>Specialization</title>
+          <codeblock>&lt;accordion&gt;
+  &lt;accordion-item id="accordion1" open="yes"&gt;
     &lt;title&gt;Accordion Item #1&lt;/title&gt;
     &lt;p&gt;
       &lt;b&gt;This is the first item’s accordion body.&lt;/b&gt; It is shown by default,
@@ -100,13 +103,50 @@
     &lt;/p&gt;
   &lt;/accordion-item&gt;
 &lt;/accordion&gt;</codeblock>
+        </section>
+         <section>
+          <title><xmlatt>outputclass</xmlatt></title>
+          <codeblock>&lt;bodydiv outputclass="accordion"&gt;
+  &lt;section id="accordion1" outputclass="show"&gt;
+    &lt;title&gt;Accordion Item #1&lt;/title&gt;
+    &lt;p&gt;
+      &lt;b&gt;This is the first item’s accordion body.&lt;/b&gt; It is shown by default,
+        until the collapse plugin adds the appropriate classes that we use to style each element.
+        These classes control the overall appearance, as well as the showing and hiding via CSS
+        transitions. You can modify any of this with custom CSS or overriding Bootstrap’s default
+        variables.
+    &lt;/p&gt;
+  &lt;/section&gt;
+  &lt;section id="accordion2"&gt;
+    &lt;title&gt;Accordion Item #2&lt;/title&gt;
+    &lt;p&gt;
+      &lt;b&gt;This is the second item’s accordion body.&lt;/b&gt; It is hidden by default,
+        until the collapse plugin adds the appropriate classes that we use to style each element.
+        These classes control the overall appearance, as well as the showing and hiding via CSS
+        transitions. You can modify any of this with custom CSS or overriding Bootstrap’s default
+        variables.
+    &lt;/p&gt;
+  &lt;/section&gt;
+  &lt;section id="accordion3"&gt;
+    &lt;title&gt;Accordion Item #3&lt;/title&gt;
+    &lt;p&gt;
+      &lt;b&gt;This is the third item’s accordion body.&lt;/b&gt; It is hidden by default,
+        until the collapse plugin adds the appropriate classes that we use to style each element.
+        These classes control the overall appearance, as well as the showing and hiding via CSS
+        transitions. You can modify any of this with custom CSS or overriding Bootstrap’s default
+        variables.
+    &lt;/p&gt;
+  &lt;/section&gt;
+&lt;/bodydiv&gt;</codeblock>
+        </section>
+      </tabbed-dialog>
     <section>
       <title>Flush</title>
       <p>Set <xmlatt>flush="yes"</xmlatt> to remove the default
         background-color, some borders, and some rounded corners to render accordions edge-to-edge with their parent
         container.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv border="yes" padding="3">
       <accordion flush="yes">
         <accordion-item id="accordion4">
           <title>Accordion Item #1</title>
@@ -128,17 +168,28 @@
         </accordion-item>
       </accordion>
     </bodydiv>
-    <codeblock>&lt;accordion flush="yes"&gt;
+    <tabbed-dialog style="pills" margin="t3">
+      <section>
+        <title>Specialization</title>
+          <codeblock>&lt;accordion flush="yes"&gt;
   ...etc
 &lt;/accordion&gt;</codeblock>
+        </section>
+         <section>
+          <title><xmlatt>outputclass</xmlatt></title>
+          <codeblock>&lt;bodydiv outputclass="accordion-flush"&gt;
+  ...etc
+&lt;/bodydiv&gt;</codeblock>
+        </section>
+      </tabbed-dialog>
 
     <section>
       <title>Always open</title>
       <p>Set <xmlatt>open="yes"</xmlatt> to make accordion items stay open when another item is opened.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv border="yes" padding="3">
       <accordion open="yes">
-        <accordion-item id="accordion7" outputclass="show">
+        <accordion-item id="accordion7" open="yes">
           <title>Accordion Item #1</title>
           <p>
             <b>This is the first item’s accordion body.</b> It is shown by default, until the collapse plugin adds the
@@ -164,8 +215,19 @@
         </accordion-item>
       </accordion>
     </bodydiv>
-    <codeblock>&lt;accordion open="yes"&gt;
+    <tabbed-dialog style="pills" margin="t3">
+      <section>
+        <title>Specialization</title>
+          <codeblock>&lt;accordion open="yes"&gt;
   ...etc
 &lt;/accordion&gt;</codeblock>
+        </section>
+         <section>
+          <title><xmlatt>outputclass</xmlatt></title>
+          <codeblock>&lt;bodydiv outputclass="accordion-open"&gt;
+  ...etc
+&lt;/bodydiv&gt;</codeblock>
+        </section>
+      </tabbed-dialog>
   </body>
 </topic>

@@ -31,8 +31,8 @@
           style="tabs"</xmlelement> element containing a series of <xmlelement>section</xmlelement> elements
       </p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
-      <tabbed-dialog style="tabs">
+    <bodydiv border="yes" padding="3">
+      <tabbed-dialog style="tabs" margin="t3">
         <section>
           <title>Home</title>
           <p>Placeholder content for the tab panel. This one relates to the home tab. Takes you miles high, so high,
@@ -59,7 +59,10 @@
         </section>
       </tabbed-dialog>
     </bodydiv>
-    <codeblock>&lt;tabbed-dialog style="tabs"&gt;
+    <tabbed-dialog style="pills" margin="t3">
+      <section>
+        <title>Specialization</title>
+          <codeblock>&lt;tabbed-dialog style="tabs"&gt;
   &lt;section&gt;
     &lt;title&gt;Home&lt;/title&gt;
     ...etc
@@ -73,10 +76,29 @@
     ...etc
   &lt;/section&gt;
 &lt;/tabbed-dialog&gt;</codeblock>
+        </section>
+         <section>
+          <title><xmlatt>outputclass</xmlatt></title>
+          <codeblock>&lt;bodydiv outputclass="nav-tabs"&gt;
+  &lt;section&gt;
+    &lt;title&gt;Home&lt;/title&gt;
+    ...etc
+  &lt;/section&gt;
+  &lt;section&gt;
+    &lt;title&gt;Profile&lt;/title&gt;
+    ...etc
+  &lt;/section&gt;
+  &lt;section&gt;
+    &lt;title&gt;Contact&lt;/title&gt;
+    ...etc
+  &lt;/section&gt;
+&lt;/bodydiv&gt;</codeblock>
+        </section>
+      </tabbed-dialog>
     <p>The tabs plugin also works with pills using <xmlatt>style="pills"</xmlatt>
     </p>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
-      <tabbed-dialog style="pills">
+    <bodydiv border="yes" padding="3">
+      <tabbed-dialog style="pills" margin="t3">
         <section>
           <title>Home</title>
           <p>Placeholder content for the tab panel. This one relates to the home tab. Takes you miles high, so high,
@@ -103,7 +125,10 @@
         </section>
       </tabbed-dialog>
     </bodydiv>
-    <codeblock>&lt;tabbed-dialog style="pills"&gt;
+    <tabbed-dialog style="pills" margin="t3">
+      <section>
+        <title>Specialization</title>
+          <codeblock>&lt;tabbed-dialog style="pills"&gt;
   &lt;section&gt;
     &lt;title&gt;Home&lt;/title&gt;
     ...etc
@@ -117,10 +142,29 @@
     ...etc
   &lt;/section&gt;
 &lt;/tabbed-dialog&gt;</codeblock>
+    </section>
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;bodydiv outputclass="nav-pills"&gt;
+  &lt;section&gt;
+    &lt;title&gt;Home&lt;/title&gt;
+    ...etc
+  &lt;/section&gt;
+  &lt;section&gt;
+    &lt;title&gt;Profile&lt;/title&gt;
+    ...etc
+  &lt;/section&gt;
+  &lt;section&gt;
+    &lt;title&gt;Contact&lt;/title&gt;
+    ...etc
+  &lt;/section&gt;
+&lt;/bodydiv&gt;</codeblock>
+        </section>
+      </tabbed-dialog>
     <p>And with vertical pills using <xmlatt>style="vertical-pills"</xmlatt>
     </p>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
-      <tabbed-dialog style="vertical-pills">
+    <bodydiv border="yes" padding="3">
+      <tabbed-dialog style="vertical-pills" margin="t3">
         <section>
           <title>Home</title>
           <p>Placeholder content for the tab panel. This one relates to the home tab. Takes you miles high, so high,
@@ -147,7 +191,10 @@
         </section>
       </tabbed-dialog>
     </bodydiv>
-    <codeblock>&lt;tabbed-dialog style="vertical-pills"&gt;
+    <tabbed-dialog style="pills" margin="t3">
+      <section>
+        <title>Specialization</title>
+          <codeblock>&lt;tabbed-dialog style="vertical-pills"&gt;
   &lt;section&gt;
     &lt;title&gt;Home&lt;/title&gt;
     ...etc
@@ -161,5 +208,24 @@
     ...etc
   &lt;/section&gt;
 &lt;/tabbed-dialog&gt;</codeblock>
+      </section>
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;bodydiv outputclass="nav-pills-vertical"&gt;
+  &lt;section&gt;
+    &lt;title&gt;Home&lt;/title&gt;
+    ...etc
+  &lt;/section&gt;
+  &lt;section&gt;
+    &lt;title&gt;Profile&lt;/title&gt;
+    ...etc
+  &lt;/section&gt;
+  &lt;section&gt;
+    &lt;title&gt;Contact&lt;/title&gt;
+    ...etc
+  &lt;/section&gt;
+&lt;/bodydiv&gt;</codeblock>
+        </section>
+      </tabbed-dialog>
   </body>
 </topic>

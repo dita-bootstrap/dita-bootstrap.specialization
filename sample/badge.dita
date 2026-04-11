@@ -28,7 +28,7 @@
       <p>Badges scale to match the size of the immediate parent element by using relative font sizing and
           <xmlatt>em</xmlatt> units. As of v5, badges no longer have focus or hover styles for links.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv border="yes" padding="3">
       <section>
         <p outputclass="h1">Example heading <badge>New</badge></p>
         <p outputclass="h2">Example heading <badge>New</badge></p>
@@ -38,25 +38,26 @@
         <p outputclass="h6">Example heading <badge>New</badge></p>
       </section>
     </bodydiv>
-    <tabbed-dialog style="pills" outputclass="mt-4">
+    <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;title&gt;Example Heading &lt;badge&gt;New&lt;/badge&gt;&lt;/title&gt;
+          <codeblock>&lt;title&gt;Example Heading &lt;badge&gt;New&lt;/badge&gt;&lt;/title&gt;
 &lt;p&gt;Example Text &lt;badge&gt;New&lt;/badge&gt;&lt;/p&gt;</codeblock>
-      </section>
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;title&gt;Example Heading &lt;ph outputclass="badge bg-secondary"&gt;New&lt;/ph&gt;&lt;/title&gt;
-&lt;p&gt;Example Text &lt;ph outputclass="badge bg-secondary"&gt;New&lt;/ph&gt;&lt;/p&gt;</codeblock>
-      </section>
-    </tabbed-dialog>    <section>
+        </section>
+         <section>
+          <title><xmlatt>outputclass</xmlatt></title>
+          <codeblock>&lt;title&gt;Example Heading &lt;ph outputclass="bg-secondary"&gt;New&lt;/ph&gt;&lt;/title&gt;
+&lt;p&gt;Example Text &lt;ph outputclass="bg-secondary"&gt;New&lt;/ph&gt;&lt;/p&gt;</codeblock>
+        </section>
+      </tabbed-dialog>
+    <section>
       <title>Background colors</title>
       <p>Set a background-color with contrasting foreground color with Bootstrap’s <codeph
         >text-bg-{color}</codeph> helpers. Previously it was required to manually pair your choice of <xmlatt
         >outputclass</xmlatt> <codeph>text-{color}</codeph> and <codeph
         >bg-{color}</codeph> utilities for styling, which you still may use if you prefer.</p>
     </section>
-    <bodydiv outputclass="bd-example" deliveryTarget="html">
+    <bodydiv border="yes" padding="3">
       <p>
         <badge>Primary</badge>
         <badge color="secondary">Secondary</badge>
@@ -68,10 +69,10 @@
         <badge color="dark">Dark</badge>
       </p>
     </bodydiv>
-    <tabbed-dialog style="pills" outputclass="mt-4">
+    <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;badge&gt;Primary&lt;/badge&gt;
+          <codeblock>&lt;badge&gt;Primary&lt;/badge&gt;
 &lt;badge color="secondary"&gt;Secondary&lt;/badge&gt;
 &lt;badge color="success"&gt;Success&lt;/badge&gt;
 &lt;badge color="danger"&gt;Danger&lt;/badge&gt;
@@ -79,10 +80,10 @@
 &lt;badge color="info"&gt;Info&lt;/badge&gt;
 &lt;badge color="light"&gt;Light&lt;/badge&gt;
 &lt;badge color="dark"&gt;Dark&lt;/badge&gt;</codeblock>
-      </section>
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;ph outputclass="badge text-bg-primary"&gt;Primary&lt;/ph&gt;
+        </section>
+         <section>
+          <title><xmlatt>outputclass</xmlatt></title>
+          <codeblock>&lt;ph outputclass="badge text-bg-primary"&gt;Primary&lt;/ph&gt;
 &lt;ph outputclass="badge text-bg-secondary"&gt;Secondary&lt;/ph&gt;
 &lt;ph outputclass="badge text-bg-success"&gt;Success&lt;/ph&gt;
 &lt;ph outputclass="badge text-bg-danger"&gt;Danger&lt;/ph&gt;
@@ -90,7 +91,7 @@
 &lt;ph outputclass="badge text-bg-info"&gt;Info&lt;/ph&gt;
 &lt;ph outputclass="badge text-bg-light"&gt;Light&lt;/ph&gt;
 &lt;ph outputclass="badge text-bg-dark"&gt;Dark&lt;/ph&gt;</codeblock>
-      </section>
-    </tabbed-dialog>
+        </section>
+      </tabbed-dialog>
   </body>
 </topic>
