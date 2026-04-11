@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookmap PUBLIC "-//OASIS//DTD DITA BookMap//EN" "bookmap.dtd">
+<bookmap>
+  <title>DITA Bootstrap Specialization Components</title>
+  <chapter navtitle="Components" locktitle="yes">
+    <topicmeta>
+      <navtitle>Components</navtitle>
+      <othermeta name="icon" content="bi-menu-button-wide-fill"/>
+      <othermeta name="icon-style" content="color: var(--bs-cyan)"/>
+    </topicmeta>
+    <topicref href="accordion.dita"/>
+    <topicref href="alert.dita"/>
+  <topicref href="badge.dita"/>
+  <topicref href="button-group.dita"/>
+  <topicref href="buttons.dita"/>
+  <topicref href="card.dita"/>
+  <topicref href="carousel.dita"/>
+  <topicref href="collapse.dita"/>
+  <topicref href="dark-mode.dita"/>
+    <topicref href="grid.dita"/>
+    <topicref href="icons.dita"/>
+    <topicref href="images.dita"/>
+  <topicref href="list-group.dita"/>
+    <topicref href="offcanvas.dita"/>
+    <topicref href="pagination.dita"/>
+    <topicref href="popovers.dita"/>
+    <topicref href="tabs.dita"/>
+    <topicref href="tooltips.dita"/>
+    <topicref href="rtl.dita"/>
+    <topicref href="typography.dita"/>
+    <topicref href="utilities.dita"/>
+  </chapter>
+</bookmap>
