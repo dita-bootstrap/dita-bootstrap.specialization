@@ -4,10 +4,10 @@ A plug-in for [DITA Open Toolkit][1] that provides the core DTD specializations 
 
 ## Installing
 
-This plug-in is typically installed as a dependency of the main `net.infotexture.dita-bootstrap` plug-in. Use the `dita` command to add it to your DITA Open Toolkit installation:
+This plug-in is typically installed as a dependency of the main `com.dita-bootstrap.html` or `com.dita-bootstrap.pdf` plug-ins. Use the `dita` command to add it to your DITA Open Toolkit installation:
 
 ```console
-dita install net.infotexture.dita-bootstrap.specialization
+dita install com.dita-bootstrap.specialization
 ```
 
 ## License
@@ -15,4 +15,4 @@ dita install net.infotexture.dita-bootstrap.specialization
 [Apache 2.0](LICENSE) © 2026 Jason Fox
 
 [1]: http://www.dita-ot.org
-[2]: https://github.com/infotexture/dita-bootstrap
+[2]: https://github.com/dita-bootstrap/dita-bootstrap.html

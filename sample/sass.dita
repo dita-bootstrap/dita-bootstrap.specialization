@@ -32,8 +32,8 @@
       <p>Use the <cmdname>dita</cmdname> command to add the required plug-ins to your DITA Open Toolkit
         installation:</p>
       <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname>install</parmname> fox.jason.extend.css
-<cmdname>dita</cmdname> <parmname>install</parmname> net.infotexture.dita-bootstrap
-<cmdname>dita</cmdname> <parmname>install</parmname> net.infotexture.dita-bootstrap.sass</codeblock>
+<cmdname>dita</cmdname> <parmname>install</parmname> com.dita-bootstrap.html
+<cmdname>dita</cmdname> <parmname>install</parmname> com.dita-bootstrap.sass</codeblock>
       <note type="note">The <cite>DITA Bootstrap Sass</cite> plug-in uses the
         <xref href="https://nodejs.org/" format="html" scope="external">Node.js</xref> JavaScript runtime to generate
         the <filepath>theme.css</filepath> file. Node.js must therefore be present for the index to be generated
