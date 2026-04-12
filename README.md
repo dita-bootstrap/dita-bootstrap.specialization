@@ -10,6 +10,46 @@ This plug-in is typically installed as a dependency of the main `com.dita-bootst
 dita install com.dita-bootstrap.specialization
 ```
 
+## Featured Bootstrap components
+
+The plug-in includes DTD handling for the following DITA Bootstrap components:
+
+- [Accordions](https://dita-bootstrap.github.io/dita-bootstrap/accordion.html) (`<accordion>`)
+- [Alerts](https://dita-bootstrap.github.io/dita-bootstrap/alerts.html) (`<alert>`)
+- [Badges](https://dita-bootstrap.github.io/dita-bootstrap/badge.html) (`<badge>`)
+- [Buttons](https://dita-bootstrap.github.io/dita-bootstrap/buttons.html) (`<button>`)
+- [Button Groups](https://dita-bootstrap.github.io/dita-bootstrap/buttons.html#button-groups) (`<button-group>`)
+- [Cards](https://dita-bootstrap.github.io/dita-bootstrap/card.html) (`<card>`)
+- [Carousels](https://dita-bootstrap.github.io/dita-bootstrap/carousel.html) (`<carousel>`)
+- [Icons](https://dita-bootstrap.github.io/dita-bootstrap/icons.html) (`<icon>`)
+- [Grid layout](https://dita-bootstrap.github.io/dita-bootstrap/grid.html) (`<grid-row>`, `<grid-col>`)
+- [List groups](https://dita-bootstrap.github.io/dita-bootstrap/list-group.html) (`<list-group>`)
+- [Offcanvas](https://dita-bootstrap.github.io/dita-bootstrap/offcanvas.html) (`<offcanvas>`)
+- [Pagination](https://dita-bootstrap.github.io/dita-bootstrap/pagination.html) (`<pagination>`)
+- [Popovers](https://dita-bootstrap.github.io/dita-bootstrap/popovers.html) (`<popover>`)
+- [Tabs](https://dita-bootstrap.github.io/dita-bootstrap/tabs.html) (`<tabbed-dialog>`)
+- [Thumbnails](https://dita-bootstrap.github.io/dita-bootstrap/images.html) (`<thumbnail>`)
+- [Tooltips](https://dita-bootstrap.github.io/dita-bootstrap/tooltips.html) (`<tooltip>`)
+
+## Using Bootstrap Specializations
+
+The preferred way to use these specializations is via the DITA Bootstrap domain. These provide native DITA elements with specialized attributes for Bootstrap styling:
+
+```xml
+<card color="primary" border="1" rounded="yes">
+  <title>Card Title</title>
+  <p>Card content goes here.</p>
+</card>
+```
+
+### Colors and Borders
+
+Most DITA Bootstrap Specializations, as well as many base DITA elements, support common attributes to control their appearance:
+
+- **Color Themes**: Use standard Bootstrap themes such as `primary`, `secondary`, `success`, `danger`, `warning`, `info`, `light`, and `dark`.
+- **Border Thickness**: Use numeric values from `1` to `5` to control border width.
+- **Rounded Corners**: Use values like `yes`, `no`, `pill`, or `circle`.
+
 ## License
 
 [Apache 2.0](LICENSE) © 2026 Jason Fox
