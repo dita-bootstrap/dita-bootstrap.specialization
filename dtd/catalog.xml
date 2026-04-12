@@ -21,4 +21,3 @@
   <system systemId="bootstrapDomain.mod" uri="base/bootstrapDomain.mod"/>
   <system systemId="commonElements.mod" uri="base/commonElements.mod"/>
 </catalog>
-
