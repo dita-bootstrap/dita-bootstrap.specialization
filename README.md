@@ -7,7 +7,10 @@ A plug-in for [DITA Open Toolkit][1] that provides the core DTD specializations 
 This plug-in is typically installed as a dependency of the main `com.dita-bootstrap.html` or `com.dita-bootstrap.pdf` plug-ins. Use the `dita` command to add it to your DITA Open Toolkit installation:
 
 ```console
+dita install fox.jason.extend.css
 dita install com.dita-bootstrap.specialization
+dita install com.dita-bootstrap.html
+dita install com.dita-bootstrap.pdf
 ```
 
 ## Featured Bootstrap components
