@@ -28,16 +28,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link" href="https://www.dita-ot.org/plugins#!net.dita-bootstrap.dita-bootstrap">Plugin</a>
+          <a class="nav-link" href="https://www.dita-ot.org/plugins#!org.dita-bootstrap.specialization">Plugin</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="https://github.com/dita-bootstrap/dita-bootstrap.specialization/releases">Releases</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="https://github.com/dita-bootstrap/dita-bootstrap.specialization">Source</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="https://getbootstrap.com/docs/5.3">Bootstrap Docs</a>
         </li>
       </ul>
       <ul class="navbar-nav ms-auto">
@@ -277,7 +274,7 @@
           <figure class="fig  figure w-100 mw-100 p-3">
             
             <pre class="pre codeblock alert alert-secondary  language-xml"><code><span class="ph  token tag"><span class="ph  token tag"><span class="ph  token punctuation">&lt;</span>plugin</span> <span class="ph  token attr-name">id</span><span class="ph  token attr-value"><span class="ph  token punctuation attr-equals">=</span><span class="ph  token punctuation">"</span>com.example.bootstrap-offline<span class="ph  token punctuation">"</span></span> <span class="ph  token attr-name">version</span><span class="ph  token attr-value"><span class="ph  token punctuation attr-equals">=</span><span class="ph  token punctuation">"</span>1.0.0<span class="ph  token punctuation">"</span></span><span class="ph  token punctuation">&gt;</span></span>
-  <span class="ph  token tag"><span class="ph  token tag"><span class="ph  token punctuation">&lt;</span>require</span> <span class="ph  token attr-name">plugin</span><span class="ph  token attr-value"><span class="ph  token punctuation attr-equals">=</span><span class="ph  token punctuation">"</span>com.dita-bootstrap.html<span class="ph  token punctuation">"</span></span> <span class="ph  token punctuation">/&gt;</span></span>
+  <span class="ph  token tag"><span class="ph  token tag"><span class="ph  token punctuation">&lt;</span>require</span> <span class="ph  token attr-name">plugin</span><span class="ph  token attr-value"><span class="ph  token punctuation attr-equals">=</span><span class="ph  token punctuation">"</span>org.dita-bootstrap.html<span class="ph  token punctuation">"</span></span> <span class="ph  token punctuation">/&gt;</span></span>
   <span class="ph  token tag"><span class="ph  token tag"><span class="ph  token punctuation">&lt;</span>feature</span> <span class="ph  token attr-name">extension</span><span class="ph  token attr-value"><span class="ph  token punctuation attr-equals">=</span><span class="ph  token punctuation">"</span>ant.import<span class="ph  token punctuation">"</span></span> <span class="ph  token attr-name">file</span><span class="ph  token attr-value"><span class="ph  token punctuation attr-equals">=</span><span class="ph  token punctuation">"</span>process_offline.xml<span class="ph  token punctuation">"</span></span> <span class="ph  token punctuation">/&gt;</span></span>
   <span class="ph  token tag"><span class="ph  token tag"><span class="ph  token punctuation">&lt;</span>feature</span> <span class="ph  token attr-name">extension</span><span class="ph  token attr-value"><span class="ph  token punctuation attr-equals">=</span><span class="ph  token punctuation">"</span>bootstrap.process.pre<span class="ph  token punctuation">"</span></span> <span class="ph  token attr-name">value</span><span class="ph  token attr-value"><span class="ph  token punctuation attr-equals">=</span><span class="ph  token punctuation">"</span>bootstrap.offline<span class="ph  token punctuation">"</span></span> <span class="ph  token punctuation">/&gt;</span></span>
 
@@ -292,7 +289,7 @@
 
           <div role="alert" class="note  alert alert-primary"><span class="note__title"><i class="pe-2 bi bi-pencil "></i>Note:</span> This plug-in will extend the default HTML5 Bootstrap transformation, so the
               <code class="keyword markupname xmlelement ">&lt;require&gt;</code> element explicitly defines
-              <span class="ph filepath ">com.dita-bootstrap.html</span> as a dependency.</div>
+              <span class="ph filepath ">org.dita-bootstrap.html</span> as a dependency.</div>
         </li>
         <li class="li ">
           <p class="p ">In the <span class="ph filepath ">com.example.bootstrap-offline</span> directory, create a subdirectory named
