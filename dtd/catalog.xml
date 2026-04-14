@@ -19,5 +19,8 @@
   <system systemId="bootstrap-topic.dtd" uri="base/bootstrap-topic.dtd"/>
   <system systemId="bootstrapDomain.ent" uri="base/bootstrapDomain.ent"/>
   <system systemId="bootstrapDomain.mod" uri="base/bootstrapDomain.mod"/>
-  <system systemId="bootstrapCommonElements.mod" uri="base/bootstrapCommonElements.mod"/>
+  <system
+    systemId="bootstrapCommonElements.mod"
+    uri="base/bootstrapCommonElements.mod"
+  />
 </catalog>
