@@ -124,7 +124,7 @@
 
 <!ENTITY % commonElements-def
   PUBLIC "-//Infotexture//ELEMENTS DITA Bootstrap Common Overrides//EN"
-         "commonElements.mod"
+         "bootstrapCommonElements.mod"
 >%commonElements-def;
 
 <!-- ============================================================= -->

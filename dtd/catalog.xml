@@ -14,10 +14,10 @@
   />
   <public
     publicId="-//Infotexture//ELEMENTS DITA Bootstrap Common Overrides//EN"
-    uri="base/commonElements.mod"
+    uri="base/bootstrapCommonElements.mod"
   />
   <system systemId="bootstrap-topic.dtd" uri="base/bootstrap-topic.dtd"/>
   <system systemId="bootstrapDomain.ent" uri="base/bootstrapDomain.ent"/>
   <system systemId="bootstrapDomain.mod" uri="base/bootstrapDomain.mod"/>
-  <system systemId="commonElements.mod" uri="base/commonElements.mod"/>
+  <system systemId="bootstrapCommonElements.mod" uri="base/bootstrapCommonElements.mod"/>
 </catalog>
