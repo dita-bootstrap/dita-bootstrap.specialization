@@ -138,13 +138,11 @@
     <accordion>
         <accordion-item open="yes">
         <title>HTML</title>
-
-        <p>If using DITA-Bootstrap specialization, ensure that the files are using the following <codeph
-          >DOCTYPE</codeph> declaration:</p>
+        <p>If using DITA-Bootstrap specialization, ensure that the <codeph
+          >*.dita</codeph> files are using the following <codeph>DOCTYPE</codeph> declaration:</p>
         <codeblock
           outputclass="language-xml"
-        >&lt;!DOCTYPE topic PUBLIC "-//Infotexture//DTD DITA Bootstrap Topic//EN" "bootstrap-topic.dtd&gt;</codeblock>
-
+        >&lt;!DOCTYPE topic PUBLIC "-//Infotexture//DTD DITA Bootstrap Topic//EN" "bootstrap-topic.dtd"&gt;</codeblock>
         <p>Specify the <option>html5-bootstrap</option> format when building output with the <cmdname>dita</cmdname>
         command:</p>
       <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
@@ -152,20 +150,17 @@
         </accordion-item>
           <accordion-item>
         <title>PDF</title>
-         <p>If using DITA-Bootstrap specialization, ensure that the files are using the following <codeph
-          >DOCTYPE</codeph> declaration:</p>
-        <codeblock
+         <p>If using DITA-Bootstrap specialization, ensure that the <codeph
+          >*.dita</codeph> files are using the following <codeph>DOCTYPE</codeph> declaration:</p>
+         <codeblock
           outputclass="language-xml"
-        >&lt;!DOCTYPE concept PUBLIC "-//Infotexture//DTD DITA Bootstrap Concept//EN" "bootstrap-concept.dtd"&gt;</codeblock>
-
+        >&lt;!DOCTYPE topic PUBLIC "-//Infotexture//DTD DITA Bootstrap Topic//EN" "bootstrap-topic.dtd"&gt;</codeblock>
         <p>Specify the <option>pdf-bootstrap</option> format when building output with the <cmdname>dita</cmdname>
         command:</p>
       <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
           >--input</parmname>=path/to/your.ditamap <parmname>--format</parmname>=pdf-bootstrap</codeblock>
         </accordion-item>
     </accordion>
-
-
     <section>
       <title>Bootswatch themes</title>
       <indexterm><parmname>--bootstrap.theme</parmname></indexterm>
