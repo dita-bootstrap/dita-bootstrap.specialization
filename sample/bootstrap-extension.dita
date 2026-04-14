@@ -38,7 +38,7 @@
       <p>Use the <cmdname>dita</cmdname> command to add the <term>DITA Bootstrap Extension</term>
        plug-in to your DITA Open Toolkit installation:</p>
       <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
-        >install</parmname> com.dita-bootstrap.extension</codeblock>
+        >install</parmname> org.dita-bootstrap.extension</codeblock>
     </section>
   </body>
 </topic>

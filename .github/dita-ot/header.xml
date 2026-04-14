@@ -52,7 +52,7 @@
         <li class="nav-item">
           <a
             class="nav-link"
-            href="https://www.dita-ot.org/plugins#!net.dita-bootstrap.dita-bootstrap"
+            href="https://www.dita-ot.org/plugins#!org.dita-bootstrap.specialization"
           >Plugin</a>
         </li>
         <li class="nav-item">
@@ -66,12 +66,6 @@
             class="nav-link"
             href="https://github.com/dita-bootstrap/dita-bootstrap.specialization"
           >Source</a>
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link"
-            href="https://getbootstrap.com/docs/5.3"
-          >Bootstrap Docs</a>
         </li>
       </ul>
       <ul class="navbar-nav ms-auto">
