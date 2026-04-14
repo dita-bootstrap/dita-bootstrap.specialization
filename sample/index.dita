@@ -10,9 +10,9 @@
 -->
 <topic id="index">
   <title>DITA Bootstrap</title>
-  <shortdesc>A plug-in for
+  <shortdesc>A series of plug-ins for
     <xref href="http://www.dita-ot.org" format="html" scope="external">DITA Open Toolkit</xref> that extends the default
-    HTML5 output with a
+    HTML5 and PDF outputs with a
     <xref href="https://getbootstrap.com/docs/5.3" format="html" scope="external">Bootstrap 5.3</xref> template and
     components.
   </shortdesc>
@@ -28,42 +28,150 @@
   <body>
     <section>
       <title>Installing</title>
-      <p>Use the <cmdname>dita</cmdname> command to add this plug-in to your DITA Open Toolkit installation:</p>
+      <p>Use the <cmdname>dita</cmdname> command to add the plug-ins to your DITA Open Toolkit installation:</p>
     </section>
-    <tabbed-dialog style="tabs">
-      <section>
-        <title>DITA-OT 3.5 and newer:</title>
-          <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
-          >install</parmname> fox.jason.extend.css
+     <accordion>
+        <accordion-item open="yes">
+        <title>DITA-OT 3.5 and newer</title>
+          <ol>  
+            <li>
+              <p><b>Optional:</b> install the specialization plug-in to add support for new DITA elements that
+               generate Bootstrap components:
+              </p>
+              <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+              >install</parmname> com.dita-bootstrap.specialization</codeblock>
+            </li>
+            <li>
+              <p>For HTML generation, install the CSS plug-in and the HTML plug-in as shown:
+              </p>
+              <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+              >install</parmname> fox.jason.extend.css
 <cmdname>dita</cmdname> <parmname>install</parmname> com.dita-bootstrap.html</codeblock>
-      </section>
-      <section>
-        <title>DITA-OT 3.3 and newer:</title>
+            </li>
+            <li>
+              <p>For PDF generation, install the PDF plug-in, and then <b
+              >optionally</b> add the PDF theme plug-in as shown:
+              </p>
+              <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+              >install</parmname> com.dita-bootstrap.pdf
+<cmdname>dita</cmdname> <parmname>install</parmname> com.dita-bootstrap.pdf.theme</codeblock>
+            </li>
+            <li>
+              <p>To add syntax highlighting using the Bootstrap color scheme, install the Prism.js plug-in if required:
+              </p>
+              <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+              >install</parmname> fox.jason.prismjs</codeblock>
+            </li>
+          </ol>
+      </accordion-item>
+      <accordion-item>
+        <title>DITA-OT 3.3 and newer</title>
+          <ol>  
+            <li>
+              <p><b>Optional:</b> install the specialization plug-in to add support for new DITA elements that
+               generate Bootstrap components:
+              </p>
+              <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+              >--install</parmname> com.dita-bootstrap.specialization</codeblock>
+          </li>
+          <li>
+          <p>For HTML generation, install the CSS plug-in and the HTML plug-in as shown:
+          </p>
           <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
-          >--install</parmname> fox.jason.extend.css
+              >--install</parmname> fox.jason.extend.css
 <cmdname>dita</cmdname> <parmname>--install</parmname> com.dita-bootstrap.html</codeblock>
-      </section>
-      <section>
-        <title>DITA-OT 3.2 and older:</title>
-        <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
-          >--install</parmname> https://github.com/jason-fox/fox.jason.extend.css/archive/master.zip
+          </li>
+          <li>
+          <p>For PDF generation, install the PDF plug-in, and then <b>optionally</b> add the PDF theme plug-in as shown:
+          </p>
+          <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+              >--install</parmname> com.dita-bootstrap.pdf
+<cmdname>dita</cmdname> <parmname>--install</parmname> com.dita-bootstrap.pdf.theme</codeblock>
+            </li>
+            <li>
+              <p>To add syntax highlighting using the bootstrap color scheme, install the Prism.js plug-in if required:
+              </p>
+              <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+              >--install</parmname> fox.jason.prismjs</codeblock>
+            </li>
+          </ol>
+      </accordion-item>
+      <accordion-item>
+        <title>DITA-OT 3.2 and older</title>
+          <ol>  
+            <li>
+              <p><b>Optional:</b> install the specialization plug-in to add support for new DITA elements that
+               generate Bootstrap components:
+              </p>
+              <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+              >--install</parmname> https://github.com/dita-bootstrap/dita-bootstrap.specialization/archive/master.zip</codeblock>
+            </li>
+            <li>
+              <p>For HTML generation, install the CSS plug-in and the HTML plug-in as shown:
+              </p>
+              <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+              >--install</parmname> https://github.com/jason-fox/fox.jason.extend.css/archive/master.zip
 <cmdname>dita</cmdname> <parmname
-          >--install</parmname> https://github.com/dita-bootstrap/dita-bootstrap.html/archive/master.zip</codeblock>
-      </section>
-    </tabbed-dialog>
+              >--install</parmname> https://github.com/dita-bootstrap/dita-bootstrap.html/archive/master.zip</codeblock>
+            </li>
+            <li>
+              <p>For PDF generation, install the PDF plug-in, and then <b
+              >optionally</b> add the PDF theme plug-in as shown:
+              </p>
+              <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+              >--install</parmname> https://github.com/dita-bootstrap/dita-bootstrap.pdf/archive/master.zip
+<cmdname>dita</cmdname> <parmname
+              >--install</parmname> https://github.com/dita-bootstrap/dita-bootstrap.pdf.theme/archive/master.zip</codeblock>
+            </li>
+            <li>
+              <p>To add syntax highlighting using the bootstrap color scheme, install the Prism.js plug-in if required:
+              </p>
+              <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+              >--install</parmname> https://github.com/jason-fox/fox.jason.prismjs/archive/master.zip</codeblock>
+            </li>
+          </ol>   
+      </accordion-item>
+    </accordion>
     <section>
       <title>Using</title>
-      <p>Specify the <option>html5-bootstrap</option> format when building output with the <cmdname>dita</cmdname>
+    </section>
+    <accordion>
+        <accordion-item open="yes">
+        <title>HTML</title>
+
+        <p>If using DITA-Bootstrap specialization, ensure that the files are using the following <codeph
+          >DOCTYPE</codeph> declaration:</p>
+        <codeblock
+          outputclass="language-xml"
+        >&lt;!DOCTYPE topic PUBLIC "-//Infotexture//DTD DITA Bootstrap Topic//EN" "bootstrap-topic.dtd&gt;</codeblock>
+
+        <p>Specify the <option>html5-bootstrap</option> format when building output with the <cmdname>dita</cmdname>
         command:</p>
       <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
-        >--input</parmname>=path/to/your.ditamap <parmname>--format</parmname>=html5-bootstrap</codeblock>
-    </section>
+          >--input</parmname>=path/to/your.ditamap <parmname>--format</parmname>=html5-bootstrap</codeblock>
+        </accordion-item>
+          <accordion-item>
+        <title>PDF</title>
+         <p>If using DITA-Bootstrap specialization, ensure that the files are using the following <codeph
+          >DOCTYPE</codeph> declaration:</p>
+        <codeblock
+          outputclass="language-xml"
+        >&lt;!DOCTYPE concept PUBLIC "-//Infotexture//DTD DITA Bootstrap Concept//EN" "bootstrap-concept.dtd"&gt;</codeblock>
+
+        <p>Specify the <option>pdf-bootstrap</option> format when building output with the <cmdname>dita</cmdname>
+        command:</p>
+      <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
+          >--input</parmname>=path/to/your.ditamap <parmname>--format</parmname>=pdf-bootstrap</codeblock>
+        </accordion-item>
+    </accordion>
+
+
     <section>
       <title>Bootswatch themes</title>
       <indexterm><parmname>--bootstrap.theme</parmname></indexterm>
       <p>Alternate Bootstrap themes can be downloaded directly from
         <xref href="https://bootswatch.com/" format="html" scope="external">Bootswatch</xref>.
-        To override the default appearance with a Bootswatch theme, pass a theme name to the <cmdname
+        To override the default appearance with a Bootswatch theme (either HTML or PDF), pass a theme name to the <cmdname
         >dita</cmdname> command via the <parmname>--bootstrap.theme</parmname> parameter:
       </p>
       <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath
