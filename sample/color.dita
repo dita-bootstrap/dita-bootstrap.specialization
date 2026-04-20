@@ -314,37 +314,6 @@
     </tabbed-dialog>
 
     <section>
-      <title>Alerts</title>
-      <p>Alerts provide contextual feedback messages for typical user actions.</p>
-    </section>
-
-    <bodydiv border="yes" padding="3">
-      <alert color="primary">A simple primary alert—check it out!</alert>
-      <alert color="secondary">A simple secondary alert—check it out!</alert>
-      <alert color="success">A simple success alert—check it out!</alert>
-      <alert color="danger">A simple danger alert—check it out!</alert>
-      <alert color="warning">A simple warning alert—check it out!</alert>
-      <alert color="info">A simple info alert—check it out!</alert>
-    </bodydiv>
-
-    <tabbed-dialog style="pills" margin="t3">
-      <section>
-        <title>Specialization</title>
-        <codeblock>&lt;alert color="primary"&gt;A simple primary alert—check it out!&lt;/alert&gt;
-&lt;alert color="secondary"&gt;A simple secondary alert—check it out!&lt;/alert&gt;
-&lt;alert color="success"&gt;A simple success alert—check it out!&lt;/alert&gt;
-&lt;alert color="danger"&gt;A simple danger alert—check it out!&lt;/alert&gt;</codeblock>
-      </section>
-      <section>
-        <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;div outputclass="alert alert-primary"&gt;A simple primary alert—check it out!&lt;/div&gt;
-&lt;div outputclass="alert alert-secondary"&gt;A simple secondary alert—check it out!&lt;/div&gt;
-&lt;div outputclass="alert alert-success"&gt;A simple success alert—check it out!&lt;/div&gt;
-&lt;div outputclass="alert alert-danger"&gt;A simple danger alert—check it out!&lt;/div&gt;</codeblock>
-      </section>
-    </tabbed-dialog>
-
-    <section>
       <title>Text Color</title>
       <p>For text-only colorization, the <xmlatt>outputclass</xmlatt> attribute remains the primary method.</p>
     </section>
