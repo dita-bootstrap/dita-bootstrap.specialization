@@ -62,5 +62,3 @@ Within the sample documentation, where necessary, the texts describing the usage
 [1]: http://www.dita-ot.org
 [2]: https://github.com/dita-bootstrap/dita-bootstrap.html
 [3]: https://getbootstrap.com/docs/5.3
-
-
