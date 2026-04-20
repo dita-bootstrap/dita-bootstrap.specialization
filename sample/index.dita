@@ -569,7 +569,7 @@
       <note type="tip">For more extensive customizations with
         <xref href="https://sass-lang.com" format="html" scope="external">Sass</xref>, you may want to install the
         <xref
-          href="https://github.com/infotexture/dita-bootstrap.sass"
+          href="https://github.com/dita-bootstrap/dita-bootstrap.sass"
           format="html"
           scope="external"
         >dita-bootstrap.sass</xref> plug-in.</note>
