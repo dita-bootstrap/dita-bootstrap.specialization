@@ -57,10 +57,6 @@ Most DITA Bootstrap Specializations, as well as many base DITA elements, support
 
 [Apache 2.0](LICENSE) © 2026 Jason Fox
 
-## License
-
-[Apache 2.0](LICENSE) © 2017–2026 Roger W. Fienhold Sheen
-
 Within the sample documentation, where necessary, the texts describing the usage of each component have been copied directly from the official [Bootstrap 5.3 documentation][3], however DITA markup is used throughout the examples describing how to implement these components correctly using DITA specializations or `outputclass`. The text is therefore a derivative of "Bootstrap 5.3 docs" by Twitter, Inc. and the Bootstrap Authors, and used under CC BY 3.0.
 
 [1]: http://www.dita-ot.org
