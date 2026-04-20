@@ -540,10 +540,10 @@
       </carousel>
       <note type="note">You can switch between the available themes via the CSS dropdown in the menu bar at
         <xref
-          href="https://infotexture.github.io/dita-bootstrap/"
+          href="https://dita-bootstrap.github.io/dita-bootstrap/"
           format="html"
           scope="external"
-        >infotexture.github.io/dita-bootstrap</xref>.
+        >dita-bootstrap.github.io/dita-bootstrap</xref>.
       </note>
     </section>
     <section>
@@ -675,10 +675,10 @@
 
        <note type="note">For an example of <option>collapsible</option> styling, see the output at
         <xref
-          href="https://infotexture.github.io/dita-bootstrap/"
+          href="https://dita-bootstrap.github.io/dita-bootstrap/"
           format="html"
           scope="external"
-        >infotexture.github.io/dita-bootstrap</xref>. </note>
+        >dita-bootstrap.github.io/dita-bootstrap</xref>. </note>
     </section>
     <section>
       <title>Common Bootstrap utility classes</title>
