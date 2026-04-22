@@ -540,10 +540,10 @@
       </carousel>
       <note type="note">You can switch between the available themes via the CSS dropdown in the menu bar at
         <xref
-          href="https://dita-bootstrap.github.io/dita-bootstrap/"
+          href="https://dita-bootstrap.github.io/"
           format="html"
           scope="external"
-        >dita-bootstrap.github.io/dita-bootstrap</xref>.
+        >dita-bootstrap.github.io</xref>.
       </note>
     </section>
     <section>
