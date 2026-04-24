@@ -17,26 +17,26 @@ dita install org.dita-bootstrap.pdf
 
 The plug-in includes DTD handling for the following DITA Bootstrap components:
 
-- [Accordions](https://dita-bootstrap.github.io/dita-bootstrap/accordion.html) (`<accordion>`)
-- [Alerts](https://dita-bootstrap.github.io/dita-bootstrap/alerts.html) (`<alert>`)
-- [Badges](https://dita-bootstrap.github.io/dita-bootstrap/badge.html) (`<badge>`)
-- [Buttons](https://dita-bootstrap.github.io/dita-bootstrap/buttons.html) (`<button>`)
-- [Button Groups](https://dita-bootstrap.github.io/dita-bootstrap/buttons.html#button-groups) (`<button-group>`)
-- [Cards](https://dita-bootstrap.github.io/dita-bootstrap/card.html) (`<card>`)
-- [Carousels](https://dita-bootstrap.github.io/dita-bootstrap/carousel.html) (`<carousel>`)
-- [Icons](https://dita-bootstrap.github.io/dita-bootstrap/icons.html) (`<icon>`)
-- [Grid layout](https://dita-bootstrap.github.io/dita-bootstrap/grid.html) (`<grid-row>`, `<grid-col>`)
-- [List groups](https://dita-bootstrap.github.io/dita-bootstrap/list-group.html) (`<list-group>`)
-- [Offcanvas](https://dita-bootstrap.github.io/dita-bootstrap/offcanvas.html) (`<offcanvas>`)
-- [Pagination](https://dita-bootstrap.github.io/dita-bootstrap/pagination.html) (`<pagination>`)
-- [Popovers](https://dita-bootstrap.github.io/dita-bootstrap/popovers.html) (`<popover>`)
-- [Tabs](https://dita-bootstrap.github.io/dita-bootstrap/tabs.html) (`<tabbed-dialog>`)
-- [Thumbnails](https://dita-bootstrap.github.io/dita-bootstrap/images.html) (`<thumbnail>`)
-- [Tooltips](https://dita-bootstrap.github.io/dita-bootstrap/tooltips.html) (`<tooltip>`)
+- [Accordions](https://dita-bootstrap.github.io/accordion.html) (`<accordion>`)
+- [Alerts](https://dita-bootstrap.github.io/alerts.html) (`<alert>`)
+- [Badges](https://dita-bootstrap.github.io/badge.html) (`<badge>`)
+- [Buttons](https://dita-bootstrap.github.io/buttons.html) (`<button>`)
+- [Button Groups](https://dita-bootstrap.github.io/buttons.html#button-groups) (`<button-group>`)
+- [Cards](https://dita-bootstrap.github.io//card.html) (`<card>`)
+- [Carousels](https://dita-bootstrap.github.io/carousel.html) (`<carousel>`)
+- [Icons](https://dita-bootstrap.github.io/icons.html) (`<icon>`)
+- [Grid layout](https://dita-bootstrap.github.io/grid.html) (`<grid-row>`, `<grid-col>`)
+- [List groups](https://dita-bootstrap.github.io/list-group.html) (`<list-group>`)
+- [Offcanvas](https://dita-bootstrap.github.io/offcanvas.html) (`<offcanvas>`)
+- [Pagination](https://dita-bootstrap.github.io/pagination.html) (`<pagination>`)
+- [Popovers](https://dita-bootstrap.github.io/popovers.html) (`<popover>`)
+- [Tabs](https://dita-bootstrap.github.io/tabs.html) (`<tabbed-dialog>`)
+- [Thumbnails](https://dita-bootstrap.github.io/images.html) (`<thumbnail>`)
+- [Tooltips](https://dita-bootstrap.github.io/tooltips.html) (`<tooltip>`)
 
 ## Using Bootstrap Specializations
 
-The preferred way to use these specializations is via the DITA Bootstrap domain. These provide native DITA elements with specialized attributes for Bootstrap styling:
+The preferred way to use these specializations is via the DITA Bootstrap DTD. These provide native DITA elements with specialized attributes for Bootstrap styling:
 
 ```xml
 <card color="primary" border="1" rounded="yes">
