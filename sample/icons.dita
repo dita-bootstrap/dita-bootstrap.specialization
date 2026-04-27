@@ -1,4 +1,4 @@
-<!DOCTYPE topic PUBLIC "-//Infotexture//DTD DITA Bootstrap Topic//EN" "bootstrap-topic.dtd">
+<!DOCTYPE topic PUBLIC "-//DITA Bootstrap//DTD DITA Bootstrap Topic//EN" "bootstrap-topic.dtd">
 <topic id="icons">
   <title>Icons</title>
   <shortdesc>When enabled, DITA Bootstrap includes Bootstrap Icons by default. Additional icon libraries such as

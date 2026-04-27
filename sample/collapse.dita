@@ -1,4 +1,4 @@
-<!DOCTYPE topic PUBLIC "-//Infotexture//DTD DITA Bootstrap Topic//EN" "bootstrap-topic.dtd">
+<!DOCTYPE topic PUBLIC "-//DITA Bootstrap//DTD DITA Bootstrap Topic//EN" "bootstrap-topic.dtd">
 <topic id="collapse">
   <title>Collapse</title>
   <shortdesc>Toggle the visibility of content across your project with a few classes and Bootstrap’s JavaScript
