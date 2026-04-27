@@ -1,6 +1,6 @@
 # DITA Bootstrap Specialization
 
-A plug-in for [DITA Open Toolkit][1] that provides the core DTD specializations for the [DITA Bootstrap plug-in][2].
+A plug-in for [DITA Open Toolkit][1] that provides the core DTD specializations for the [DITA Bootstrap plug-ins][2].
 
 ## Installing
 
@@ -60,5 +60,5 @@ Most DITA Bootstrap Specializations, as well as many base DITA elements, support
 Within the sample documentation, where necessary, the texts describing the usage of each component have been copied directly from the official [Bootstrap 5.3 documentation][3], however DITA markup is used throughout the examples describing how to implement these components correctly using DITA specializations or `outputclass`. The text is therefore a derivative of "Bootstrap 5.3 docs" by Twitter, Inc. and the Bootstrap Authors, and used under CC BY 3.0.
 
 [1]: http://www.dita-ot.org
-[2]: https://github.com/dita-bootstrap/dita-bootstrap.html
+[2]: https://dita-bootstrap.github.io/
 [3]: https://getbootstrap.com/docs/5.3
