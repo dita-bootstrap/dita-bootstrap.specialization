@@ -36,7 +36,7 @@
         />
     </svg>
       DITA Bootstrap
-      <span class="badge bg-dark small  m-0">Specialization</span>
+      <span class="badge bg-dark small m-0">Latest</span>
     </a>
     <button
       class="navbar-toggler p-2"
