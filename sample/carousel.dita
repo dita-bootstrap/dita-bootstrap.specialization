@@ -572,7 +572,7 @@ And, kept unused, the user so destroys it.</lines>
   &lt;/carousel-item&gt;
 &lt;/carousel&gt;</codeblock>
         </section>
-         <section>
+        <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;ol outputclass="carousel" otherprops="autoplay(false)"&gt;
   &lt;li&gt;
@@ -604,10 +604,21 @@ And, kept unused, the user so destroys it.</lines>
         </carousel-item>
       </carousel>
     </bodydiv>
-    <codeblock>&lt;carousel interval="2000"&gt;
+    <tabbed-dialog style="pills" margin="t3">
+      <section>
+        <title>Specialization</title>
+        otherprops="interval(2000)"
+        <codeblock>&lt;carousel interval="2000"&gt;
   ...
 &lt;/carousel&gt;</codeblock>
-
+      </section>
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;ol outputclass="carousel" otherprops="interval(2000)"&gt;
+  ...
+&lt;/ol&gt;</codeblock>
+      </section>
+    </tabbed-dialog>
     <section id="item-intervals">
       <title>Individual carousel item interval</title>
       <p>Add <xmlatt>interval="1000"</xmlatt> to a <xmlelement
