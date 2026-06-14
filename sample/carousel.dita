@@ -261,7 +261,7 @@ And, kept unused, the user so destroys it.</lines>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
-          <codeblock>&lt;carousel&gt;
+        <codeblock>&lt;carousel&gt;
   &lt;carousel-item&gt;
     &lt;grid-row&gt;
       &lt;grid-col colspan="1"/&gt;
@@ -287,10 +287,10 @@ And, kept unused, the user so destroys it.</lines>
     &lt;/grid-row&gt;
   &lt;/carousel-item&gt;
 &lt;/carousel&gt;</codeblock>
-        </section>
-         <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;ol outputclass="carousel"&gt;
+      </section>
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;ol outputclass="carousel"&gt;
   &lt;li&gt;
     &lt;div outputclass="row"&gt;
       &lt;div outputclass="col-1"/&gt;
@@ -316,9 +316,8 @@ And, kept unused, the user so destroys it.</lines>
     &lt;/div&gt;
   &lt;/li&gt;
 &lt;/ol&gt;</codeblock>
-        </section>
-      </tabbed-dialog>
-
+      </section>
+    </tabbed-dialog>
     <section id="multiple-slides">
       <title>Multiple slides side-by-side</title>
       <p>Add multiple <xmlelement>image</xmlelement> elements within each <xmlelement>carousel-item</xmlelement></p>
@@ -443,6 +442,9 @@ And, kept unused, the user so destroys it.</lines>
         </carousel-item>
       </carousel>
     </bodydiv>
+    <tabbed-dialog style="pills" margin="t3">
+      <section>
+        <title>Specialization</title>
     <codeblock>&lt;carousel&gt;
   &lt;carousel-item&gt;
     &lt;image href="..." /&gt;
@@ -462,6 +464,28 @@ And, kept unused, the user so destroys it.</lines>
   &lt;/carousel-item&gt;
   ...
 &lt;/carousel&gt;</codeblock>
+  </section>
+         <section>
+          <title><xmlatt>outputclass</xmlatt></title>
+    <codeblock>&lt;ol outputclass="carousel"&gt;
+  &lt;li&gt;
+    &lt;image href="..." /&gt;
+    &lt;image href="..." /&gt;
+    &lt;image href="..." /&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;image href="..." /&gt;
+    &lt;image href="..." /&gt;
+    &lt;image href="..." /&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;image href="..." /&gt;
+    &lt;image href="..." /&gt;
+    &lt;image href="..." /&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;</codeblock>
+      </section>
+    </tabbed-dialog>
     <section id="crossfade">
       <title>Crossfade</title>
       <p> Add <xmlatt>fade="yes"</xmlatt> to your carousel to animate slides with a fade transition
