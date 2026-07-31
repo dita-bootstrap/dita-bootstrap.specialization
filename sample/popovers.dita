@@ -28,7 +28,7 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="overview">
       <title>Overview</title>
       <p>Things to know when using the tooltip plugin:</p>
       <ul>
@@ -46,7 +46,7 @@
       </ul>
     </section>
 
-    <section deliveryTarget="html">
+    <section id="examples" deliveryTarget="html">
       <title>Examples</title>
       <p>Keep reading to see how popovers work with some examples.</p>
     </section>
@@ -75,7 +75,7 @@
         </section>
       </tabbed-dialog>
 
-    <section>
+    <section id="four-directions">
       <title>Four directions</title>
       <p>Four options are available: <codeph>top</codeph>, <codeph>right</codeph>, <codeph>bottom</codeph>, and
           <codeph>left</codeph> aligned. Directions are mirrored when using Bootstrap in RTL. To enable popovers, add
@@ -133,7 +133,7 @@
 &lt;/xref&gt;</codeblock>
         </section>
       </tabbed-dialog>
-    <section>
+    <section id="custom-popovers">
       <title>Custom popovers</title>
       <p>You can customize the appearance of popovers using CSS variables.
         We set a custom class with <codeph

@@ -10,9 +10,9 @@
 <!-- ============================================================= -->
 
 <!ENTITY % bootstrap-decoration-atts
-  "color (primary | secondary | success | danger | warning | info | light | dark) #IMPLIED
+  "color (primary | secondary | success | danger | warning | info | accent | inverse) #IMPLIED
    border (yes | no | 1 | 2 | 3 | 4 | 5) #IMPLIED
-   bordercolor (primary | secondary | success | danger | warning | info | light | dark | white | black | primary-subtle | secondary-subtle | success-subtle | danger-subtle | warning-subtle | info-subtle | light-subtle | dark-subtle) #IMPLIED
+   bordercolor (primary | secondary | success | danger | warning | info | accent | inverse | white | black | primary-subtle | secondary-subtle | success-subtle | danger-subtle | warning-subtle | info-subtle | accent-subtle | inverse-subtle) #IMPLIED
    rounded (yes | no | 0 | 1 | 2 | 3 | 4 | 5 | circle | pill) #IMPLIED
    margin CDATA #IMPLIED
    padding CDATA #IMPLIED
@@ -21,7 +21,7 @@
 >
 
 <!ENTITY % table-color-atts
-  "color (primary | secondary | success | danger | warning | info | light | dark) #IMPLIED"
+  "color (primary | secondary | success | danger | warning | info | accent | inverse) #IMPLIED"
 >
 
 <!ATTLIST pre %bootstrap-decoration-atts;>
@@ -63,9 +63,9 @@
 >
 
 <!ATTLIST note
-  color (primary | secondary | success | danger | warning | info | light | dark) #IMPLIED
+  color (primary | secondary | success | danger | warning | info | accent | inverse) #IMPLIED
   border (yes | no | 1 | 2 | 3 | 4 | 5) #IMPLIED
-  bordercolor (primary | secondary | success | danger | warning | info | light | dark | white | black | primary-subtle | secondary-subtle | success-subtle | danger-subtle | warning-subtle | info-subtle | light-subtle | dark-subtle) #IMPLIED
+  bordercolor (primary | secondary | success | danger | warning | info | accent | inverse | white | black | primary-subtle | secondary-subtle | success-subtle | danger-subtle | warning-subtle | info-subtle | accent-subtle | inverse-subtle) #IMPLIED
   rounded (yes | no | 0 | 1 | 2 | 3 | 4 | 5 | circle | pill) #IMPLIED
   margin CDATA #IMPLIED
   padding CDATA #IMPLIED

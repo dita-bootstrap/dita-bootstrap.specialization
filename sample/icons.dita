@@ -19,7 +19,7 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="bootstrap-icons">
       <title>Bootstrap Icons</title>
       <p>
         <xref href="https://icons.getbootstrap.com/" format="html" scope="external">Bootstrap Icons</xref> is a growing
@@ -28,7 +28,7 @@
         >Link</xmlelement> to the default Bootstrap Icons CDN set is included by default. </p>
     </section>
 
-    <section>
+    <section id="example">
       <title>Example</title>
       <p>Icon fonts with classes for every icon are included in Bootstrap Icons. Include the icon web fonts in your page
         via CSS, then reference the class names as needed in your DITA (e.g., <xmlelement>icon
@@ -87,12 +87,12 @@
       </xref>
     </p>
     <p>
-      <xref href="#" color="light">
+      <xref href="#" color="accent">
         <icon outputclass="bi-link"/> Light link
       </xref>
     </p>
     <p>
-      <xref href="#" color="dark">
+      <xref href="#" color="inverse">
         <icon outputclass="bi-link"/> Dark link
       </xref>
     </p>
@@ -118,42 +118,40 @@
 &lt;xref color="info" href="#"&gt;
   &lt;icon outputclass="bi-link"/&gt; Info link
 &lt;/xref&gt;
-&lt;xref color="light" href="#"&gt;
-  &lt;icon outputclass="bi-link"/&gt; Light link
+&lt;xref color="accent" href="#"&gt;
+  &lt;icon outputclass="bi-link"/&gt; Accent link
 &lt;/xref&gt;
-&lt;xref color="dark" href="#"&gt;
-  &lt;icon outputclass="bi-link"/&gt; Dark link
+&lt;xref color="inverse" href="#"&gt;
+  &lt;icon outputclass="bi-link"/&gt; Inverse link
 &lt;/xref&gt;</codeblock>
         </section>
          <section>
           <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;xref outputclass="link-primary" href="#"&gt;
+          <codeblock>&lt;xref outputclass="link theme-primary" href="#"&gt;
   &lt;i outputclass="bi-link"/&gt; Primary link
 &lt;/xref&gt;
-&lt;xref outputclass="link-secondary" href="#"&gt;
+&lt;xref outputclass="link theme-secondary" href="#"&gt;
   &lt;i outputclass="bi-link"/&gt; Secondary link
 &lt;/xref&gt;
-&lt;xref outputclass="link-success" href="#"&gt;
+&lt;xref outputclass="link theme-success" href="#"&gt;
   &lt;i outputclass="bi-link"/&gt; Success link
 &lt;/xref&gt;
-&lt;xref outputclass="link-danger" href="#"&gt;
+&lt;xref outputclass="link theme-danger" href="#"&gt;
   &lt;i outputclass="bi-link"/&gt; Danger link
 &lt;/xref&gt;
-&lt;xref outputclass="link-warning" href="#"&gt;
+&lt;xref outputclass="link theme-warning" href="#"&gt;
   &lt;i outputclass="bi-link"/&gt; Warning link
 &lt;/xref&gt;
-&lt;xref outputclass="link-info" href="#"&gt;
+&lt;xref outputclass="link theme-info" href="#"&gt;
   &lt;i outputclass="bi-link"/&gt; Info link
 &lt;/xref&gt;
-&lt;xref outputclass="link-light" href="#"&gt;
-  &lt;i outputclass="bi-link"/&gt; Light link
+&lt;xref outputclass="link theme-accent" href="#"&gt;
+  &lt;i outputclass="bi-link"/&gt; Accent link
 &lt;/xref&gt;
-&lt;xref outputclass="link-dark" href="#"&gt;
-  &lt;i outputclass="bi-link"/&gt; Dark link
+&lt;xref outputclass="link theme-inverse" href="#"&gt;
+  &lt;i outputclass="bi-link"/&gt; Inverse link
 &lt;/xref&gt;
-&lt;xref outputclass="link-body-emphasis" href="#"&gt;
-  &lt;i outputclass="bi-link"/&gt; Emphasis link
-&lt;/xref&gt;</codeblock>
+</codeblock>
         </section>
       </tabbed-dialog>
     <p>Icons can also be placed within buttons as shown:</p>
@@ -189,22 +187,22 @@
         </section>
          <section>
           <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;xref outputclass="btn-primary btn-floating m-1" href="#"&gt;
+          <codeblock>&lt;xref outputclass="btn theme-primary btn-floating m-1" href="#"&gt;
   &lt;i outputclass="bi-arrow-down-square-fill"/&gt;
 &lt;/xref&gt;
-&lt;xref outputclass="btn-primary btn-floating m-1" href="#"&gt;
+&lt;xref outputclass="btn theme-primary btn-floating m-1" href="#"&gt;
   &lt;i outputclass="bi-chat-left-quote-fill"/&gt;
 &lt;/xref&gt;
-&lt;xref outputclass="btn-primary btn-floating m-1" href="#"&gt;
+&lt;xref outputclass="btn theme-primary btn-floating m-1" href="#"&gt;
   &lt;i outputclass="bi-speedometer"/&gt;
 &lt;/xref&gt;
-&lt;xref outputclass="btn-primary btn-floating m-1" href="#"&gt;
+&lt;xref outputclass="btn theme-primary btn-floating m-1" href="#"&gt;
   &lt;i outputclass="bi-camera-fill"/&gt;
 &lt;/xref&gt;
-&lt;xref outputclass="btn-primary btn-floating m-1" href="#"&gt;
+&lt;xref outputclass="btn theme-primary btn-floating m-1" href="#"&gt;
   &lt;i outputclass="bi-link"/&gt;
 &lt;/xref&gt;
-&lt;xref outputclass="btn-primary btn-floating m-1" href="#"&gt;
+&lt;xref outputclass="btn theme-primary btn-floating m-1" href="#"&gt;
   &lt;i outputclass="bi-share-fill"/&gt;
 &lt;/xref&gt;</codeblock>
         </section>
@@ -235,7 +233,7 @@
   &lt;/topicref&gt;
   ...
 &lt;/chapter&gt;</codeblock>
-    <section>
+    <section id="installing-other-icons">
       <title>Installing other icons</title>
       <p>Other icon sets such as
         <xref href="https://fontawesome.com/" format="html" scope="external">Font Awesome</xref>
@@ -254,7 +252,7 @@
      <parmname>--icons.include</parmname>=<option>yes</option> \
      <parmname>--icons.cdn.path</parmname>=<filepath>path/to/icon-cdn-header.xml</filepath></codeblock>
     </section>
-    <section>
+    <section id="excluding-icons">
       <title>Excluding icons</title>
       <indexterm><parmname>--icons.cdn.path</parmname></indexterm>
       <indexterm><parmname>--icons.include</parmname></indexterm>

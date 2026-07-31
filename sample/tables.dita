@@ -25,7 +25,7 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="overview">
       <title>Overview</title>
       <p>Due to the widespread use of <xmlelement>table</xmlelement> elements across third-party widgets like calendars
         and date pickers, Bootstrap’s tables are opt-in. Extend with optional modifier output classes or custom styles.
@@ -106,7 +106,7 @@
 &lt;/table&gt;</codeblock>
       </section>
     </tabbed-dialog>
-    <section>
+    <section id="variants">
       <title>Variants</title>
       <p>Use contextual classes to color tables, table rows or individual cells.</p>
     </section>
@@ -175,7 +175,7 @@
       </section>
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;table outputclass="table-primary p-1 w-100"&gt;
+        <codeblock>&lt;table outputclass="theme-primary p-1 w-100"&gt;
   &lt;tgroup cols="2"&gt;
     &lt;thead&gt;
       &lt;row&gt;
@@ -184,17 +184,17 @@
       &lt;/row&gt;
     &lt;/thead&gt;
     &lt;tbody&gt;
-      &lt;row outputclass="table-info"&gt;
+      &lt;row outputclass="theme-info"&gt;
         &lt;entry&gt;Elephant (African and Asian)&lt;/entry&gt;
         &lt;entry&gt;19-22 months&lt;/entry&gt;
       &lt;/row&gt;
-      &lt;row outputclass="table-success"&gt;
+      &lt;row outputclass="theme-success"&gt;
         &lt;entry&gt;Giraffe&lt;/entry&gt;
         &lt;entry&gt;15 months&lt;/entry&gt;
       &lt;/row&gt;
       &lt;row&gt;
         &lt;entry&gt;Rhinoceros&lt;/entry&gt;
-        &lt;entry outputclass="table-danger"&gt;14-16 months&lt;/entry&gt;
+        &lt;entry outputclass="theme-danger"&gt;14-16 months&lt;/entry&gt;
       &lt;/row&gt;
       &lt;row&gt;
         &lt;entry&gt;Hippopotamus&lt;/entry&gt;
@@ -205,7 +205,7 @@
 &lt;/table&gt;</codeblock>
       </section>
     </tabbed-dialog>
-    <section>
+    <section id="striped-rows">
       <title>Striped rows</title>
       <p>Use <xmlatt>striped="yes"</xmlatt> to add zebra-striping to any table row
         within the <xmlelement>tbody</xmlelement>.</p>
@@ -256,7 +256,7 @@
 &lt;/table&gt;</codeblock>
       </section>
     </tabbed-dialog>
-    <section>
+    <section id="striped-columns">
       <title>Striped columns</title>
       <p>Use <xmlatt>striped-columns="yes"</xmlatt> to add zebra-striping to any table column
         within the <xmlelement>tbody</xmlelement>.</p>
@@ -307,7 +307,7 @@
 &lt;/table&gt;</codeblock>
       </section>
     </tabbed-dialog>
-    <section>
+    <section id="bordered-tables">
       <title>Bordered tables</title>
       <p>Add <xmlatt>rowsep="1"</xmlatt> and <xmlatt
         >colsep="1"</xmlatt> for borders on all sides of the table and cells.</p>
@@ -358,7 +358,7 @@
 &lt;/table&gt;</codeblock>
       </section>
     </tabbed-dialog>
-    <section>
+    <section id="tables-without-borders">
       <title>Tables without borders</title>
       <p>Add <xmlatt>rowsep="0"</xmlatt> and <xmlatt>colsep="0"</xmlatt> for a table without borders.</p>
     </section>
@@ -408,7 +408,7 @@
 &lt;/table&gt;</codeblock>
       </section>
     </tabbed-dialog>
-    <section>
+    <section id="small-tables">
       <title>Small tables</title>
       <p>Add <xmlatt>compact="yes"</xmlatt> to make any table more compact by cutting all cell <codeph
         >padding</codeph> in half.</p>
@@ -459,7 +459,7 @@
 &lt;/table&gt;</codeblock>
       </section>
     </tabbed-dialog>
-    <section>
+    <section id="table-group-dividers">
       <title>Table group dividers</title>
       <p>Add a thicker border, darker between table groups—<xmlelement>thead</xmlelement> and <xmlelement
         >tbody</xmlelement>, with <xmlatt>divider="yes"</xmlatt> on the table.</p>
@@ -513,7 +513,7 @@
 &lt;/tbody&gt;</codeblock>
       </section>
     </tabbed-dialog>
-    <section>
+    <section id="vertical-alignment">
       <title>Vertical alignment</title>
       <p>Table cells of <xmlelement
         >thead</xmlelement> are always vertical aligned to the bottom. Table cells in <xmlelement
@@ -625,10 +625,10 @@
 &lt;/table&gt;</codeblock>
       </section>
     </tabbed-dialog>
-    <section>
+    <section id="table-head">
       <title>Table head</title>
-      <p>Similar to tables and dark tables, use the modifier <xmlatt>color="light"</xmlatt> or
-          <xmlatt>color="dark"</xmlatt> to make <xmlelement>thead</xmlelement> elements appear light or dark
+      <p>Similar to tables and dark tables, use the modifier <xmlatt>color="accent"</xmlatt> or
+          <xmlatt>color="inverse"</xmlatt> to make <xmlelement>thead</xmlelement> elements appear light or dark
         gray.</p>
     </section>
     <bodydiv border="yes" padding="3">
@@ -636,7 +636,7 @@
         <tgroup cols="2">
           <colspec colname="COLSPEC0"/>
           <colspec colname="COLSPEC1"/>
-          <thead color="light">
+          <thead color="accent">
             <row>
               <entry colname="COLSPEC0" valign="top">Animal</entry>
               <entry colname="COLSPEC1" valign="top">Gestation</entry>
@@ -668,7 +668,7 @@
         <title>Specialization</title>
         <codeblock>&lt;table&gt;
   &lt;tgroup&gt;
-    &lt;thead color="light"&gt;
+    &lt;thead color="secondary"&gt;
       ...etc
     &lt;/thead&gt;
   &lt;/tgroup&gt;
@@ -678,7 +678,7 @@
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;table&gt;
   &lt;tgroup&gt;
-    &lt;thead outputclass="table-light"&gt;
+    &lt;thead outputclass="theme-secondary"&gt;
       ...etc
     &lt;/thead&gt;
   &lt;/tgroup&gt;
@@ -690,7 +690,7 @@
         <tgroup cols="2">
           <colspec colname="COLSPEC0"/>
           <colspec colname="COLSPEC1"/>
-          <thead color="dark">
+          <thead color="inverse">
             <row>
               <entry colname="COLSPEC0" valign="top">Animal</entry>
               <entry colname="COLSPEC1" valign="top">Gestation</entry>
@@ -722,7 +722,7 @@
         <title>Specialization</title>
         <codeblock>&lt;table&gt;
   &lt;tgroup&gt;
-    &lt;thead color="dark"&gt;
+    &lt;thead color="inverse"&gt;
       ...etc
     &lt;/thead&gt;
   &lt;/tgroup&gt;
@@ -732,7 +732,7 @@
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;table&gt;
   &lt;tgroup&gt;
-    &lt;thead outputclass="table-dark"&gt;
+    &lt;thead outputclass="theme-inverse"&gt;
       ...etc
     &lt;/thead&gt;
   &lt;/tgroup&gt;

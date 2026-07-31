@@ -26,7 +26,7 @@
 <!ENTITY % grid-col "grid-col">
 <!ENTITY % icon "icon">
 <!ENTITY % list-group "list-group">
-<!ENTITY % offcanvas "offcanvas">
+<!ENTITY % drawer "drawer">
 <!ENTITY % pagination "pagination">
 <!ENTITY % popover "popover">
 <!ENTITY % picture "picture">
@@ -41,7 +41,7 @@
 <!ENTITY % bootstrap-d-ph "badge | icon">
 <!ENTITY % bootstrap-d-xref "button | popover | tooltip">
 <!ENTITY % bootstrap-d-bodydiv "accordion | button-group | button-toolbar | collapse | grid-row | grid-col | tabbed-dialog">
-<!ENTITY % bootstrap-d-section "accordion-item | alert | card | offcanvas | pagination">
+<!ENTITY % bootstrap-d-section "accordion-item | alert | card | drawer | pagination">
 <!ENTITY % bootstrap-d-ul "carousel | list-group">
 <!ENTITY % bootstrap-d-li "carousel-item">
 <!ENTITY % bootstrap-d-div "card-header | card-footer | picture">

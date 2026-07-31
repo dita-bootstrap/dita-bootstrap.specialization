@@ -26,7 +26,7 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="example">
       <title>Example</title>
       <p>Alerts are available for any length of text, as well as an optional close button. For proper styling, use one
         of the eight required contextual classes (e.g., set <xmlatt>outputclass</xmlatt> to
@@ -39,67 +39,67 @@
       <alert color="danger">A simple danger alert—check it out!</alert>
       <alert color="warning">A simple warning alert—check it out!</alert>
       <alert color="info">A simple info alert—check it out!</alert>
-      <alert color="light">A simple light alert—check it out!</alert>
-      <alert color="dark">A simple dark alert—check it out!</alert>
+      <alert color="accent">A simple light alert—check it out!</alert>
+      <alert color="inverse">A simple dark alert—check it out!</alert>
     </bodydiv>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
         <codeblock>&lt;alert color="primary"&gt;
-  A simple primary alert—check it out!
+  A simple primary alert — check it out!
 &lt;/alert&gt;
 &lt;alert color="secondary"&gt;
-  A simple secondary alert—check it out!
+  A simple secondary alert — check it out!
 &lt;/alert&gt;
 &lt;alert color="success"&gt;
-  A simple success alert—check it out!
+  A simple success alert — check it out!
 &lt;/alert&gt;
 &lt;alert color="danger"&gt;
-  A simple danger alert—check it out!
+  A simple danger alert — check it out!
 &lt;/alert&gt;
 &lt;alert color="warning"&gt;
-  A simple warning alert—check it out!
+  A simple warning alert — check it out!
 &lt;/alert&gt;
 &lt;alert color="info"&gt;
-  A simple info alert—check it out!
+  A simple info alert — check it out!
 &lt;/alert&gt;
-&lt;alert color="light"&gt;
-  A simple light alert—check it out!
+&lt;alert color="accent"&gt;
+  A simple accent alert — check it out!
 &lt;/alert&gt;
-&lt;alert color="dark"&gt;
-  A simple dark alert—check it out!
+&lt;alert color="inverse"&gt;
+  A simple inverse alert — check it out!
 &lt;/alert&gt;</codeblock>
       </section>
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-            <codeblock>&lt;section outputclass="alert-primary"&gt;
-  A simple primary alert—check it out!
+            <codeblock>&lt;section outputclass="alert theme-primary"&gt;
+  A simple primary alert — check it out!
 &lt;/section&gt;
-&lt;section outputclass="alert-secondary"&gt;
-  A simple secondary alert—check it out!
+&lt;section outputclass="alert theme-secondary"&gt;
+  A simple secondary alert — check it out!
 &lt;/section&gt;
-&lt;section outputclass="alert-success"&gt;
-  A simple success alert—check it out!
+&lt;section outputclass="alert theme-success"&gt;
+  A simple success alert — check it out!
 &lt;/section&gt;
-&lt;section outputclass="alert-danger"&gt;
-  A simple danger alert—check it out!
+&lt;section outputclass="alert theme-danger"&gt;
+  A simple danger alert — check it out!
 &lt;/section&gt;
-&lt;section outputclass="alert-warning"&gt;
-  A simple warning alert—check it out!
+&lt;section outputclass="alert theme-warning"&gt;
+  A simple warning alert — check it out!
 &lt;/section&gt;
-&lt;section outputclass="alert-info"&gt;
-  A simple info alert—check it out!
+&lt;section outputclass="alert theme-info"&gt;
+  A simple info alert — check it out!
 &lt;/section&gt;
-&lt;section outputclass="alert-light"&gt;
-  A simple light alert—check it out!
+&lt;section outputclass="alert theme-accent"&gt;
+  A simple accent alert — check it out!
 &lt;/section&gt;
-&lt;section outputclass="alert-dark"&gt;
-  A simple dark alert—check it out!
+&lt;section outputclass="alert theme-inverse"&gt;
+  A simple inverse alert — check it out!
 &lt;/section&gt;</codeblock>
       </section>
     </tabbed-dialog>
 
-    <section>
+    <section id="additional-content">
       <title>Additional content</title>
       <p>Alerts can also contain additional HTML elements like headings, paragraphs, icons and links.</p>
     </section>
@@ -115,7 +115,7 @@
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;alert color="success"&gt;
+        <codeblock>&lt;alert color="success" outputclass="vstack"&gt;
   &lt;title&gt;&lt;icon outputclass="bi-emoji-smile" padding="e2"/&gt;Well done!&lt;/title&gt;
   &lt;p&gt;
     Aww yeah, you successfully read this important alert message. This example text with a
@@ -129,7 +129,7 @@
       </section>
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;section outputclass="alert alert-success"&gt;
+        <codeblock>&lt;section outputclass="alert theme-success vstack"&gt;
   &lt;title&gt;&lt;i outputclass="bi bi-emoji-smile pe-2"/&gt;Well done!&lt;/title&gt;
   &lt;p&gt;
     Aww yeah, you successfully read this important alert message. This example text with a
@@ -143,7 +143,7 @@
       </section>
     </tabbed-dialog>
 
-    <section>
+    <section id="notes">
       <title>Notes</title>
       <p>DITA <xmlelement>note</xmlelement> elements are displayed as alerts according to the <xmlatt>type</xmlatt>
         attribute. With the exception <xmlatt>type="othertype"</xmlatt>, an icon is added if <xmlatt
@@ -200,8 +200,8 @@
     <bodydiv border="yes" padding="3">
       <note color="primary">This is a primary note.</note>
       <note color="secondary">This is a secondary note.</note>
-      <note color="light">This is light note.</note>
-      <note color="dark">This is dark note.</note>
+      <note color="accent">This is light note.</note>
+      <note color="inverse">This is dark note.</note>
     </bodydiv>
     <tabbed-dialog style="pills" margin="t3">
       <section>
@@ -212,24 +212,24 @@
 &lt;note color="secondary"&gt;
   This is a secondary note.
 &lt;/note&gt;
-&lt;note color="light"&gt;
-  This is light note.
+&lt;note color="accent"&gt;
+  This is accent note.
 &lt;/note&gt;
-&lt;note color="dark"&gt;
-  This is dark note.
+&lt;note color="inverse"&gt;
+  This is inverse note.
 &lt;/note&gt;</codeblock>
       </section>
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;note type="note" outputclass="alert-primary"&gt;
+        <codeblock>&lt;note type="note" outputclass="theme-primary"&gt;
   This is a primary note.&lt;/note&gt;
-&lt;note type="note" outputclass="alert-secondary"&gt;
+&lt;note type="note" outputclass="theme-secondary"&gt;
   This is a secondary note.&lt;/note&gt;
-&lt;note type="note" outputclass="alert-light"&gt;
-  This is light note.
+&lt;note type="note" outputclass="theme-accent"&gt;
+  This is accent note.
 &lt;/note&gt;
-&lt;note type="note" outputclass="alert-dark"&gt;
-  This is dark note.
+&lt;note type="note" outputclass="theme-inverse"&gt;
+  This is inverse note.
 &lt;/note&gt;</codeblock>
       </section>
     </tabbed-dialog>

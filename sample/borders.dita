@@ -47,14 +47,14 @@
 &lt;ph outputclass="border-bottom"&gt;...&lt;/ph&gt;
 &lt;ph outputclass="border-start"&gt;...&lt;/ph&gt;</codeblock>
 
-    <section>
+    <section id="border-specialization">
       <title>Border Specialization</title>
       <p>The <xmlatt>border</xmlatt> and <xmlatt
         >rounded</xmlatt> attributes provide a semantic way to add borders and rounded corners.</p>
     </section>
 
     <bodydiv border="yes" padding="3">
-      <section border="yes" padding="2">
+      <section id="bordered-section" border="yes" padding="2">
         <title>Bordered Section</title>
         <p>This section has a border.</p>
       </section>
@@ -108,7 +108,7 @@
 &lt;/ul&gt;</codeblock>
       </section>
     </tabbed-dialog>
-    <section>
+    <section id="border-styling">
       <title>Border Styling</title>
       <p>The <xmlatt>border</xmlatt> attribute also accepts numeric values 1-5 for width. The <xmlatt
         >rounded</xmlatt> attribute 
@@ -203,19 +203,19 @@
     <bodydiv border="yes" padding="3" margin="t3">
       <div margin="b3" padding="t3">
         <ph border="yes" rounded="circle" padding="4" margin="e5" bordercolor="info">Circle</ph>
-        <ph border="yes" rounded="pill" padding="x4 y2" margin="e2" bordercolor="dark">Pill</ph>
+        <ph border="yes" rounded="pill" padding="x4 y2" margin="e2" bordercolor="inverse">Pill</ph>
       </div>
     </bodydiv>
     <tabbed-dialog margin="t3" style="pills">
       <section>
         <title>Specialization</title>
         <codeblock>&lt;ph border="yes" rounded="circle" bordercolor="info"&gt;Circle&lt;/ph&gt;
-&lt;ph border="yes" rounded="pill" bordercolor="dark"&gt;Pill&lt;/ph&gt;</codeblock>
+&lt;ph border="yes" rounded="pill" bordercolor="warning"&gt;Pill&lt;/ph&gt;</codeblock>
       </section>
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;ph outputclass="border rounded-circle border-info"&gt;Circle&lt;/ph&gt;
-&lt;ph outputclass="border rounded-pill border-dark"&gt;Pill&lt;/ph&gt;</codeblock>
+&lt;ph outputclass="border rounded-pill border-warning"&gt;Pill&lt;/ph&gt;</codeblock>
       </section>
     </tabbed-dialog>
 
@@ -252,7 +252,7 @@ and summer’s lease hath all too short a date:
         <tgroup cols="2">
           <colspec colname="COLSPEC0"/>
           <colspec colname="COLSPEC1"/>
-          <thead outputclass="table-dark">
+          <thead outputclass="table-inverse">
             <row>
               <entry colname="COLSPEC0" valign="top">Animal</entry>
               <entry colname="COLSPEC1" valign="top">Gestation</entry>
@@ -281,7 +281,7 @@ and summer’s lease hath all too short a date:
       <p/>
     </bodydiv>
     <codeblock>&lt;codeblock frame="sides"&gt;...&lt;/codeblock&gt;
-&lt;lines frame="topbot" outputclass="bg-secondary-subtle p-3 border rounded"&gt;...&lt;/lines&gt;
+&lt;lines frame="topbot" outputclass="..."&gt;...&lt;/lines&gt;
 &lt;table frame="all"&gt;...&lt;/table&gt;</codeblock>
   </body>
 </topic>

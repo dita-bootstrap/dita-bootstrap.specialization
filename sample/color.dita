@@ -17,7 +17,7 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="colors">
       <title>Colors</title>
       <p>Colorize text and backgrounds with color utilities. The <xmlatt
         >color</xmlatt> attribute provides a semantic way to apply standard Bootstrap color themes.</p>
@@ -30,43 +30,43 @@
       <div color="danger">.text-bg-danger</div>
       <div color="warning">.text-bg-warning</div>
       <div color="info">.text-bg-info</div>
-      <div color="light">.text-bg-light</div>
-      <div color="dark">.text-bg-dark</div>
+      <div color="accent">.text-bg-light</div>
+      <div color="inverse">.text-bg-inverse</div>
     </bodydiv>
 
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;div color="primary"&gt;.text-bg-primary&lt;/div&gt;
-&lt;div color="secondary"&gt;.text-bg-secondary&lt;/div&gt;
-&lt;div color="success"&gt;.text-bg-success&lt;/div&gt;
-&lt;div color="danger"&gt;.text-bg-danger&lt;/div&gt;
-&lt;div color="warning"&gt;.text-bg-warning&lt;/div&gt;
-&lt;div color="info"&gt;.text-bg-info&lt;/div&gt;
-&lt;div color="light"&gt;.text-bg-light&lt;/div&gt;
-&lt;div color="dark"&gt;.text-bg-dark&lt;/div&gt;</codeblock>
+        <codeblock>&lt;div color="primary"&gt;bg-primary&lt;/div&gt;
+&lt;div color="secondary"&gt;bg-secondary&lt;/div&gt;
+&lt;div color="success"&gt;bg-success&lt;/div&gt;
+&lt;div color="danger"&gt;bg-danger&lt;/div&gt;
+&lt;div color="warning"&gt;bg-warning&lt;/div&gt;
+&lt;div color="info"&gt;bg-info&lt;/div&gt;
+&lt;div color="accent"&gt;bg-accent&lt;/div&gt;
+&lt;div color="inverse"&gt;bg-inverse&lt;/div&gt;</codeblock>
       </section>
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;div outputclass="text-bg-primary"&gt;.text-bg-primary&lt;/div&gt;
-&lt;div outputclass="text-bg-secondary"&gt;.text-bg-secondary&lt;/div&gt;
-&lt;div outputclass="text-bg-success"&gt;.text-bg-success&lt;/div&gt;
-&lt;div outputclass="text-bg-danger"&gt;.text-bg-danger&lt;/div&gt;
-&lt;div outputclass="text-bg-warning"&gt;.text-bg-warning&lt;/div&gt;
-&lt;div outputclass="text-bg-info"&gt;.text-bg-info&lt;/div&gt;
-&lt;div outputclass="text-bg-light"&gt;.text-bg-light&lt;/div&gt;
-&lt;div outputclass="text-bg-dark"&gt;.text-bg-dark&lt;/div&gt;</codeblock>
+        <codeblock>&lt;div outputclass="bg-primary fg-contrast-primary"&gt;bg-primary&lt;/div&gt;
+&lt;div outputclass="bg-secondary fg-contrast-secondary"&gt;bg-secondary&lt;/div&gt;
+&lt;div outputclass="bg-success fg-contrast-success"&gt;bg-success&lt;/div&gt;
+&lt;div outputclass="bg-danger fg-contrast-danger"&gt;bg-danger&lt;/div&gt;
+&lt;div outputclass="bg-warning fg-contrast-warning"&gt;bg-warning&lt;/div&gt;
+&lt;div outputclass="bg-info fg-contrast-info" &gt;bg-info&lt;/div&gt;
+&lt;div outputclass="bg-accent fg-contrast-accent"&gt;bg-accent&lt;/div&gt;
+&lt;div outputclass="bg-inverse fg-contrast-inverse"&gt;bg-inverse&lt;/div&gt;</codeblock>
       </section>
     </tabbed-dialog>
 
-    <section>
+    <section id="base-dita-elements">
       <title>Base DITA Elements</title>
       <p
       >Decoration attributes can be applied to many base DITA elements to add background color and contrasting text.</p>
     </section>
 
     <bodydiv border="yes" padding="3">
-      <section color="primary" margin="t2">
+      <section id="section-decoration" color="primary" margin="t2">
         <title>Section Decoration</title>
         <p>This section has a primary color background.</p>
       </section>
@@ -169,24 +169,24 @@
       </section>
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;section outputclass="text-bg-primary"&gt;
+        <codeblock>&lt;section outputclass="bg-primary fg-contrast-primary"&gt;
   &lt;title&gt;Section Decoration&lt;/title&gt;
   &lt;p&gt;This section has a primary color background.&lt;/p&gt;
 &lt;/section&gt;
 
-&lt;div outputclass="text-bg-success p-3"&gt;
+&lt;div outputclass="bg-success fg-contrast-success p-3"&gt;
   &lt;p&gt;This div has a success color background.&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;pre outputclass="text-bg-warning"&gt;
+&lt;pre outputclass="bg-warning fg-contrast-warning"&gt;
   This pre has a warning color background.
 &lt;/pre&gt;
 
-&lt;lq outputclass="text-bg-danger p-1"&gt;
+&lt;lq outputclass="bg-danger fg-contrast-danger p-1"&gt;
   ...
 &lt;/lq&gt;
 
-&lt;table outputclass="table-primary p-1 w-100"&gt;
+&lt;table outputclass="theme-primary p-1 w-100"&gt;
   &lt;tgroup cols="2"&gt;
     &lt;thead&gt;
       &lt;row&gt;
@@ -195,15 +195,15 @@
       &lt;/row&gt;
     &lt;/thead&gt;
     &lt;tbody&gt;
-      &lt;row outputclass="table-info"&gt;
+      &lt;row outputclass="theme-info"&gt;
        ...
       &lt;/row&gt;
-      &lt;row outputclass="table-success"&gt;
+      &lt;row outputclass="theme-success"&gt;
        ...
       &lt;/row&gt;
       &lt;row&gt;
         &lt;entry&gt;...&lt;/entry&gt;
-        &lt;entry outputclass="table-danger"&gt;...&lt;/entry&gt;
+        &lt;entry outputclass="theme-danger"&gt;...&lt;/entry&gt;
       &lt;/row&gt;
       &lt;row&gt;
         &lt;entry&gt;...&lt;/entry&gt;
@@ -219,7 +219,7 @@
       </section>
     </tabbed-dialog>
 
-    <section>
+    <section id="specialized-elements">
       <title>Specialized Elements</title>
       <p>Many specialized components also support the <xmlatt>color</xmlatt> attribute for consistent theming.</p>
     </section>
@@ -244,7 +244,7 @@
         <li>A second item</li>
       </list-group>
 
-      <carousel color="dark" width="50" indicators="yes" margin="t2">
+      <carousel color="inverse" width="50" indicators="yes" margin="t2">
         <carousel-item>
           <image scope="external" href="https://picsum.photos/1200/600?a"/>
         </carousel-item>
@@ -279,7 +279,7 @@
   &lt;li&gt;A second item&lt;/li&gt;
 &lt;/list-group&gt;
 
-&lt;carousel color="dark" width="50" indicators="yes"&gt;
+&lt;carousel color="inverse" width="50" indicators="yes"&gt;
   &lt;carousel-item&gt;
     &lt;image href="..."/&gt;
   &lt;/carousel-item&gt;
@@ -295,43 +295,43 @@
         <title><xmlatt>outputclass</xmlatt></title>
         <codeblock>&lt;img src="..." class="img-thumbnail bg-warning"/&gt;
 
-&lt;section outputclass="card text-bg-success w-50"&gt;
+&lt;section outputclass="card theme-success w-50"&gt;
   ...
 &lt;/section&gt;
 
-&lt;bodydiv outputclass="accordion accordion-info"&gt;
+&lt;bodydiv outputclass="accordion theme-info"&gt;
   ...
 &lt;/bodydiv&gt;
 
-&lt;ul outputclass="list-group list-group-item-danger w-50"&gt;
+&lt;ul outputclass="list-group theme-danger w-50"&gt;
   ...
 &lt;/ul&gt;
 
-&lt;ul outputclass="carousel carousel-dark w-50"&gt;
+&lt;ul outputclass="carousel theme-inverse w-50"&gt;
   ...
 &lt;/ul&gt;</codeblock>
       </section>
     </tabbed-dialog>
 
-    <section>
+    <section id="text-color">
       <title>Text Color</title>
       <p>For text-only colorization, the <xmlatt>outputclass</xmlatt> attribute remains the primary method.</p>
     </section>
 
     <bodydiv border="yes" padding="3">
-      <p outputclass="text-primary">.text-primary</p>
-      <p outputclass="text-secondary">.text-secondary</p>
-      <p outputclass="text-success">.text-success</p>
-      <p outputclass="text-danger">.text-danger</p>
-      <p outputclass="text-warning bg-dark">.text-warning</p>
-      <p outputclass="text-info bg-dark">.text-info</p>
+      <p outputclass="fg-primary">fg-primary</p>
+      <p outputclass="fg-secondary">fg-secondary</p>
+      <p outputclass="fg-success">fg-success</p>
+      <p outputclass="fg-danger">fg-danger</p>
+      <p outputclass="fg-warning">fg-warning</p>
+      <p outputclass="fg-info">fg-info</p>
     </bodydiv>
 
-    <codeblock>&lt;p outputclass="text-primary"&gt;.text-primary&lt;/p&gt;
-&lt;p outputclass="text-secondary"&gt;.text-secondary&lt;/p&gt;
-&lt;p outputclass="text-success"&gt;.text-success&lt;/p&gt;
-&lt;p outputclass="text-danger"&gt;.text-danger&lt;/p&gt;
-&lt;p outputclass="text-warning bg-dark"&gt;.text-warning&lt;/p&gt;
-&lt;p outputclass="text-info bg-dark"&gt;.text-info&lt;/p&gt;</codeblock>
+    <codeblock>&lt;p outputclass="fg-primary"&gt;fg-primary&lt;/p&gt;
+&lt;p outputclass="fg-secondary"&gt;fg-secondary&lt;/p&gt;
+&lt;p outputclass="fg-success"&gt;fg-success&lt;/p&gt;
+&lt;p outputclass="fg-danger"&gt;fg-danger&lt;/p&gt;
+&lt;p outputclass="fg-warning"&gt;fg-warning&lt;/p&gt;
+&lt;p outputclass="fg-info"&gt;fg-info&lt;/p&gt;</codeblock>
   </body>
 </topic>

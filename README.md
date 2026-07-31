@@ -27,7 +27,7 @@ The plug-in includes DTD handling for the following DITA Bootstrap components:
 - [Icons](https://dita-bootstrap.github.io/icons.html) (`<icon>`)
 - [Grid layout](https://dita-bootstrap.github.io/grid.html) (`<grid-row>`, `<grid-col>`)
 - [List groups](https://dita-bootstrap.github.io/list-group.html) (`<list-group>`)
-- [Offcanvas](https://dita-bootstrap.github.io/offcanvas.html) (`<offcanvas>`)
+- [Drawer](https://dita-bootstrap.github.io/drawer.html) (`<drawer>`)
 - [Pagination](https://dita-bootstrap.github.io/pagination.html) (`<pagination>`)
 - [Popovers](https://dita-bootstrap.github.io/popovers.html) (`<popover>`)
 - [Tabs](https://dita-bootstrap.github.io/tabs.html) (`<tabbed-dialog>`)

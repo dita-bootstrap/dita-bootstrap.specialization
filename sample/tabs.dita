@@ -25,7 +25,7 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="basic-example">
       <title>Basic example</title>
       <p>The following example shows a simple tabbed dialog using a <xmlelement>tabbed-dialog
           style="tabs"</xmlelement> element containing a series of <xmlelement>section</xmlelement> elements
