@@ -50,11 +50,11 @@
     </section>
     <bodydiv border="yes" padding="3" deliveryTarget="html">
       <p outputclass="h3">Fancy display heading <ph
-          outputclass="small text-body-secondary"
+          outputclass="small fs-md fg-secondary"
         >with faded secondary text</ph></p>
     </bodydiv>
     <codeblock
-    >&lt;title&gt;Fancy display heading &lt;ph outputclass="small text-body-secondary"&gt;with faded secondary text&lt;/ph&gt;&lt;/title&gt;</codeblock>
+    >&lt;title&gt;Fancy display heading &lt;ph outputclass="small fs-md fg-secondary"&gt;with faded secondary text&lt;/ph&gt;&lt;/title&gt;</codeblock>
     <section id="display-headings">
       <title>Display headings</title>
       <p>Traditional heading elements are designed to work best in the meat of your page content. When you need a
