@@ -228,7 +228,7 @@
 
       <thumbnail scope="external" href="https://picsum.photos/100/100?a" color="warning"/>
       <card color="success" width="50" margin="t2">
-        <title>Card Title</title>
+        <card-header>Success Card</card-header>
         <p>Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
       </card>
 
@@ -263,7 +263,7 @@
         <codeblock>&lt;thumbnail href="..." color="warning"/&gt;
 
 &lt;card color="success" width="50"&gt;
-  &lt;title&gt;Card Title&lt;/title&gt;
+  &lt;card-header&gt;Card Title&lt;/card-header&gt;
   &lt;p&gt;Some quick example text to build on the card title and make up the bulk of the card’s content.&lt;/p&gt;
 &lt;/card&gt;
 

@@ -187,15 +187,13 @@
     </section>
     <bodydiv border="yes" padding="3">
       <card color="success">
-        <title>Card Title</title>
-        <image scope="external" href="https://picsum.photos/400/200?a"/>
+        <card-header>Success Card</card-header>
         <p>Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
         <button href="#">Go Somewhere</button>
       </card>
     </bodydiv>
     <codeblock>&lt;card color="success"&gt;
-  &lt;title&gt;Card Title&lt;/title&gt;
-  &lt;image href="..." /&gt;
+  &lt;card-header&gt;Card Title&lt;/card-header&gt;
   &lt;p&gt;Some quick example text to build on the card title and make up the bulk of the card’s content.&lt;/p&gt;
   &lt;button href="#"&gt;Go Somewhere&lt;/button&gt;
 &lt;/card&gt;</codeblock>
