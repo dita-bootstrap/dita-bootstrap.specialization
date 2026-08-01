@@ -66,8 +66,8 @@
         <badge color="danger">Danger</badge>
         <badge color="warning">Warning</badge>
         <badge color="info">Info</badge>
-        <badge color="accent">Light</badge>
-        <badge color="inverse">Dark</badge>
+        <badge color="accent">Accent</badge>
+        <badge color="inverse">Inverse</badge>
       </p>
     </bodydiv>
     <tabbed-dialog style="pills" margin="t3">

@@ -36,8 +36,8 @@
       <button href="#" color="danger">Danger</button>
       <button href="#" color="warning">Warning</button>
       <button href="#" color="info">Info</button>
-      <button href="#" color="accent">Light</button>
-      <button href="#" color="inverse">Dark</button>
+      <button href="#" color="accent">Accent</button>
+      <button href="#" color="inverse">Inverse</button>
     </bodydiv>
 
     <tabbed-dialog style="pills" margin="t3">

@@ -39,8 +39,8 @@
       <alert color="danger">A simple danger alert—check it out!</alert>
       <alert color="warning">A simple warning alert—check it out!</alert>
       <alert color="info">A simple info alert—check it out!</alert>
-      <alert color="accent">A simple light alert—check it out!</alert>
-      <alert color="inverse">A simple dark alert—check it out!</alert>
+      <alert color="accent">A simple accent alert—check it out!</alert>
+      <alert color="inverse">A simple inverse alert—check it out!</alert>
     </bodydiv>
     <tabbed-dialog style="pills" margin="t3">
       <section>
@@ -200,8 +200,8 @@
     <bodydiv border="yes" padding="3">
       <note color="primary">This is a primary note.</note>
       <note color="secondary">This is a secondary note.</note>
-      <note color="accent">This is light note.</note>
-      <note color="inverse">This is dark note.</note>
+      <note color="accent">This is accent note.</note>
+      <note color="inverse">This is inverse note.</note>
     </bodydiv>
     <tabbed-dialog style="pills" margin="t3">
       <section>
