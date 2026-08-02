@@ -41,9 +41,13 @@ jobs:
           # Function to check URL existence and return fallback on failure
           get_plugin_url() {
             local repo=$1
-            local target_url="https://github.com/${owner}/${repo}/archive/${ref}.zip"
-            if curl -sfIL "$target_url" >/dev/null; then
-              echo "$target_url"
+            local fork_url="https://github.com/${owner}/${repo}/archive/${ref}.zip"
+            local upstream_url="https://github.com/dita-bootstrap/${repo}/archive/${ref}.zip"
+            
+            if curl -sfIL "$fork_url" >/dev/null; then
+              echo "$fork_url"
+            elif curl -sfIL "$upstream_url" >/dev/null; then
+              echo "$upstream_url"
             else
               echo "https://github.com/dita-bootstrap/${repo}/archive/develop.zip"
             fi
