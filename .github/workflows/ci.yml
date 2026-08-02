@@ -42,10 +42,14 @@ jobs:
           get_plugin_url() {
             local repo=$1
             local fork_url="https://github.com/${owner}/${repo}/archive/${ref}.zip"
+            # TODO: Remove dev_url check once v6 branch is merged upstream
+            local dev_url="https://github.com/jason-fox/${repo}/archive/${ref}.zip"
             local upstream_url="https://github.com/dita-bootstrap/${repo}/archive/${ref}.zip"
             
             if curl -sfIL "$fork_url" >/dev/null; then
               echo "$fork_url"
+            elif [ "${owner}" != "jason-fox" ] && curl -sfIL "$dev_url" >/dev/null; then
+              echo "$dev_url"
             elif curl -sfIL "$upstream_url" >/dev/null; then
               echo "$upstream_url"
             else
