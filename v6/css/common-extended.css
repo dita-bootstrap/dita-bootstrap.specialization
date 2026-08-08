@@ -161,12 +161,20 @@
 .bs-container {
   display: grid;
   grid-template-areas: 'sidebar main';
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: minmax(260px, 1fr) minmax(0, 5fr);
   gap: 1.5rem;
 }
 
 .bs-sidebar {
   grid-area: sidebar;
+}
+
+.bs-sidebar .nav-pills .nav-link {
+  white-space: normal;
+  overflow-wrap: break-word;
+  font-size: 0.875rem;
+  justify-content: flex-start;
+  text-align: left;
 }
 
 .bs-main {
@@ -186,7 +194,7 @@
   padding-top: 0.25rem;
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1023.98px) {
   .bs-main {
     margin-inline: auto;
   }
@@ -204,7 +212,7 @@
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   .bs-main {
     grid-template-areas: 'content';
     grid-template-rows: auto 1fr;
@@ -225,7 +233,7 @@
   }
 }
 
-@media (max-width: 991.98px) {
+@media (max-width: 1023.98px) {
   .bd-navbar .bd-navbar-toggle {
     width: 4.25rem;
   }
@@ -245,7 +253,7 @@
     max-width: calc(100vw - 4rem);
   }
 
-  .bs-sidebar .offcanvas-lg {
+  .bs-sidebar .lg\:drawer {
     border-right-color: var(--bs-border-color);
   }
 }
@@ -289,7 +297,7 @@ article [tabindex='0'] {
 .bd-links a {
   padding: 0.1875rem 0.5rem;
   margin-top: 0.125rem;
-  color: var(--bs-body-color);
+  color: var(--bs-fg-body);
   text-decoration: none;
 }
 
@@ -298,7 +306,7 @@ article [tabindex='0'] {
 }
 
 .bd-links span {
-  color: var(--bs-body-color);
+  color: var(--bs-fg-body);
 }
 
 .bd-links span:hover {
@@ -306,7 +314,7 @@ article [tabindex='0'] {
 }
 
 .bd-links span.bd-divider:hover {
-  color: var(--bs-body-color);
+  color: var(--bs-fg-body);
 }
 
 @media (min-width: 768px) {
@@ -320,7 +328,7 @@ article [tabindex='0'] {
 @media (max-width: 767.98px) {
   .bd-links > ul {
     padding: 1.5rem 0.75rem;
-    background-color: var(--bs-body-bg);
+    background-color: var(--bs-bg-body);
   }
 }
 
@@ -336,7 +344,7 @@ article [tabindex='0'] {
 .bd-links .btn {
   padding: 0.25rem !important;
   font-weight: 600;
-  color: var(--bs-body-color);
+  color: var(--bs-fg-body);
   background-color: transparent;
   box-shadow: none;
 }
@@ -386,7 +394,7 @@ article [tabindex='0'] {
 
 .bd-links .active {
   font-weight: 600;
-  color: var(--bs-body-color);
+  color: var(--bs-fg-body);
 }
 
 /**
