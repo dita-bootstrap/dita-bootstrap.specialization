@@ -31,7 +31,7 @@
       <p>The most basic list group is an unordered list with list items and the proper classes. Build upon it with the
         options that follow, or with your own CSS as needed.</p>
     </section>
-    <bodydiv border="yes" padding="3">
+    <example>
       <list-group>
         <li>An item</li>
         <li>A second item</li>
@@ -39,7 +39,7 @@
         <li>A fourth item</li>
         <li>And a fifth one</li>
       </list-group>
-    </bodydiv>
+    </example>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
@@ -66,13 +66,13 @@
       <title>Compacted list group</title>
       <p>Add <xmlatt>compact="yes"</xmlatt> to reduce the padding of list items</p>
     </section>
-    <bodydiv border="yes" padding="3">
+    <example>
       <list-group compact="yes">
         <li>Item One</li>
         <li>Item Two</li>
         <li>Item Three</li>
       </list-group>
-    </bodydiv>
+    </example>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
@@ -91,13 +91,13 @@
       <title>Expanded list group</title>
       <p>Add <xmlatt>compact="no"</xmlatt> to increase the padding of list items</p>
     </section>
-    <bodydiv border="yes" padding="3">
+    <example>
       <list-group compact="no">
         <li>Item One</li>
         <li>Item Two</li>
         <li>Item Three</li>
       </list-group>
-    </bodydiv>
+    </example>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
@@ -117,7 +117,7 @@
       <p>Add a <xmlatt>flush="yes"</xmlatt> to remove some borders and
         rounded corners to render list group items edge-to-edge in a parent container (e.g., cards).</p>
     </section>
-    <bodydiv border="yes" padding="3">
+    <example>
       <list-group flush="yes">
         <li>An item</li>
         <li>A second item</li>
@@ -125,7 +125,7 @@
         <li>A fourth item</li>
         <li>And a fifth one</li>
       </list-group>
-    </bodydiv>
+    </example>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>

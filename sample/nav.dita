@@ -76,7 +76,7 @@
      <parmname>--format</parmname>=<option>html5-bootstrap</option> \
      <parmname>--nav-toc</parmname>=<option>&lt;sidebar-style&gt;</option></codeblock>
     </section>
-    <bodydiv border="yes" padding="3">
+    <example>
       <carousel cols="1">
         <carousel-item id="full">
           <fig>
@@ -121,7 +121,7 @@
           </fig>
         </carousel-item>
       </carousel>
-    </bodydiv>
+    </example>
 
     <section>
       <p>

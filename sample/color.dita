@@ -23,7 +23,7 @@
         >color</xmlatt> attribute provides a semantic way to apply standard Bootstrap color themes.</p>
     </section>
 
-    <bodydiv border="yes" padding="3">
+    <example>
       <div color="primary">.text-bg-primary</div>
       <div color="secondary">.text-bg-secondary</div>
       <div color="success">.text-bg-success</div>
@@ -32,7 +32,7 @@
       <div color="info">.text-bg-info</div>
       <div color="accent">.text-bg-light</div>
       <div color="inverse">.text-bg-inverse</div>
-    </bodydiv>
+    </example>
 
     <tabbed-dialog style="pills" margin="t3">
       <section>
@@ -65,7 +65,7 @@
       >Decoration attributes can be applied to many base DITA elements to add background color and contrasting text.</p>
     </section>
 
-    <bodydiv border="yes" padding="3">
+    <example>
       <section id="section-decoration" color="primary" margin="t2">
         <title>Section Decoration</title>
         <p>This section has a primary color background.</p>
@@ -115,7 +115,7 @@
       <note color="primary" margin="t2">
         This is a note with a primary color theme.
       </note>
-    </bodydiv>
+    </example>
 
     <tabbed-dialog style="pills" margin="t3">
       <section>
@@ -224,7 +224,7 @@
       <p>Many specialized components also support the <xmlatt>color</xmlatt> attribute for consistent theming.</p>
     </section>
 
-    <bodydiv border="yes" padding="3">
+    <example>
 
       <thumbnail scope="external" href="https://picsum.photos/100/100?a" color="warning"/>
       <card color="success" width="50" margin="t2">
@@ -255,7 +255,7 @@
           <image scope="external" href="https://picsum.photos/1200/600?c"/>
         </carousel-item>
       </carousel>
-    </bodydiv>
+    </example>
 
     <tabbed-dialog style="pills" margin="t3">
       <section>
@@ -318,14 +318,14 @@
       <p>For text-only colorization, the <xmlatt>outputclass</xmlatt> attribute remains the primary method.</p>
     </section>
 
-    <bodydiv border="yes" padding="3">
+    <example>
       <p outputclass="fg-primary">fg-primary</p>
       <p outputclass="fg-secondary">fg-secondary</p>
       <p outputclass="fg-success">fg-success</p>
       <p outputclass="fg-danger">fg-danger</p>
       <p outputclass="fg-warning">fg-warning</p>
       <p outputclass="fg-info">fg-info</p>
-    </bodydiv>
+    </example>
 
     <codeblock>&lt;p outputclass="fg-primary"&gt;fg-primary&lt;/p&gt;
 &lt;p outputclass="fg-secondary"&gt;fg-secondary&lt;/p&gt;

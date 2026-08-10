@@ -36,12 +36,12 @@
       <p>Use a <xmlatt>style</xmlatt> attribute and alter the CSS font-size and color to change the icon
         appearance.</p>
     </section>
-    <bodydiv border="yes" padding="3">
+    <example>
       <p>
         <icon outputclass="bi-alarm"/>
         <icon outputclass="bi-alarm" style="font-size: 2rem; color: cornflowerblue;"/>
       </p>
-    </bodydiv>
+    </example>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
@@ -55,7 +55,7 @@
         </section>
       </tabbed-dialog>
   <p>Icons placed within an <xmlelement>xref</xmlelement> element are colorized appropriately:</p>
-  <bodydiv border="yes" padding="3">
+  <example>
     <p>
       <xref href="#" color="primary">
         <icon outputclass="bi-link"/> Primary link
@@ -96,7 +96,7 @@
         <icon outputclass="bi-link"/> Dark link
       </xref>
     </p>
-  </bodydiv>
+  </example>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
@@ -155,7 +155,7 @@
         </section>
       </tabbed-dialog>
     <p>Icons can also be placed within buttons as shown:</p>
-    <bodydiv border="yes" padding="3">
+    <example>
       <button color="primary" outputclass="btn-icon" href="#">
         <icon outputclass="bi-arrow-down-square-fill"/>
       </button>
@@ -174,7 +174,7 @@
       <button color="danger" outputclass="btn-icon" href="#">
         <icon outputclass="bi-share-fill"/>
       </button>
-    </bodydiv>
+    </example>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>

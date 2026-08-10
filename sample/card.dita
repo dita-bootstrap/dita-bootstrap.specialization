@@ -47,14 +47,14 @@
         >sizing options.</xref>
       </p>
     </section>
-    <bodydiv border="yes" padding="3">
+    <example>
       <card>
         <title>Card Title</title>
         <image scope="external" href="https://picsum.photos/400/200?a"/>
         <p>Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
         <button href="#">Go Somewhere</button>
       </card>
-    </bodydiv>
+    </example>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
@@ -81,7 +81,7 @@
           <codeph>card-link</codeph> to an <xmlelement>xref</xmlelement> tag.</p>
       <p>Subtitles are used by adding a <xmlelement>div</xmlelement> element.</p>
     </section>
-    <bodydiv border="yes" padding="3">
+    <example>
       <card>
         <title>Card Title</title>
         <div outputclass="h6">Card Subtitle</div>
@@ -89,7 +89,7 @@
         <xref outputclass="card-link" href="#">Card Link</xref>
         <xref outputclass="card-link" href="#">Another Link</xref>
       </card>
-    </bodydiv>
+    </example>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
@@ -118,16 +118,12 @@
         >card</xmlelement> places an image to the top of the card
       </p>
     </section>
-    <bodydiv border="yes" padding="3">
-      <grid-row>
-        <grid-col>
-          <card>
-            <image scope="external" href="https://picsum.photos/400/200?a"/>
-            <p>Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-          </card>
-        </grid-col>
-      </grid-row>
-    </bodydiv>
+    <example>
+      <card>
+        <image scope="external" href="https://picsum.photos/400/200?a"/>
+        <p>Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+      </card>
+    </example>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
@@ -150,7 +146,7 @@
         >card-header</xmlelement> and <xmlelement>card-footer</xmlelement> elements.
       </p>
     </section>
-    <bodydiv border="yes" padding="3">
+    <example>
       <card>
         <title>Special title treatment</title>
         <card-header>Featured</card-header>
@@ -158,7 +154,7 @@
         <button href="#">Go somewhere</button>
         <card-footer>2 days ago</card-footer>
       </card>
-    </bodydiv>
+    </example>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
@@ -185,13 +181,13 @@
       <p>A card can be colorized by adding a <xmlatt>color</xmlatt> attribute. This
         applies a contextual background color.</p>
     </section>
-    <bodydiv border="yes" padding="3">
+    <example>
       <card color="success">
         <card-header>Success Card</card-header>
         <p>Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
         <button href="#">Go Somewhere</button>
       </card>
-    </bodydiv>
+    </example>
     <codeblock>&lt;card color="success"&gt;
   &lt;card-header&gt;Card Title&lt;/card-header&gt;
   &lt;p&gt;Some quick example text to build on the card title and make up the bulk of the card’s content.&lt;/p&gt;

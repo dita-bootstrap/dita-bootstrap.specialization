@@ -31,7 +31,7 @@
           <xmlatt>props="collapse-toggle"</xmlatt> to an <xmlelement>xref</xmlelement> element to associate a button to
         a collapse</p>
     </section>
-    <bodydiv border="yes" padding="3" deliveryTarget="html">
+    <example deliveryTarget="html">
       <p>
         <button props="collapse-toggle" href="#collapse1">Toggle Collapse</button>
       </p>
@@ -41,7 +41,7 @@
             user activates the relevant trigger.</p>
         </card>
       </collapse>
-    </bodydiv>
+    </example>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
@@ -76,7 +76,7 @@
         to transition the width instead of height and set an <xmlatt>otherprops="style(width: ...)</xmlatt> on the
         immediate child <xmlelement>div</xmlelement> element.</p>
     </section>
-    <bodydiv border="yes" padding="3" deliveryTarget="html">
+    <example deliveryTarget="html">
       <p>
         <button props="collapse-toggle" href="#collapse2">Toggle Width Collapse</button>
       </p>
@@ -86,7 +86,7 @@
           collapse. It’s hidden by default and shown when triggered.</p>
       </bodydiv>
     </collapse>
-    </bodydiv>
+    </example>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>

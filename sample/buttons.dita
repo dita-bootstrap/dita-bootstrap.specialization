@@ -29,7 +29,7 @@
       <p>Bootstrap includes several predefined button styles, each serving its own semantic purpose, with a few extras
         thrown in for more control.</p>
     </section>
-    <bodydiv border="yes" padding="3">
+    <example>
       <button href="#">Primary</button>
       <button href="#" color="secondary">Secondary</button>
       <button href="#" color="success">Success</button>
@@ -38,7 +38,7 @@
       <button href="#" color="info">Info</button>
       <button href="#" color="accent">Accent</button>
       <button href="#" color="inverse">Inverse</button>
-    </bodydiv>
+    </example>
 
     <tabbed-dialog style="pills" margin="t3">
         <section>
@@ -71,7 +71,7 @@
         the <xmlatt>outputclass</xmlatt> and a value of <codeph>btn-outline-*</codeph> to remove all background images
         and colors on any button.</p>
     </section>
-    <bodydiv border="yes" padding="3">
+    <example>
       <button href="#" outline="yes">Primary</button>
       <button href="#" color="secondary" outline="yes">Secondary</button>
       <button href="#" color="success" outline="yes">Success</button>
@@ -80,7 +80,7 @@
       <button href="#" color="info" outline="yes">Info</button>
       <button href="#" color="accent" outline="yes">Light</button>
       <button href="#" color="inverse" outline="yes">Dark</button>
-    </bodydiv>
+    </example>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
@@ -110,10 +110,10 @@
       <p>Fancy larger or smaller buttons? Use <xmlatt>size="large"</xmlatt> or
           <xmlatt>size="small"</xmlatt> for additional sizes.</p>
     </section>
-    <bodydiv border="yes" padding="3">
+    <example>
       <button href="#" size="large">Large button</button>
       <button href="#" color="secondary" size="large">Large button</button>
-    </bodydiv>
+    </example>
 
     <tabbed-dialog style="pills" margin="t3">
       <section>
@@ -128,10 +128,10 @@
         </section>
       </tabbed-dialog>
 
-    <bodydiv border="yes" padding="3">
+    <example>
       <button href="#" size="small">Small button</button>
       <button href="#" color="secondary" size="small">Small button</button>
-    </bodydiv>
+    </example>
 
     <tabbed-dialog style="pills" margin="t3">
       <section>

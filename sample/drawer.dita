@@ -48,13 +48,13 @@
           <xmlatt>props="drawer-toggle"</xmlatt> to an <xmlelement>xref</xmlelement> element to associate a button to
         a drawer</p>
     </section>
-    <bodydiv border="yes" padding="3" deliveryTarget="html">
+    <example deliveryTarget="html">
             <button props="drawer-toggle" href="#drawer1">Click here to display drawer</button>
       <drawer id="drawer1" position="start">
         <title>Drawer</title>
         <p>Content for the drawer goes here. You can place just about any section elements here.</p>
       </drawer>
-    </bodydiv>
+    </example>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
@@ -100,13 +100,13 @@
           the viewport</li>
       </ul>
     </section>
-    <bodydiv border="yes" padding="3" deliveryTarget="html">
+    <example deliveryTarget="html">
             <button props="drawer-toggle" href="#drawer2">Toggle right drawer</button>
       <drawer position="end" id="drawer2">
         <title>Drawer</title>
         <p>Content for the drawer goes here. You can place just about any section elements here.</p>
       </drawer>
-    </bodydiv>
+    </example>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
@@ -121,13 +121,13 @@
 &lt;/section&gt;</codeblock>
         </section>
       </tabbed-dialog>
-    <bodydiv border="yes" padding="3" deliveryTarget="html">
+    <example deliveryTarget="html">
             <button props="drawer-toggle" href="#drawer3">Toggle bottom drawer</button>
       <drawer position="bottom" id="drawer3">
         <title>Drawer</title>
         <p>Content for the drawer goes here. You can place just about any section elements here.</p>
       </drawer>
-    </bodydiv>
+    </example>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
@@ -149,7 +149,7 @@
         >outputclass="drawer-lg"</xmlatt> hides content in a drawer below the <codeph
         >lg</codeph> breakpoint, but shows the content above the <codeph>lg</codeph> breakpoint.</p>
     </section>
-    <bodydiv border="yes" padding="3" deliveryTarget="html">
+    <example deliveryTarget="html">
       <note
         color="info"
         outputclass="d-none lg:d-block"
@@ -159,7 +159,7 @@
         <title>Drawer</title>
         <p>This is content within an <xmlatt>outputclass="drawer-lg"</xmlatt>.</p>
       </drawer>
-    </bodydiv>
+    </example>
     <p>Responsive drawer classes are available across for each breakpoint.</p>
     <ul>
       <li><xmlatt>outputclass="drawer"</xmlatt></li>

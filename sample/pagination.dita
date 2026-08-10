@@ -35,7 +35,7 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <bodydiv border="yes" padding="3" deliveryTarget="html">
+    <example deliveryTarget="html">
       <pagination>
         <title>Page navigation example</title>
         <ol>
@@ -56,7 +56,7 @@
           </li>
         </ol>
       </pagination>
-    </bodydiv>
+    </example>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
@@ -90,7 +90,7 @@
       <p>Fancy larger or smaller pagination? Use <xmlatt>size="large"</xmlatt> or
           <xmlatt>size="small"</xmlatt> for additional sizes.</p>
     </section>
-    <bodydiv border="yes" padding="3" deliveryTarget="html">
+    <example deliveryTarget="html">
       <pagination size="large">
         <title>Page navigation example</title>
         <ol>
@@ -111,7 +111,7 @@
           </li>
         </ol>
       </pagination>
-    </bodydiv>
+    </example>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
@@ -140,7 +140,7 @@
 &lt;/section&gt;</codeblock>
         </section>
       </tabbed-dialog>
-    <bodydiv border="yes" padding="3" deliveryTarget="html">
+    <example deliveryTarget="html">
       <pagination size="small">
         <title>Page navigation example</title>
         <ol>
@@ -161,7 +161,7 @@
           </li>
         </ol>
       </pagination>
-    </bodydiv>
+    </example>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
@@ -201,7 +201,7 @@
         to the <xmlatt>outputclass</xmlatt>
       </p>
     </section>
-    <bodydiv border="yes" padding="3" deliveryTarget="html">
+    <example deliveryTarget="html">
       <pagination outputclass="justify-content-center">
         <title>Page navigation example</title>
         <ol>
@@ -222,7 +222,7 @@
           </li>
         </ol>
       </pagination>
-    </bodydiv>
+    </example>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
@@ -251,7 +251,7 @@
 &lt;/section&gt;</codeblock>
         </section>
       </tabbed-dialog>
-    <bodydiv border="yes" padding="3" deliveryTarget="html">
+    <example deliveryTarget="html">
       <pagination outputclass="justify-content-end">
         <title>Page navigation example</title>
         <ol>
@@ -272,7 +272,7 @@
           </li>
         </ol>
       </pagination>
-    </bodydiv>
+    </example>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>

@@ -27,7 +27,7 @@
         >auto</codeph>.</p>
     </section>
 
-    <bodydiv border="yes" padding="3">
+    <example>
       <div color="primary" margin="0" padding="2">Margin 0</div>
       <div color="secondary" margin="1" padding="2">Margin 1</div>
       <div color="success" margin="2" padding="2">Margin 2</div>
@@ -35,7 +35,7 @@
       <div color="warning" margin="4" padding="2">Margin 4</div>
       <div color="info" margin="5" padding="2">Margin 5</div>
       <div color="accent" margin="auto" padding="2" width="50">Margin Auto</div>
-    </bodydiv>
+    </example>
 
     <tabbed-dialog style="pills" margin="t3">
       <section>
@@ -66,7 +66,7 @@
         >padding</xmlatt> attribute controls the internal spacing of an element, supporting values from 0 to 5.</p>
     </section>
 
-    <bodydiv border="yes" padding="3">
+    <example>
       <div color="primary" padding="0">Padding 0</div>
       <div color="secondary" padding="1" margin="1"><div
           width="100"
@@ -88,7 +88,7 @@
           width="100"
           outputclass="bg-info-subtle text-inverse"
         >Padding 5</div></div>
-    </bodydiv>
+    </example>
 
     <tabbed-dialog style="pills" margin="t3">
       <section>
@@ -126,7 +126,7 @@
       <p>Multiple values can be specified as a space-separated list.</p>
     </section>
 
-    <bodydiv border="yes" padding="3">
+    <example>
       <div color="primary" margin="t5 b0">Margin Top 5, Bottom 0</div>
       <div color="secondary" margin="x3">Margin Horizontal 3</div>
       <div color="success" padding="y5"><div
@@ -137,7 +137,7 @@
           width="100"
           outputclass="bg-danger-subtle text-inverse"
         >Padding Start 3, End 1</div></div>
-    </bodydiv>
+    </example>
 
     <tabbed-dialog style="pills" margin="t3">
       <section>

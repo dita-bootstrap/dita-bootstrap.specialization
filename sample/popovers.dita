@@ -51,11 +51,11 @@
       <p>Keep reading to see how popovers work with some examples.</p>
     </section>
 
-    <bodydiv border="yes" padding="3" deliveryTarget="html">
+    <example deliveryTarget="html">
       <popover outputclass="btn-lg btn-danger">
         <data name="title">Popover title</data>
         <desc>And here’s some amazing content. It’s very engaging. Right?</desc> Click to toggle popover </popover>
-    </bodydiv>
+    </example>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
@@ -83,7 +83,7 @@
         >popover</xmlelement> element use the <xmlatt>position</xmlatt> attribute. The direction of the
         popover is appended to the <xmlatt>output-class</xmlatt> or taken from the attribute.</p>
     </section>
-    <bodydiv border="yes" padding="3" deliveryTarget="html">
+    <example deliveryTarget="html">
       <popover outputclass="btn-secondary" position="top">
         <desc>Top popover</desc> Popover on top </popover>
       <popover outputclass="btn-secondary" position="right">
@@ -92,7 +92,7 @@
         <desc>Bottom popover</desc> Popover on bottom </popover>
       <popover outputclass="btn-secondary" position="left">
         <desc>Left popover</desc> Popover on left </popover>
-    </bodydiv>
+    </example>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
@@ -148,12 +148,12 @@
   --bs-popover-body-padding-y: .5rem;
 }</codeblock>
     </section>
-    <bodydiv border="yes" padding="3" deliveryTarget="html">
+    <example deliveryTarget="html">
         <popover outputclass="btn-lg btn-danger">
           <data name="title">Popover title</data>
           <data name="class">custom-popover</data>
           <desc>And here’s some amazing content. It’s very engaging. Right?</desc>Custom popover</popover>
-    </bodydiv>
+    </example>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>

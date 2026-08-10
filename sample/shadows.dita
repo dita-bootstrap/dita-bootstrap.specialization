@@ -26,12 +26,12 @@
         automatically added to prevent the shadow from being clipped by the parent container.</p>
     </section>
 
-    <bodydiv border="yes" padding="3">
+    <example>
       <div shadow="none" margin="3" padding="3" color="accent">No shadow</div>
       <div shadow="sm" margin="3" padding="3" color="accent">Small shadow</div>
       <div shadow="yes" margin="3" padding="3" color="accent">Regular shadow</div>
       <div shadow="lg" margin="3" padding="3" color="accent">Larger shadow</div>
-    </bodydiv>
+    </example>
 
     <tabbed-dialog style="pills" margin="t3">
       <section>
@@ -55,13 +55,13 @@
       <p>Shadows can be applied to complex elements as follow:</p>
     </section>
 
-    <bodydiv border="yes" padding="3">
+    <example>
       <card shadow="lg" margin="3" color="accent">
         <title>Shadowed Card</title>
         <p>This card has a large shadow.</p>
       </card>
       <alert shadow="sm" color="accent">Alert with small shadow</alert>
-    </bodydiv>
+    </example>
 
     <tabbed-dialog style="pills" margin="t3">
       <section>
