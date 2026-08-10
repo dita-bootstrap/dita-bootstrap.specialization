@@ -479,7 +479,7 @@ And, kept unused, the user so destroys it.</lines>
           <xmlelement>div outputclass="bg-body"</xmlelement> or some custom CSS to the carousel items for proper
         crossfading.</p>
     </section>
-    <example deliveryTarget="html">
+    <example>
       <carousel fade="yes">
         <carousel-item>
           <image scope="external" href="https://picsum.photos/1200/600?a"/>
@@ -530,7 +530,7 @@ And, kept unused, the user so destroys it.</lines>
       <p>When <xmlatt>autoplay="no"</xmlatt> is set, the carousel won’t automatically start to cycle on
         page load. Instead, it will only start after the first user interaction.</p>
     </section>
-    <example deliveryTarget="html">
+    <example>
       <carousel autoplay="no">
         <carousel-item>
           <image scope="external" href="https://picsum.photos/1200/600?d"/>
@@ -580,7 +580,7 @@ And, kept unused, the user so destroys it.</lines>
         >carousel</xmlelement> to change the amount of time to delay
         between automatically cycling to the next item.</p>
     </section>
-    <example deliveryTarget="html">
+    <example>
       <carousel interval="2000">
         <carousel-item>
           <image scope="external" href="https://picsum.photos/1200/600?a"/>
@@ -627,7 +627,7 @@ And, kept unused, the user so destroys it.</lines>
         >carousel-item</xmlelement> to change the amount of time to delay
         between automatically cycling to the next item.</p>
     </section>
-    <example deliveryTarget="html">
+    <example>
       <carousel>
         <carousel-item interval="2000">
           <image scope="external" href="https://picsum.photos/1200/600?g"/>
@@ -675,7 +675,7 @@ And, kept unused, the user so destroys it.</lines>
       <p>Carousels support swiping left/right on touchscreen devices to move between slides. Add
           <xmlatt>touch="no"</xmlatt> to disable this option.</p>
     </section>
-    <example deliveryTarget="html">
+    <example>
       <carousel touch="no">
         <carousel-item>
           <image scope="external" href="https://picsum.photos/1200/600?j"/>

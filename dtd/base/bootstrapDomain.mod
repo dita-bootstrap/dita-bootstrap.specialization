@@ -64,7 +64,7 @@
 <!ELEMENT button %button.content;>
 <!ATTLIST button %button.attributes;>
 
-<!ENTITY % button-group.content "(%bodydiv.cnt; | %bodydiv;)*">
+<!ENTITY % button-group.content "(%div.cnt;)*">
 <!ENTITY % button-group.attributes
   "outputclass CDATA #IMPLIED
    vertical (yes | no) 'no'
@@ -75,7 +75,7 @@
   shadow (yes | no | sm | md | lg | none) #IMPLIED
 >
 
-<!ENTITY % button-toolbar.content "(%bodydiv.cnt; | %bodydiv;)*">
+<!ENTITY % button-toolbar.content "(%div.cnt;)*">
 <!ENTITY % button-toolbar.attributes
   "outputclass CDATA 'btn-toolbar'
    %univ-atts;">
@@ -245,8 +245,8 @@
 <!ATTLIST accordion-item class CDATA "+ topic/section bootstrap-d/accordion-item ">
 <!ATTLIST badge class CDATA "+ topic/ph bootstrap-d/badge ">
 <!ATTLIST button class CDATA "+ topic/xref bootstrap-d/button ">
-<!ATTLIST button-group class CDATA "+ topic/bodydiv bootstrap-d/button-group ">
-<!ATTLIST button-toolbar class CDATA "+ topic/bodydiv bootstrap-d/button-toolbar ">
+<!ATTLIST button-group class CDATA "+ topic/div bootstrap-d/button-group ">
+<!ATTLIST button-toolbar class CDATA "+ topic/div bootstrap-d/button-toolbar ">
 <!ATTLIST card class CDATA "+ topic/section bootstrap-d/card ">
 <!ATTLIST card-header class CDATA "+ topic/div bootstrap-d/card-header ">
 <!ATTLIST card-footer class CDATA "+ topic/div bootstrap-d/card-footer ">
