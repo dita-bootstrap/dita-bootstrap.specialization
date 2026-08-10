@@ -55,13 +55,13 @@
       <p>Shadows can be applied to complex elements as follow:</p>
     </section>
 
-    <example>
+    <bodydiv border="yes" padding="3">
       <card shadow="lg" margin="3" color="accent">
         <title>Shadowed Card</title>
         <p>This card has a large shadow.</p>
       </card>
       <alert shadow="sm" color="accent">Alert with small shadow</alert>
-    </example>
+    </bodydiv>
 
     <tabbed-dialog style="pills" margin="t3">
       <section>

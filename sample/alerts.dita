@@ -32,7 +32,7 @@
         of the eight required contextual classes (e.g., set <xmlatt>outputclass</xmlatt> to
           <codeph>alert-success</codeph>).</p>
     </section>
-    <example>
+    <bodydiv border="yes" padding="3">
       <alert color="primary">A simple primary alert—check it out!</alert>
       <alert color="secondary">A simple secondary alert—check it out!</alert>
       <alert color="success">A simple success alert—check it out!</alert>
@@ -41,7 +41,7 @@
       <alert color="info">A simple info alert—check it out!</alert>
       <alert color="accent">A simple accent alert—check it out!</alert>
       <alert color="inverse">A simple inverse alert—check it out!</alert>
-    </example>
+    </bodydiv>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
@@ -103,7 +103,7 @@
       <title>Additional content</title>
       <p>Alerts can also contain additional HTML elements like headings, paragraphs, icons and links.</p>
     </section>
-    <example>
+    <bodydiv border="yes" padding="3">
       <alert color="success">
         <title><icon outputclass="bi-emoji-smile" padding="e2"/>Well done!</title>
         <p>Aww yeah, you successfully read this important alert message. This example text with a
@@ -111,7 +111,7 @@
           with this kind of content.</p>
         <p>Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
       </alert>
-    </example>
+    </bodydiv>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>

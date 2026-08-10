@@ -29,13 +29,13 @@
           outputclass="btn-group"</xmlelement>
       </p>
     </section>
-    <example>
+    <bodydiv border="yes" padding="3">
       <button-group>
         <button href="#">Left</button>
         <button href="#">Middle</button>
         <button href="#">Right</button>
       </button-group>
-    </example>
+    </bodydiv>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
@@ -57,13 +57,13 @@
     <section id="mixed-styles">
       <title>Mixed styles</title>
     </section>
-    <example deliveryTarget="html">
+    <bodydiv deliveryTarget="html" border="yes" padding="3">
       <button-group>
         <button color="danger" href="#">Left</button>
         <button color="warning" href="#">Middle</button>
         <button color="success" href="#">Right</button>
       </button-group>
-    </example>
+    </bodydiv>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
@@ -85,13 +85,13 @@
     <section id="outlined-styles">
       <title>Outlined styles</title>
     </section>
-    <example>
+    <bodydiv border="yes" padding="3">
       <button-group>
         <button outline="yes" href="#">Left</button>
         <button outline="yes" href="#">Middle</button>
         <button outline="yes" href="#">Right</button>
       </button-group>
-    </example>
+    </bodydiv>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
@@ -114,7 +114,7 @@
       <title>Button toolbar</title>
       <p>Combine sets of button groups into button toolbars for more complex components.</p>
     </section>
-    <example>
+    <bodydiv border="yes" padding="3">
       <button-toolbar>
         <button-group outputclass="me-2">
           <button href="#">1</button>
@@ -131,7 +131,7 @@
           <button color="info" href="#">8</button>
         </button-group>
       </button-toolbar>
-    </example>
+    </bodydiv>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
@@ -176,13 +176,13 @@
       <title>Vertical variation</title>
       <p>Make a set of buttons appear vertically stacked rather than horizontally.</p>
     </section>
-    <example>
+    <bodydiv border="yes" padding="3">
       <button-group vertical="yes">
         <button href="#">Top</button>
         <button href="#">Middle</button>
         <button href="#">Bottom</button>
       </button-group>
-    </example>
+    </bodydiv>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>

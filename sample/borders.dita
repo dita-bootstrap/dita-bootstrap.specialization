@@ -53,7 +53,7 @@
         >rounded</xmlatt> attributes provide a semantic way to add borders and rounded corners.</p>
     </section>
 
-    <example>
+    <bodydiv border="yes" padding="3">
       <section id="bordered-section" border="yes" padding="2">
         <title>Bordered Section</title>
         <p>This section has a border.</p>
@@ -71,7 +71,7 @@
           <image scope="external" href="https://picsum.photos/600/400?2"/>
         </carousel-item>
       </carousel>
-    </example>
+    </bodydiv>
 
     <tabbed-dialog style="pills" margin="t3">
       <section>
