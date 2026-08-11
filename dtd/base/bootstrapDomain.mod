@@ -173,7 +173,7 @@
 >
 
 <!ENTITY % pagination.content "(%section.cnt;)*">
-<!ENTITY % pagination.attributes "outputclass CDATA 'pagination' spectitle CDATA #IMPLIED size (small | large) #IMPLIED %univ-atts;">
+<!ENTITY % pagination.attributes "outputclass CDATA 'pagination' spectitle CDATA #IMPLIED size (small | large) #IMPLIED color (primary | secondary | success | danger | warning | info | accent | inverse) #IMPLIED %univ-atts;">
 <!ELEMENT pagination %pagination.content;>
 <!ATTLIST pagination %pagination.attributes;
   margin CDATA #IMPLIED
