@@ -172,17 +172,18 @@
     </section>
     <bodydiv border="yes" padding="3">
       <alert color="primary">
-        <p><icon
-            outputclass="bi-exclamation-triangle-fill flex-shrink-0"
-            padding="e2"
-          />An example alert with an icon</p>
+        <div>
+          <icon outputclass="bi-exclamation-triangle-fill flex-shrink-0" padding="e2"/>An example alert with an icon
+        </div>
       </alert>
     </bodydiv>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
         <codeblock>&lt;alert color="primary"&gt;
-  &lt;p&gt;&lt;icon outputclass="bi-exclamation-triangle-fill flex-shrink-0" padding="e2"/&gt;An example alert with an icon&lt;/p&gt;
+  &lt;div&gt;
+    &lt;icon outputclass="bi-exclamation-triangle-fill flex-shrink-0" padding="e2"/&gt;An example alert with an icon
+  &lt;/div&gt;
 &lt;/alert&gt;</codeblock>
       </section>
       <section>

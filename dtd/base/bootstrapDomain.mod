@@ -148,7 +148,7 @@
 
 <!--                    GRID COL                                  -->
 <!ENTITY % grid-col.content "(%bodydiv.cnt; | %bodydiv; | %section;)*">
-<!ENTITY % grid-col.attributes "outputclass CDATA 'col' breakpoint (sm | md | lg | xl | xxl) #IMPLIED colspan CDATA #IMPLIED %univ-atts;">
+<!ENTITY % grid-col.attributes "outputclass CDATA 'col' breakpoint (sm | md | lg | xl | xxl) #IMPLIED colspan CDATA #IMPLIED margin CDATA #IMPLIED padding CDATA #IMPLIED %univ-atts;">
 <!ELEMENT grid-col %grid-col.content;>
 <!ATTLIST grid-col %grid-col.attributes;>
 
