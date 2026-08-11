@@ -171,7 +171,7 @@
         icons and content, you may want to add more utilities or custom styles.</p>
     </section>
     <bodydiv border="yes" padding="3">
-      <alert color="primary" outputclass="d-flex align-items-center">
+      <alert color="primary">
         <p><icon
             outputclass="bi-exclamation-triangle-fill flex-shrink-0"
             padding="e2"
@@ -181,7 +181,7 @@
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;alert color="primary" outputclass="d-flex align-items-center"&gt;
+        <codeblock>&lt;alert color="primary"&gt;
   &lt;p&gt;&lt;icon outputclass="bi-exclamation-triangle-fill flex-shrink-0" padding="e2"/&gt;An example alert with an icon&lt;/p&gt;
 &lt;/alert&gt;</codeblock>
       </section>

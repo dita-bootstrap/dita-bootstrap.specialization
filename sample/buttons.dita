@@ -61,9 +61,9 @@
     </example>
 
     <tabbed-dialog style="pills" margin="t3">
-        <section>
-          <title>Specialization</title>
-          <codeblock>&lt;button href="#" color="primary"&gt;Primary&lt;/button&gt;
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;button href="#" color="primary"&gt;Primary&lt;/button&gt;
 &lt;button href="#" color="secondary"&gt;Secondary&lt;/button&gt;
 &lt;button href="#" color="success"&gt;Success&lt;/button&gt;
 &lt;button href="#" color="danger"&gt;Danger&lt;/button&gt;
@@ -71,10 +71,10 @@
 &lt;button href="#" color="info"&gt;Info&lt;/button&gt;
 &lt;button href="#" color="accent"&gt;Accent&lt;/button&gt;
 &lt;button href="#" color="inverse"&gt;Inverse&lt;/button&gt;</codeblock>
-        </section>
-          <section>
-          <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;xref href="#" outputclass="btn theme-primary"&gt;Primary&lt;/xref&gt;
+      </section>
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;xref href="#" outputclass="btn theme-primary"&gt;Primary&lt;/xref&gt;
 &lt;xref href="#" outputclass="btn theme-secondary"&gt;Secondary&lt;/xref&gt;
 &lt;xref href="#" outputclass="btn theme-success"&gt;Success&lt;/xref&gt;
 &lt;xref href="#" outputclass="btn theme-danger"&gt;Danger&lt;/xref&gt;
@@ -82,8 +82,8 @@
 &lt;xref href="#" outputclass="btn theme-info"&gt;Info&lt;/xref&gt;
 &lt;xref href="#" outputclass="btn theme-accent"&gt;Accent&lt;/xref&gt;
 &lt;xref href="#" outputclass="btn theme-inverse"&gt;Inverse&lt;/xref&gt;</codeblock>
-        </section>
-      </tabbed-dialog>
+      </section>
+    </tabbed-dialog>
 
     <section id="variants">
       <title>Variants</title>
@@ -92,52 +92,116 @@
     </section>
     <bodydiv border="yes" padding="3">
       <grid-row>
-        <grid-col><button href="#" color="primary">Primary</button></grid-col>
-        <grid-col><button href="#" color="primary" style="outline">Primary</button></grid-col>
-        <grid-col><button href="#" color="primary" style="subtle">Primary</button></grid-col>
-        <grid-col><button href="#" color="primary" style="text">Primary</button></grid-col>
+        <grid-col padding="1">
+          <button href="#" color="primary">Primary</button>
+        </grid-col>
+        <grid-col padding="1">
+          <button href="#" color="primary" style="outline">Primary</button>
+        </grid-col>
+        <grid-col padding="1">
+          <button href="#" color="primary" style="subtle">Primary</button>
+        </grid-col>
+        <grid-col padding="1">
+          <button href="#" color="primary" style="text">Primary</button>
+        </grid-col>
       </grid-row>
       <grid-row>
-        <grid-col><button href="#" color="secondary">Secondary</button></grid-col>
-        <grid-col><button href="#" color="secondary" style="outline">Secondary</button></grid-col>
-        <grid-col><button href="#" color="secondary" style="subtle">Secondary</button></grid-col>
-        <grid-col><button href="#" color="secondary" style="text">Secondary</button></grid-col>
+        <grid-col padding="1">
+          <button href="#" color="secondary">Secondary</button>
+        </grid-col>
+        <grid-col padding="1">
+          <button href="#" color="secondary" style="outline">Secondary</button>
+        </grid-col>
+        <grid-col padding="1">
+          <button href="#" color="secondary" style="subtle">Secondary</button>
+        </grid-col>
+        <grid-col padding="1">
+          <button href="#" color="secondary" style="text">Secondary</button>
+        </grid-col>
       </grid-row>
       <grid-row>
-        <grid-col><button href="#" color="success">Success</button></grid-col>
-        <grid-col><button href="#" color="success" style="outline">Success</button></grid-col>
-        <grid-col><button href="#" color="success" style="subtle">Success</button></grid-col>
-        <grid-col><button href="#" color="success" style="text">Success</button></grid-col>
+        <grid-col padding="1">
+          <button href="#" color="success">Success</button>
+        </grid-col>
+        <grid-col padding="1">
+          <button href="#" color="success" style="outline">Success</button>
+        </grid-col>
+        <grid-col padding="1">
+          <button href="#" color="success" style="subtle">Success</button>
+        </grid-col>
+        <grid-col padding="1">
+          <button href="#" color="success" style="text">Success</button>
+        </grid-col>
       </grid-row>
       <grid-row>
-        <grid-col><button href="#" color="danger">Danger</button></grid-col>
-        <grid-col><button href="#" color="danger" style="outline">Danger</button></grid-col>
-        <grid-col><button href="#" color="danger" style="subtle">Danger</button></grid-col>
-        <grid-col><button href="#" color="danger" style="text">Danger</button></grid-col>
+        <grid-col padding="1">
+          <button href="#" color="danger">Danger</button>
+        </grid-col>
+        <grid-col padding="1">
+          <button href="#" color="danger" style="outline">Danger</button>
+        </grid-col>
+        <grid-col padding="1">
+          <button href="#" color="danger" style="subtle">Danger</button>
+        </grid-col>
+        <grid-col padding="1">
+          <button href="#" color="danger" style="text">Danger</button>
+        </grid-col>
       </grid-row>
       <grid-row>
-        <grid-col><button href="#" color="warning">Warning</button></grid-col>
-        <grid-col><button href="#" color="warning" style="outline">Warning</button></grid-col>
-        <grid-col><button href="#" color="warning" style="subtle">Warning</button></grid-col>
-        <grid-col><button href="#" color="warning" style="text">Warning</button></grid-col>
+        <grid-col padding="1">
+          <button href="#" color="warning">Warning</button>
+        </grid-col>
+        <grid-col padding="1">
+          <button href="#" color="warning" style="outline">Warning</button>
+        </grid-col>
+        <grid-col padding="1">
+          <button href="#" color="warning" style="subtle">Warning</button>
+        </grid-col>
+        <grid-col padding="1">
+          <button href="#" color="warning" style="text">Warning</button>
+        </grid-col>
       </grid-row>
       <grid-row>
-        <grid-col><button href="#" color="info">Info</button></grid-col>
-        <grid-col><button href="#" color="info" style="outline">Info</button></grid-col>
-        <grid-col><button href="#" color="info" style="subtle">Info</button></grid-col>
-        <grid-col><button href="#" color="info" style="text">Info</button></grid-col>
+        <grid-col padding="1">
+          <button href="#" color="info">Info</button>
+        </grid-col>
+        <grid-col padding="1">
+          <button href="#" color="info" style="outline">Info</button>
+        </grid-col>
+        <grid-col padding="1">
+          <button href="#" color="info" style="subtle">Info</button>
+        </grid-col>
+        <grid-col padding="1">
+          <button href="#" color="info" style="text">Info</button>
+        </grid-col>
       </grid-row>
       <grid-row>
-        <grid-col><button href="#" color="accent">Accent</button></grid-col>
-        <grid-col><button href="#" color="accent" style="outline">Accent</button></grid-col>
-        <grid-col><button href="#" color="accent" style="subtle">Accent</button></grid-col>
-        <grid-col><button href="#" color="accent" style="text">Accent</button></grid-col>
+        <grid-col padding="1">
+          <button href="#" color="accent">Accent</button>
+        </grid-col>
+        <grid-col padding="1">
+          <button href="#" color="accent" style="outline">Accent</button>
+        </grid-col>
+        <grid-col padding="1">
+          <button href="#" color="accent" style="subtle">Accent</button>
+        </grid-col>
+        <grid-col padding="1">
+          <button href="#" color="accent" style="text">Accent</button>
+        </grid-col>
       </grid-row>
       <grid-row>
-        <grid-col><button href="#" color="inverse">Inverse</button></grid-col>
-        <grid-col><button href="#" color="inverse" style="outline">Inverse</button></grid-col>
-        <grid-col><button href="#" color="inverse" style="subtle">Inverse</button></grid-col>
-        <grid-col><button href="#" color="inverse" style="text">Inverse</button></grid-col>
+        <grid-col padding="1">
+          <button href="#" color="inverse">Inverse</button>
+        </grid-col>
+        <grid-col padding="1">
+          <button href="#" color="inverse" style="outline">Inverse</button>
+        </grid-col>
+        <grid-col padding="1">
+          <button href="#" color="inverse" style="subtle">Inverse</button>
+        </grid-col>
+        <grid-col padding="1">
+          <button href="#" color="inverse" style="text">Inverse</button>
+        </grid-col>
       </grid-row>
     </bodydiv>
     <tabbed-dialog style="pills" margin="t3">
