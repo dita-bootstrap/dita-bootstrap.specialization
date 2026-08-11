@@ -23,10 +23,38 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section id="example">
-      <title>Example</title>
-      <p>Badges scale to match the size of the immediate parent element by using relative font sizing and
-          <xmlatt>em</xmlatt> units. As of v5, badges no longer have focus or hover styles for links.</p>
+    <section id="examples">
+      <title>Examples</title>
+      <p>Badges are tiny, static display components used for adding context to other elements. They can be used as
+        part of navigation, buttons, and more to provide a counter or label. Badges scale to match the size of the
+        immediate parent element by using relative font sizing and <xmlatt>em</xmlatt> units.</p>
+      <p>Badges come in three variants: solid (default), subtle, and outline.</p>
+    </section>
+    <bodydiv border="yes" padding="3">
+      <p>
+        <badge color="primary">New</badge>
+        <badge color="primary" style="subtle">New</badge>
+        <badge color="primary" style="outline">New</badge>
+      </p>
+    </bodydiv>
+    <tabbed-dialog style="pills" margin="t3">
+      <section>
+        <title>Specialization</title>
+        <codeblock>&lt;badge color="primary"&gt;New&lt;/badge&gt;
+&lt;badge color="primary" style="subtle"&gt;New&lt;/badge&gt;
+&lt;badge color="primary" style="outline"&gt;New&lt;/badge&gt;</codeblock>
+      </section>
+      <section>
+        <title><xmlatt>outputclass</xmlatt></title>
+        <codeblock>&lt;ph outputclass="badge theme-primary"&gt;New&lt;/ph&gt;
+&lt;ph outputclass="badge badge-subtle theme-primary"&gt;New&lt;/ph&gt;
+&lt;ph outputclass="badge badge-outline theme-primary"&gt;New&lt;/ph&gt;</codeblock>
+      </section>
+    </tabbed-dialog>
+
+    <section id="headings">
+      <title>Headings</title>
+      <p>Badges adapt to the font-size of the parent element.</p>
     </section>
     <bodydiv border="yes" padding="3">
       <section>
@@ -46,21 +74,18 @@
         </section>
          <section>
           <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock
-        >&lt;title&gt;Example Heading &lt;ph outputclass="badge theme-primary"&gt;New&lt;/ph&gt;&lt;/title&gt;
-&lt;p&gt;Example Text &lt;ph outputclass="badge theme-primary"&gt;New&lt;/ph&gt;&lt;/p&gt;</codeblock>
+          <codeblock>&lt;title&gt;Example Heading &lt;ph outputclass="badge"&gt;New&lt;/ph&gt;&lt;/title&gt;
+&lt;p&gt;Example Text &lt;ph outputclass="badge"&gt;New&lt;/ph&gt;&lt;/p&gt;</codeblock>
         </section>
       </tabbed-dialog>
-    <section id="background-colors">
-      <title>Background colors</title>
-      <p>Set a background-color with contrasting foreground color with Bootstrap’s <codeph
-        >text-bg-{color}</codeph> helpers. Previously it was required to manually pair your choice of <xmlatt
-        >outputclass</xmlatt> <codeph>text-{color}</codeph> and <codeph
-        >bg-{color}</codeph> utilities for styling, which you still may use if you prefer.</p>
+    <section id="variants">
+      <title>Variants</title>
+      <p>Use the contextual <xmlatt>color</xmlatt> attribute to apply a semantic theme color to badges, in any of the
+        solid, subtle, or outline styles.</p>
     </section>
     <example>
       <p>
-        <badge>Primary</badge>
+        <badge color="primary">Primary</badge>
         <badge color="secondary">Secondary</badge>
         <badge color="success">Success</badge>
         <badge color="danger">Danger</badge>
@@ -68,6 +93,26 @@
         <badge color="info">Info</badge>
         <badge color="accent">Accent</badge>
         <badge color="inverse">Inverse</badge>
+      </p>
+      <p>
+        <badge color="primary" style="subtle">Primary</badge>
+        <badge color="secondary" style="subtle">Secondary</badge>
+        <badge color="success" style="subtle">Success</badge>
+        <badge color="danger" style="subtle">Danger</badge>
+        <badge color="warning" style="subtle">Warning</badge>
+        <badge color="info" style="subtle">Info</badge>
+        <badge color="accent" style="subtle">Accent</badge>
+        <badge color="inverse" style="subtle">Inverse</badge>
+      </p>
+      <p>
+        <badge color="primary" style="outline">Primary</badge>
+        <badge color="secondary" style="outline">Secondary</badge>
+        <badge color="success" style="outline">Success</badge>
+        <badge color="danger" style="outline">Danger</badge>
+        <badge color="warning" style="outline">Warning</badge>
+        <badge color="info" style="outline">Info</badge>
+        <badge color="accent" style="outline">Accent</badge>
+        <badge color="inverse" style="outline">Inverse</badge>
       </p>
     </example>
     <tabbed-dialog style="pills" margin="t3">
@@ -80,7 +125,25 @@
 &lt;badge color="warning"&gt;Warning&lt;/badge&gt;
 &lt;badge color="info"&gt;Info&lt;/badge&gt;
 &lt;badge color="accent"&gt;Accent&lt;/badge&gt;
-&lt;badge color="inverse"&gt;Inverse&lt;/badge&gt;</codeblock>
+&lt;badge color="inverse"&gt;Inverse&lt;/badge&gt;
+
+&lt;badge color="primary" style="subtle"&gt;Primary&lt;/badge&gt;
+&lt;badge color="secondary" style="subtle"&gt;Secondary&lt;/badge&gt;
+&lt;badge color="success" style="subtle"&gt;Success&lt;/badge&gt;
+&lt;badge color="danger" style="subtle"&gt;Danger&lt;/badge&gt;
+&lt;badge color="warning" style="subtle"&gt;Warning&lt;/badge&gt;
+&lt;badge color="info" style="subtle"&gt;Info&lt;/badge&gt;
+&lt;badge color="accent" style="subtle"&gt;Accent&lt;/badge&gt;
+&lt;badge color="inverse" style="subtle"&gt;Inverse&lt;/badge&gt;
+
+&lt;badge color="primary" style="outline"&gt;Primary&lt;/badge&gt;
+&lt;badge color="secondary" style="outline"&gt;Secondary&lt;/badge&gt;
+&lt;badge color="success" style="outline"&gt;Success&lt;/badge&gt;
+&lt;badge color="danger" style="outline"&gt;Danger&lt;/badge&gt;
+&lt;badge color="warning" style="outline"&gt;Warning&lt;/badge&gt;
+&lt;badge color="info" style="outline"&gt;Info&lt;/badge&gt;
+&lt;badge color="accent" style="outline"&gt;Accent&lt;/badge&gt;
+&lt;badge color="inverse" style="outline"&gt;Inverse&lt;/badge&gt;</codeblock>
         </section>
          <section>
           <title><xmlatt>outputclass</xmlatt></title>
@@ -91,7 +154,25 @@
 &lt;ph outputclass="badge theme-warning"&gt;Warning&lt;/ph&gt;
 &lt;ph outputclass="badge theme-info"&gt;Info&lt;/ph&gt;
 &lt;ph outputclass="badge theme-accent"&gt;Accent&lt;/ph&gt;
-&lt;ph outputclass="badge theme-inverse"&gt;Inverse&lt;/ph&gt;</codeblock>
+&lt;ph outputclass="badge theme-inverse"&gt;Inverse&lt;/ph&gt;
+
+&lt;ph outputclass="badge badge-subtle theme-primary"&gt;Primary&lt;/ph&gt;
+&lt;ph outputclass="badge badge-subtle theme-secondary"&gt;Secondary&lt;/ph&gt;
+&lt;ph outputclass="badge badge-subtle theme-success"&gt;Success&lt;/ph&gt;
+&lt;ph outputclass="badge badge-subtle theme-danger"&gt;Danger&lt;/ph&gt;
+&lt;ph outputclass="badge badge-subtle theme-warning"&gt;Warning&lt;/ph&gt;
+&lt;ph outputclass="badge badge-subtle theme-info"&gt;Info&lt;/ph&gt;
+&lt;ph outputclass="badge badge-subtle theme-accent"&gt;Accent&lt;/ph&gt;
+&lt;ph outputclass="badge badge-subtle theme-inverse"&gt;Inverse&lt;/ph&gt;
+
+&lt;ph outputclass="badge badge-outline theme-primary"&gt;Primary&lt;/ph&gt;
+&lt;ph outputclass="badge badge-outline theme-secondary"&gt;Secondary&lt;/ph&gt;
+&lt;ph outputclass="badge badge-outline theme-success"&gt;Success&lt;/ph&gt;
+&lt;ph outputclass="badge badge-outline theme-danger"&gt;Danger&lt;/ph&gt;
+&lt;ph outputclass="badge badge-outline theme-warning"&gt;Warning&lt;/ph&gt;
+&lt;ph outputclass="badge badge-outline theme-info"&gt;Info&lt;/ph&gt;
+&lt;ph outputclass="badge badge-outline theme-accent"&gt;Accent&lt;/ph&gt;
+&lt;ph outputclass="badge badge-outline theme-inverse"&gt;Inverse&lt;/ph&gt;</codeblock>
         </section>
       </tabbed-dialog>
   </body>

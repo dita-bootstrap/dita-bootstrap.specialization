@@ -13,7 +13,7 @@
 <!ENTITY % alert.content "(#PCDATA | %title; | %basic.block; | %data.elements.incl; | %foreign.unknown.incl; | %sectiondiv; | %txt.incl;)*">
 <!ENTITY % alert.attributes
   "outputclass CDATA 'alert'
-   color (primary | secondary | success | danger | warning | info | accent | inverse) #REQUIRED
+   color (primary | secondary | success | danger | warning | info | accent | inverse) #IMPLIED
    %univ-atts;">
 <!ELEMENT alert %alert.content;>
 <!ATTLIST alert %alert.attributes;
@@ -48,7 +48,8 @@
 <!ENTITY % badge.content "(%ph.cnt;)*">
 <!ENTITY % badge.attributes
   "outputclass CDATA 'badge'
-   color (primary | secondary | success | danger | warning | info | accent | inverse) 'primary'
+   color (primary | secondary | success | danger | warning | info | accent | inverse) #IMPLIED
+   style (solid | subtle | outline | none) 'solid'
    %univ-atts;">
 <!ELEMENT badge %badge.content;>
 <!ATTLIST badge %badge.attributes;>
@@ -57,9 +58,10 @@
 <!ENTITY % button.attributes
   "href CDATA #IMPLIED
    outputclass CDATA 'btn'
-   color (primary | secondary | success | danger | warning | info | accent | inverse) 'primary'
-   outline (yes | no) 'no'
-   size (small | large) #IMPLIED
+   color (primary | secondary | success | danger | warning | info | accent | inverse) #IMPLIED
+   style (none | solid | outline | subtle | text) 'solid'
+   gradient (yes | no) 'no'
+   size (xs | small | large) #IMPLIED
    %univ-atts;">
 <!ELEMENT button %button.content;>
 <!ATTLIST button %button.attributes;>
