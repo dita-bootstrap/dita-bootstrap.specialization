@@ -71,7 +71,7 @@
   &lt;title outputclass="h5"&gt;Card Title&lt;/title&gt;
   &lt;image outputclass="card-img-top" href="..." /&gt;
   &lt;p&gt;Some quick example text to build on the card title and make up the bulk of the card’s content.&lt;/p&gt;
-  &lt;xref outputclass="btn-primary" href="#"&gt;Go Somewhere&lt;/xref&gt;
+  &lt;xref outputclass="btn-solid theme-primary" href="#"&gt;Go Somewhere&lt;/xref&gt;
 &lt;/section&gt;</codeblock>
         </section>
       </tabbed-dialog>
@@ -172,7 +172,7 @@
   &lt;div outputclass="card-header"&gt;Featured&lt;/div&gt;
   &lt;title outputclass="h5"&gt;Special title treatment&lt;/title&gt;
   &lt;p&gt;With supporting text below as a natural lead-in to additional content.&lt;/p&gt;
-  &lt;xref href="#" outputclass="btn-primary"&gt;Go somewhere&lt;/xref&gt;
+  &lt;xref href="#" outputclass="btn-solid theme-primary"&gt;Go somewhere&lt;/xref&gt;
 &lt;/section&gt;</codeblock>
         </section>
       </tabbed-dialog>

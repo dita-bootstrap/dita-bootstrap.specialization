@@ -59,7 +59,7 @@
          <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;p&gt;
-  &lt;xref outputclass="btn-primary" props="collapse-toggle" href="#collapse1"&gt;
+  &lt;xref outputclass="btn-solid theme-primary" props="collapse-toggle" href="#collapse1"&gt;
     Toggle Collapse
   &lt;/xref&gt;
 &lt;/p&gt;
@@ -102,7 +102,7 @@
          <section>
           <title><xmlatt>outputclass</xmlatt></title>
           <codeblock>&lt;p&gt;
-  &lt;xref outputclass="btn-primary" props="collapse-toggle" href="#collapse2"&gt;Toggle Width Collapse&lt;/xref&gt;
+  &lt;xref outputclass="btn-solid theme-primary" props="collapse-toggle" href="#collapse2"&gt;Toggle Width Collapse&lt;/xref&gt;
 &lt;/p&gt;
 &lt;bodydiv outputclass="collapse-horizontal" id="collapse2" otherprops="style(min-height: 120px;)"&gt;
   &lt;div outputclass="card card-body" otherprops="style(width: 300px;)"&gt;

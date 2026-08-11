@@ -70,7 +70,7 @@
         </section>
          <section>
           <title><xmlatt>outputclass</xmlatt></title>
-          <codeblock>&lt;xref outputclass="btn-primary" props="drawer-toggle" href="#drawer1"&gt;
+          <codeblock>&lt;xref outputclass="btn-solid theme-primary" props="drawer-toggle" href="#drawer1"&gt;
   Click here
 &lt;/xref&gt;
 &lt;section outputclass="drawer-start" id="drawer1"&gt;
@@ -190,7 +190,7 @@
           <codeblock>&lt;note outputclass="d-none lg:d-block"&gt;
   Resize your browser to show the responsive drawer toggle.
 &lt;/note&gt;
-&lt;xref outputclass="btn-primary lg:d-none" props="drawer-toggle" href="#drawer4"&gt;
+&lt;xref outputclass="btn-solid theme-primary lg:d-none" props="drawer-toggle" href="#drawer4"&gt;
   Toggle drawer
 &lt;/xref&gt;
 &lt;section outputclass="drawer-lg" id="drawer4"&gt;
