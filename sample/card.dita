@@ -178,7 +178,7 @@
       </tabbed-dialog>
     <section id="card-colors">
       <title>Card Colors</title>
-      <p>A card can be colorized by adding a <xmlatt>color</xmlatt> attribute. This
+      <p>A card can be colorized by adding a <xmlatt>theme</xmlatt> attribute. This
         applies a contextual background color.</p>
     </section>
     <bodydiv border="1" padding="3">

@@ -46,7 +46,7 @@
 &lt;div theme="danger-contrast" margin="3" padding="2"&gt;Margin 3&lt;/div&gt;
 &lt;div theme="warning-contrast" margin="4" padding="2"&gt;Margin 4&lt;/div&gt;
 &lt;div theme="info-contrast" margin="5" padding="2"&gt;Margin 5&lt;/div&gt;
-&lt;div theme="light-contrast" margin="auto" padding="2" width="50"&gt;Margin Auto&lt;/div&gt;</codeblock>
+&lt;div theme="accent-contrast" margin="auto" padding="2" width="50"&gt;Margin Auto&lt;/div&gt;</codeblock>
       </section>
       <section>
         <title><xmlatt>outputclass</xmlatt></title>

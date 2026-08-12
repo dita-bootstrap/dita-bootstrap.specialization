@@ -246,7 +246,7 @@
 &lt;note type="other" othertype="Another note"&gt;
   This is something other than a normal note.
 &lt;/note&gt;</codeblock>
-    <p>The default colors can be overridden by using a <xmlatt>color</xmlatt> attribute or an <xmlatt
+    <p>The default colors can be overridden by using a <xmlatt>theme</xmlatt> attribute or an <xmlatt
       >outputclass</xmlatt>.</p>
     <example>
       <note theme="primary-contrast">This is a high contrast primary note.</note>

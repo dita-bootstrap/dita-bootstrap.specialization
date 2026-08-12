@@ -87,7 +87,7 @@
       </tabbed-dialog>
     <section id="variants">
       <title>Variants</title>
-      <p>Add a <xmlatt>color</xmlatt> attribute to a pagination list to apply a semantic theme color across the
+      <p>Add a <xmlatt>theme</xmlatt> attribute to a pagination list to apply a semantic theme color across the
         component, including hover, focus, and the active page item.</p>
     </section>
     <bodydiv deliveryTarget="html" border="1" padding="3">
