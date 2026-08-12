@@ -50,13 +50,13 @@
       </section>
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;div outputclass="bg-primary fg-contrast-primary m-0 p-2"&gt;Margin 0&lt;/div&gt;
-&lt;div outputclass="bg-secondary fg-contrast-secondary m-1 p-2"&gt;Margin 1&lt;/div&gt;
-&lt;div outputclass="bg-success fg-contrast-success m-2 p-2"&gt;Margin 2&lt;/div&gt;
-&lt;div outputclass="bg-danger fg-contrast-danger m-3 p-2"&gt;Margin 3&lt;/div&gt;
-&lt;div outputclass="bg-warning fg-contrast-warning m-4 p-2"&gt;Margin 4&lt;/div&gt;
-&lt;div outputclass="bg-info fg-contrast-info m-5 p-2"&gt;Margin 5&lt;/div&gt;
-&lt;div outputclass="bg-accent fg-contrast-accent m-auto p-2 w-50"&gt;Margin Auto&lt;/div&gt;</codeblock>
+        <codeblock>&lt;div outputclass="theme-primary theme-contrast m-0 p-2"&gt;Margin 0&lt;/div&gt;
+&lt;div outputclass="theme-secondary theme-contrast m-1 p-2"&gt;Margin 1&lt;/div&gt;
+&lt;div outputclass="theme-success theme-contrast m-2 p-2"&gt;Margin 2&lt;/div&gt;
+&lt;div outputclass="theme-danger theme-contrastm-3 p-2"&gt;Margin 3&lt;/div&gt;
+&lt;div outputclass="theme-warning theme-contrast m-4 p-2"&gt;Margin 4&lt;/div&gt;
+&lt;div outputclass="theme-info theme-contrast m-5 p-2"&gt;Margin 5&lt;/div&gt;
+&lt;div outputclass="theme-accent theme-contrast m-auto p-2 w-50"&gt;Margin Auto&lt;/div&gt;</codeblock>
       </section>
     </tabbed-dialog>
 
@@ -70,23 +70,23 @@
       <div theme="primary-contrast" padding="0">Padding 0</div>
       <div theme="secondary-contrast" padding="1" margin="1"><div
           width="100"
-          outputclass="bg-secondary-subtle text-inverse"
+          outputclass="theme-secondary theme-subtle"
         >Padding 1</div></div>
       <div theme="success-contrast" padding="2" margin="1"><div
           width="100"
-          outputclass="bg-success-subtle text-inverse"
+          outputclass="theme-success theme-subtle"
         >Padding 2</div></div>
       <div theme="danger-contrast" padding="3" margin="1"><div
           width="100"
-          outputclass="bg-danger-subtle text-inverse"
+          outputclass="theme-danger theme-subtle"
         >Padding 3</div></div>
       <div theme="warning-contrast" padding="4" margin="1"><div
           width="100"
-          outputclass="bg-warning-subtle text-inverse"
+          outputclass="theme-warning theme-subtle"
         >Padding 4</div></div>
       <div theme="info-contrast" padding="5" margin="1"><div
           width="100"
-          outputclass="bg-info-subtle text-inverse"
+          outputclass="theme-info theme-subtle"
         >Padding 5</div></div>
     </example>
 
@@ -102,12 +102,12 @@
       </section>
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;div outputclass="bg-primary p-0"&gt;Padding 0&lt;/div&gt;
-&lt;div outputclass="bg-secondary p-1 m-1"&gt;Padding 1&lt;/div&gt;
-&lt;div outputclass="bg-success p-2 m-1"&gt;Padding 2&lt;/div&gt;
-&lt;div outputclass="bg-danger p-3 m-1"&gt;Padding 3&lt;/div&gt;
-&lt;div outputclass="bg-warning p-4 m-1"&gt;Padding 4&lt;/div&gt;
-&lt;div outputclass="bg-info p-5 m-1"&gt;Padding 5&lt;/div&gt;</codeblock>
+        <codeblock>&lt;div outputclass="theme-primary theme-contrast p-0"&gt;Padding 0&lt;/div&gt;
+&lt;div outputclass="theme-secondary theme-contrast p-1 m-1"&gt;Padding 1&lt;/div&gt;
+&lt;div outputclass="theme-success theme-contrast p-2 m-1"&gt;Padding 2&lt;/div&gt;
+&lt;div outputclass="theme-danger theme-contrast p-3 m-1"&gt;Padding 3&lt;/div&gt;
+&lt;div outputclass="theme-warning theme-contrast p-4 m-1"&gt;Padding 4&lt;/div&gt;
+&lt;div outputclass="theme-info theme-contrast p-5 m-1"&gt;Padding 5&lt;/div&gt;</codeblock>
       </section>
     </tabbed-dialog>
 
@@ -129,13 +129,10 @@
     <example>
       <div theme="primary-contrast" margin="t5 b0">Margin Top 5, Bottom 0</div>
       <div theme="secondary-contrast" margin="x3">Margin Horizontal 3</div>
-      <div theme="success-contrast" padding="y5"><div
-          width="100"
-          outputclass="bg-success-subtle text-inverse"
-        >Padding Vertical 5</div></div>
+      <div theme="success-contrast" padding="y5"><div width="100" theme="success-subtle">Padding Vertical 5</div></div>
       <div theme="danger-contrast" padding="s3 e1"><div
           width="100"
-          outputclass="bg-danger-subtle text-inverse"
+          theme="danger-subtle"
         >Padding Start 3, End 1</div></div>
     </example>
 
