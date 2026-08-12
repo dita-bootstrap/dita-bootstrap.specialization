@@ -144,6 +144,16 @@
   border-left: 0;
 }
 
+.navbar .menu {
+  --bs-theme-fg: initial;
+  --bs-theme-base: initial;
+  --bs-theme-bg: initial;
+  --bs-theme-bg-subtle: initial;
+  --bs-theme-bg-muted: initial;
+  --bs-theme-border: initial;
+  --bs-theme-contrast: initial;
+}
+
 /*!
  *  This file is part of the DITA Bootstrap plug-in for DITA Open Toolkit.
  *  See the accompanying LICENSE file for applicable licenses.
