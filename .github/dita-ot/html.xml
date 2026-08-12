@@ -29,6 +29,8 @@
       <param name="popovers.include" value="yes"/>
       <param name="dark.mode.include" value="yes"/>
       <param name="css.theme.switcher" value="no"/>
+      <param name="bootstrap.theme.header" value="inverse-contrast"/>
+      <param name="bootstrap.theme.footer" value="secondary-subtle"/>
       <param name="open-graph.url" value="https://dita-bootstrap.github.io"/>
       <param name="twitter.site" value="@infotexture"/>
     </publication>
