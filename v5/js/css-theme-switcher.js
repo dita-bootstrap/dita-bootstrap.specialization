@@ -71,9 +71,13 @@
     }
   };
 
-  window.addEventListener('DOMContentLoaded', () => {    
-    setCss( getStoredCss());
-    showActiveCss(getStoredCss());
+  window.addEventListener('DOMContentLoaded', () => {
+    const stored = getStoredCss();
+    const isAvailable = stored && Array.from(document.querySelectorAll('[data-bs-css-href]'))
+      .some(toggle => toggle.getAttribute('data-bs-css-href') === stored);
+    if (isAvailable) {
+      showActiveCss(stored);
+    }
     document.querySelectorAll('[data-bs-css-href]').forEach(toggle => {
       toggle.addEventListener('click', () => {
         const css = toggle.getAttribute('data-bs-css-href');
