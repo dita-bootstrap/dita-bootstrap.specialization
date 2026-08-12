@@ -3,7 +3,7 @@
 <topic id="color">
   <title>Color</title>
   <shortdesc>Convey meaning through <codeph>color</codeph> with a handful of color utility classes. Includes support for
-    styling text and background colors via the semantic <xmlatt>color</xmlatt> attribute.</shortdesc>
+    styling text and background colors via the semantic <xmlatt>theme</xmlatt> attribute.</shortdesc>
   <prolog>
     <metadata>
       <keywords>
@@ -12,7 +12,7 @@
         <indexterm>CSS
           <indexterm><xmlatt>outputclass</xmlatt></indexterm>
         </indexterm>
-        <indexterm><xmlatt>color</xmlatt></indexterm>
+        <indexterm><xmlatt>theme</xmlatt></indexterm>
       </keywords>
     </metadata>
   </prolog>
@@ -20,31 +20,31 @@
     <section id="colors">
       <title>Colors</title>
       <p>Colorize text and backgrounds with color utilities. The <xmlatt
-        >color</xmlatt> attribute provides a semantic way to apply standard Bootstrap color themes.</p>
+        >theme</xmlatt> attribute provides a semantic way to apply standard Bootstrap color themes.</p>
     </section>
 
     <example>
-      <div color="primary">.text-bg-primary</div>
-      <div color="secondary">.text-bg-secondary</div>
-      <div color="success">.text-bg-success</div>
-      <div color="danger">.text-bg-danger</div>
-      <div color="warning">.text-bg-warning</div>
-      <div color="info">.text-bg-info</div>
-      <div color="accent">.text-bg-light</div>
-      <div color="inverse">.text-bg-inverse</div>
+      <div theme="primary-contrast">.text-bg-primary</div>
+      <div theme="secondary-contrast">.text-bg-secondary</div>
+      <div theme="success-contrast">.text-bg-success</div>
+      <div theme="danger-contrast">.text-bg-danger</div>
+      <div theme="warning-contrast">.text-bg-warning</div>
+      <div theme="info-contrast">.text-bg-info</div>
+      <div theme="accent-contrast">.text-bg-light</div>
+      <div theme="inverse-contrast">.text-bg-inverse</div>
     </example>
 
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;div color="primary"&gt;bg-primary&lt;/div&gt;
-&lt;div color="secondary"&gt;bg-secondary&lt;/div&gt;
-&lt;div color="success"&gt;bg-success&lt;/div&gt;
-&lt;div color="danger"&gt;bg-danger&lt;/div&gt;
-&lt;div color="warning"&gt;bg-warning&lt;/div&gt;
-&lt;div color="info"&gt;bg-info&lt;/div&gt;
-&lt;div color="accent"&gt;bg-accent&lt;/div&gt;
-&lt;div color="inverse"&gt;bg-inverse&lt;/div&gt;</codeblock>
+        <codeblock>&lt;div theme="primary-contrast"&gt;bg-primary&lt;/div&gt;
+&lt;div theme="secondary-contrast"&gt;bg-secondary&lt;/div&gt;
+&lt;div theme="success-contrast"&gt;bg-success&lt;/div&gt;
+&lt;div theme="danger-contrast"&gt;bg-danger&lt;/div&gt;
+&lt;div theme="warning-contrast"&gt;bg-warning&lt;/div&gt;
+&lt;div theme="info-contrast"&gt;bg-info&lt;/div&gt;
+&lt;div theme="accent-contrast"&gt;bg-accent&lt;/div&gt;
+&lt;div theme="inverse-contrast"&gt;bg-inverse&lt;/div&gt;</codeblock>
       </section>
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
@@ -65,25 +65,25 @@
       >Decoration attributes can be applied to many base DITA elements to add background color and contrasting text.</p>
     </section>
 
-    <bodydiv border="yes" padding="3">
-      <section id="section-decoration" color="primary" margin="t2">
+    <bodydiv border="1" padding="3">
+      <section id="section-decoration" theme="primary-contrast" margin="t2">
         <title>Section Decoration</title>
         <p>This section has a primary color background.</p>
       </section>
 
-      <div color="success" padding="3" margin="t2">
+      <div theme="success-contrast" padding="3" margin="t2">
         <p>This div has a success color background.</p>
       </div>
 
-      <pre color="warning" margin="t2">
+      <pre theme="warning-contrast" margin="t2">
         This pre has a warning color background.
       </pre>
 
-      <lq color="danger" padding="1" margin="t2">
+      <lq theme="danger-contrast" padding="1" margin="t2">
         This is a long quote with a danger color background.
       </lq>
 
-      <table color="primary" padding="1" width="100" margin="t2">
+      <table theme="primary" padding="1" width="100" margin="t2">
         <tgroup cols="2">
           <thead>
             <row>
@@ -92,17 +92,17 @@
             </row>
           </thead>
           <tbody>
-            <row color="info">
+            <row theme="info">
               <entry>Elephant (African and Asian)</entry>
               <entry>19-22 months</entry>
             </row>
-            <row color="success">
+            <row theme="success">
               <entry>Giraffe</entry>
               <entry>15 months</entry>
             </row>
             <row>
               <entry>Rhinoceros</entry>
-              <entry color="danger">14-16 months</entry>
+              <entry theme="danger">14-16 months</entry>
             </row>
             <row>
               <entry>Hippopotamus</entry>
@@ -112,7 +112,7 @@
         </tgroup>
       </table>
 
-      <note color="primary" margin="t2">
+      <note theme="primary-contrast" margin="t2">
         This is a note with a primary color theme.
       </note>
     </bodydiv>
@@ -120,24 +120,24 @@
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;section color="primary"&gt;
+        <codeblock>&lt;section theme="primary-contrast"&gt;
   &lt;title&gt;Section Decoration&lt;/title&gt;
   &lt;p&gt;This section has a primary color background.&lt;/p&gt;
 &lt;/section&gt;
 
-&lt;div color="success" padding="3"&gt;
+&lt;div theme="success-contrast" padding="3"&gt;
   &lt;p&gt;This div has a success color background.&lt;/p&gt;
 &lt;/div&gt;
 
-&lt;pre color="warning"&gt;
+&lt;pre theme="warning-contrast"&gt;
   This pre has a warning color background.
 &lt;/pre&gt;
 
-&lt;lq color="danger" padding="1"&gt;
+&lt;lq theme="danger-contrast" padding="1"&gt;
   This is a long quote with a danger color background.
 &lt;/lq&gt;
 
-&lt;table color="primary" padding="1" width="100"&gt;
+&lt;table theme="primary" padding="1" width="100"&gt;
   &lt;tgroup cols="2"&gt;
     &lt;thead&gt;
       &lt;row&gt;
@@ -146,15 +146,15 @@
       &lt;/row&gt;
     &lt;/thead&gt;
     &lt;tbody&gt;
-      &lt;row color="info"&gt;
+      &lt;row theme="info"&gt;
         ...
       &lt;/row&gt;
-      &lt;row color="success"&gt;
+      &lt;row theme="success"&gt;
         ...
       &lt;/row&gt;
       &lt;row&gt;
         &lt;entry&gt;...&lt;/entry&gt;
-        &lt;entry color="danger"&gt;...&lt;/entry&gt;
+        &lt;entry theme="danger"&gt;...&lt;/entry&gt;
       &lt;/row&gt;
       &lt;row&gt;
         ...
@@ -163,7 +163,7 @@
   &lt;/tgroup&gt;
 &lt;/table&gt;
 
-&lt;note color="primary"&gt;
+&lt;note theme="primary-contrast"&gt;
   This is a note with a primary color theme.
 &lt;/note&gt;</codeblock>
       </section>
@@ -213,7 +213,7 @@
   &lt;/tgroup&gt;
 &lt;/table&gt;
 
-&lt;note color="primary"&gt;
+&lt;note outputclass="theme-primary theme-contrast"&gt;
   ...
 &lt;/note&gt;</codeblock>
       </section>
@@ -221,30 +221,30 @@
 
     <section id="specialized-elements">
       <title>Specialized Elements</title>
-      <p>Many specialized components also support the <xmlatt>color</xmlatt> attribute for consistent theming.</p>
+      <p>Many specialized components also support the <xmlatt>theme</xmlatt> attribute for consistent theming.</p>
     </section>
 
-    <bodydiv border="yes" padding="3">
+    <bodydiv border="1" padding="3">
 
-      <thumbnail scope="external" href="https://picsum.photos/100/100?a" color="warning"/>
-      <card color="success" width="50" margin="t2">
+      <thumbnail scope="external" href="https://picsum.photos/100/100?a" theme="warning-contrast"/>
+      <card theme="success" width="50" margin="t2">
         <card-header>Success Card</card-header>
         <p>Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
       </card>
 
-      <accordion color="info" margin="t2">
+      <accordion theme="info" margin="t2">
         <accordion-item id="accordion_color_1" open="yes">
           <title>Accordion Item #1</title>
           <p>This is the first item's accordion body.</p>
         </accordion-item>
       </accordion>
 
-      <list-group width="50" color="danger" margin="t2">
+      <list-group width="50" theme="danger" margin="t2">
         <li>An item</li>
         <li>A second item</li>
       </list-group>
 
-      <carousel color="inverse" width="50" indicators="yes" margin="t2">
+      <carousel theme="inverse" width="50" indicators="yes" margin="t2">
         <carousel-item>
           <image scope="external" href="https://picsum.photos/1200/600?a"/>
         </carousel-item>
@@ -260,26 +260,26 @@
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;thumbnail href="..." color="warning"/&gt;
+        <codeblock>&lt;thumbnail href="..." theme="warning-contrast"/&gt;
 
-&lt;card color="success" width="50"&gt;
+&lt;card theme="success-contrast" width="50"&gt;
   &lt;card-header&gt;Card Title&lt;/card-header&gt;
   &lt;p&gt;Some quick example text to build on the card title and make up the bulk of the card’s content.&lt;/p&gt;
 &lt;/card&gt;
 
-&lt;accordion color="info"&gt;
+&lt;accordion theme="info-contrast"&gt;
   &lt;accordion-item open="yes"&gt;
     &lt;title&gt;Accordion Item #1&lt;/title&gt;
     &lt;p&gt;This is the first item's accordion body.&lt;/p&gt;
   &lt;/accordion-item&gt;
 &lt;/accordion&gt;
 
-&lt;list-group width="50" color="danger"&gt;
+&lt;list-group width="50" theme="danger-contrast"&gt;
   &lt;li&gt;An item&lt;/li&gt;
   &lt;li&gt;A second item&lt;/li&gt;
 &lt;/list-group&gt;
 
-&lt;carousel color="inverse" width="50" indicators="yes"&gt;
+&lt;carousel theme="inverse-contrast" width="50" indicators="yes"&gt;
   &lt;carousel-item&gt;
     &lt;image href="..."/&gt;
   &lt;/carousel-item&gt;

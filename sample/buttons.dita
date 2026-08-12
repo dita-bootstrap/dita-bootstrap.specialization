@@ -31,12 +31,12 @@
         class to apply different visual styles for a specific button variant and theme.</p>
     </section>
     <example>
-      <button style="none">Base class</button>
+      <button>Base class</button>
     </example>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;button style="none"&gt;Base class&lt;/button&gt;</codeblock>
+        <codeblock>&lt;button&gt;Base class&lt;/button&gt;</codeblock>
       </section>
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
@@ -50,27 +50,27 @@
         thrown in for more control.</p>
     </section>
     <example>
-      <button href="#" color="primary">Primary</button>
-      <button href="#" color="secondary">Secondary</button>
-      <button href="#" color="success">Success</button>
-      <button href="#" color="danger">Danger</button>
-      <button href="#" color="warning">Warning</button>
-      <button href="#" color="info">Info</button>
-      <button href="#" color="accent">Accent</button>
-      <button href="#" color="inverse">Inverse</button>
+      <button href="#" theme="primary">Primary</button>
+      <button href="#" theme="secondary">Secondary</button>
+      <button href="#" theme="success">Success</button>
+      <button href="#" theme="danger">Danger</button>
+      <button href="#" theme="warning">Warning</button>
+      <button href="#" theme="info">Info</button>
+      <button href="#" theme="accent">Accent</button>
+      <button href="#" theme="inverse">Inverse</button>
     </example>
 
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;button href="#" color="primary"&gt;Primary&lt;/button&gt;
-&lt;button href="#" color="secondary"&gt;Secondary&lt;/button&gt;
-&lt;button href="#" color="success"&gt;Success&lt;/button&gt;
-&lt;button href="#" color="danger"&gt;Danger&lt;/button&gt;
-&lt;button href="#" color="warning"&gt;Warning&lt;/button&gt;
-&lt;button href="#" color="info"&gt;Info&lt;/button&gt;
-&lt;button href="#" color="accent"&gt;Accent&lt;/button&gt;
-&lt;button href="#" color="inverse"&gt;Inverse&lt;/button&gt;</codeblock>
+        <codeblock>&lt;button href="#" theme="primary"&gt;Primary&lt;/button&gt;
+&lt;button href="#" theme="secondary"&gt;Secondary&lt;/button&gt;
+&lt;button href="#" theme="success"&gt;Success&lt;/button&gt;
+&lt;button href="#" theme="danger"&gt;Danger&lt;/button&gt;
+&lt;button href="#" theme="warning"&gt;Warning&lt;/button&gt;
+&lt;button href="#" theme="info"&gt;Info&lt;/button&gt;
+&lt;button href="#" theme="accent"&gt;Accent&lt;/button&gt;
+&lt;button href="#" theme="inverse"&gt;Inverse&lt;/button&gt;</codeblock>
       </section>
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
@@ -90,155 +90,155 @@
       <p>Compare the solid (default), outline, subtle, and text button styles at once, combined with theme
         colors.</p>
     </section>
-    <bodydiv border="yes" padding="3">
+    <bodydiv border="1" padding="3">
       <grid-row>
         <grid-col padding="1">
-          <button href="#" color="primary">Primary</button>
+          <button href="#" theme="primary">Primary</button>
         </grid-col>
         <grid-col padding="1">
-          <button href="#" color="primary" style="outline">Primary</button>
+          <button href="#" theme="primary-outline">Primary</button>
         </grid-col>
         <grid-col padding="1">
-          <button href="#" color="primary" style="subtle">Primary</button>
+          <button href="#" theme="primary-subtle">Primary</button>
         </grid-col>
         <grid-col padding="1">
-          <button href="#" color="primary" style="text">Primary</button>
+          <button href="#" theme="primary-text">Primary</button>
         </grid-col>
       </grid-row>
       <grid-row>
         <grid-col padding="1">
-          <button href="#" color="secondary">Secondary</button>
+          <button href="#" theme="secondary">Secondary</button>
         </grid-col>
         <grid-col padding="1">
-          <button href="#" color="secondary" style="outline">Secondary</button>
+          <button href="#" theme="secondary-outline">Secondary</button>
         </grid-col>
         <grid-col padding="1">
-          <button href="#" color="secondary" style="subtle">Secondary</button>
+          <button href="#" theme="secondary-subtle">Secondary</button>
         </grid-col>
         <grid-col padding="1">
-          <button href="#" color="secondary" style="text">Secondary</button>
-        </grid-col>
-      </grid-row>
-      <grid-row>
-        <grid-col padding="1">
-          <button href="#" color="success">Success</button>
-        </grid-col>
-        <grid-col padding="1">
-          <button href="#" color="success" style="outline">Success</button>
-        </grid-col>
-        <grid-col padding="1">
-          <button href="#" color="success" style="subtle">Success</button>
-        </grid-col>
-        <grid-col padding="1">
-          <button href="#" color="success" style="text">Success</button>
+          <button href="#" theme="secondary-text">Secondary</button>
         </grid-col>
       </grid-row>
       <grid-row>
         <grid-col padding="1">
-          <button href="#" color="danger">Danger</button>
+          <button href="#" theme="success">Success</button>
         </grid-col>
         <grid-col padding="1">
-          <button href="#" color="danger" style="outline">Danger</button>
+          <button href="#" theme="success-outline">Success</button>
         </grid-col>
         <grid-col padding="1">
-          <button href="#" color="danger" style="subtle">Danger</button>
+          <button href="#" theme="success-subtle">Success</button>
         </grid-col>
         <grid-col padding="1">
-          <button href="#" color="danger" style="text">Danger</button>
-        </grid-col>
-      </grid-row>
-      <grid-row>
-        <grid-col padding="1">
-          <button href="#" color="warning">Warning</button>
-        </grid-col>
-        <grid-col padding="1">
-          <button href="#" color="warning" style="outline">Warning</button>
-        </grid-col>
-        <grid-col padding="1">
-          <button href="#" color="warning" style="subtle">Warning</button>
-        </grid-col>
-        <grid-col padding="1">
-          <button href="#" color="warning" style="text">Warning</button>
+          <button href="#" theme="success-text">Success</button>
         </grid-col>
       </grid-row>
       <grid-row>
         <grid-col padding="1">
-          <button href="#" color="info">Info</button>
+          <button href="#" theme="danger">Danger</button>
         </grid-col>
         <grid-col padding="1">
-          <button href="#" color="info" style="outline">Info</button>
+          <button href="#" theme="danger-outline">Danger</button>
         </grid-col>
         <grid-col padding="1">
-          <button href="#" color="info" style="subtle">Info</button>
+          <button href="#" theme="danger-subtle">Danger</button>
         </grid-col>
         <grid-col padding="1">
-          <button href="#" color="info" style="text">Info</button>
-        </grid-col>
-      </grid-row>
-      <grid-row>
-        <grid-col padding="1">
-          <button href="#" color="accent">Accent</button>
-        </grid-col>
-        <grid-col padding="1">
-          <button href="#" color="accent" style="outline">Accent</button>
-        </grid-col>
-        <grid-col padding="1">
-          <button href="#" color="accent" style="subtle">Accent</button>
-        </grid-col>
-        <grid-col padding="1">
-          <button href="#" color="accent" style="text">Accent</button>
+          <button href="#" theme="danger-text">Danger</button>
         </grid-col>
       </grid-row>
       <grid-row>
         <grid-col padding="1">
-          <button href="#" color="inverse">Inverse</button>
+          <button href="#" theme="warning">Warning</button>
         </grid-col>
         <grid-col padding="1">
-          <button href="#" color="inverse" style="outline">Inverse</button>
+          <button href="#" theme="warning-outline">Warning</button>
         </grid-col>
         <grid-col padding="1">
-          <button href="#" color="inverse" style="subtle">Inverse</button>
+          <button href="#" theme="warning-subtle">Warning</button>
         </grid-col>
         <grid-col padding="1">
-          <button href="#" color="inverse" style="text">Inverse</button>
+          <button href="#" theme="warning-text">Warning</button>
+        </grid-col>
+      </grid-row>
+      <grid-row>
+        <grid-col padding="1">
+          <button href="#" theme="info">Info</button>
+        </grid-col>
+        <grid-col padding="1">
+          <button href="#" theme="info-outline">Info</button>
+        </grid-col>
+        <grid-col padding="1">
+          <button href="#" theme="info-subtle">Info</button>
+        </grid-col>
+        <grid-col padding="1">
+          <button href="#" theme="info-text">Info</button>
+        </grid-col>
+      </grid-row>
+      <grid-row>
+        <grid-col padding="1">
+          <button href="#" theme="accent">Accent</button>
+        </grid-col>
+        <grid-col padding="1">
+          <button href="#" theme="accent-outline">Accent</button>
+        </grid-col>
+        <grid-col padding="1">
+          <button href="#" theme="accent-subtle">Accent</button>
+        </grid-col>
+        <grid-col padding="1">
+          <button href="#" theme="accent-text">Accent</button>
+        </grid-col>
+      </grid-row>
+      <grid-row>
+        <grid-col padding="1">
+          <button href="#" theme="inverse">Inverse</button>
+        </grid-col>
+        <grid-col padding="1">
+          <button href="#" theme="inverse-outline">Inverse</button>
+        </grid-col>
+        <grid-col padding="1">
+          <button href="#" theme="inverse-subtle">Inverse</button>
+        </grid-col>
+        <grid-col padding="1">
+          <button href="#" theme="inverse-text">Inverse</button>
         </grid-col>
       </grid-row>
     </bodydiv>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;button href="#" color="primary"&gt;Primary&lt;/button&gt;
-&lt;button href="#" color="primary" style="outline"&gt;Primary&lt;/button&gt;
-&lt;button href="#" color="primary" style="subtle"&gt;Primary&lt;/button&gt;
-&lt;button href="#" color="primary" style="text"&gt;Primary&lt;/button&gt;
-&lt;button href="#" color="secondary"&gt;Secondary&lt;/button&gt;
-&lt;button href="#" color="secondary" style="outline"&gt;Secondary&lt;/button&gt;
-&lt;button href="#" color="secondary" style="subtle"&gt;Secondary&lt;/button&gt;
-&lt;button href="#" color="secondary" style="text"&gt;Secondary&lt;/button&gt;
-&lt;button href="#" color="success"&gt;Success&lt;/button&gt;
-&lt;button href="#" color="success" style="outline"&gt;Success&lt;/button&gt;
-&lt;button href="#" color="success" style="subtle"&gt;Success&lt;/button&gt;
-&lt;button href="#" color="success" style="text"&gt;Success&lt;/button&gt;
-&lt;button href="#" color="danger"&gt;Danger&lt;/button&gt;
-&lt;button href="#" color="danger" style="outline"&gt;Danger&lt;/button&gt;
-&lt;button href="#" color="danger" style="subtle"&gt;Danger&lt;/button&gt;
-&lt;button href="#" color="danger" style="text"&gt;Danger&lt;/button&gt;
-&lt;button href="#" color="warning"&gt;Warning&lt;/button&gt;
-&lt;button href="#" color="warning" style="outline"&gt;Warning&lt;/button&gt;
-&lt;button href="#" color="warning" style="subtle"&gt;Warning&lt;/button&gt;
-&lt;button href="#" color="warning" style="text"&gt;Warning&lt;/button&gt;
-&lt;button href="#" color="info"&gt;Info&lt;/button&gt;
-&lt;button href="#" color="info" style="outline"&gt;Info&lt;/button&gt;
-&lt;button href="#" color="info" style="subtle"&gt;Info&lt;/button&gt;
-&lt;button href="#" color="info" style="text"&gt;Info&lt;/button&gt;
-&lt;button href="#" color="accent"&gt;Accent&lt;/button&gt;
-&lt;button href="#" color="accent" style="outline"&gt;Accent&lt;/button&gt;
-&lt;button href="#" color="accent" style="subtle"&gt;Accent&lt;/button&gt;
-&lt;button href="#" color="accent" style="text"&gt;Accent&lt;/button&gt;
-&lt;button href="#" color="inverse"&gt;Inverse&lt;/button&gt;
-&lt;button href="#" color="inverse" style="outline"&gt;Inverse&lt;/button&gt;
-&lt;button href="#" color="inverse" style="subtle"&gt;Inverse&lt;/button&gt;
-&lt;button href="#" color="inverse" style="text"&gt;Inverse&lt;/button&gt;</codeblock>
+        <codeblock>&lt;button href="#" theme="primary"&gt;Primary&lt;/button&gt;
+&lt;button href="#" theme="primary-outline"&gt;Primary&lt;/button&gt;
+&lt;button href="#" theme="primary-subtle"&gt;Primary&lt;/button&gt;
+&lt;button href="#" theme="primary-text"&gt;Primary&lt;/button&gt;
+&lt;button href="#" theme="secondary"&gt;Secondary&lt;/button&gt;
+&lt;button href="#" theme="secondary-outline"&gt;Secondary&lt;/button&gt;
+&lt;button href="#" theme="secondary-subtle"&gt;Secondary&lt;/button&gt;
+&lt;button href="#" theme="secondary-text"&gt;Secondary&lt;/button&gt;
+&lt;button href="#" theme="success"&gt;Success&lt;/button&gt;
+&lt;button href="#" theme="success-outline"&gt;Success&lt;/button&gt;
+&lt;button href="#" theme="success-subtle"&gt;Success&lt;/button&gt;
+&lt;button href="#" theme="success-text"&gt;Success&lt;/button&gt;
+&lt;button href="#" theme="danger"&gt;Danger&lt;/button&gt;
+&lt;button href="#" theme="danger-outline"&gt;Danger&lt;/button&gt;
+&lt;button href="#" theme="danger-subtle"&gt;Danger&lt;/button&gt;
+&lt;button href="#" theme="danger-text"&gt;Danger&lt;/button&gt;
+&lt;button href="#" theme="warning"&gt;Warning&lt;/button&gt;
+&lt;button href="#" theme="warning-outline"&gt;Warning&lt;/button&gt;
+&lt;button href="#" theme="warning-subtle"&gt;Warning&lt;/button&gt;
+&lt;button href="#" theme="warning-text"&gt;Warning&lt;/button&gt;
+&lt;button href="#" theme="info"&gt;Info&lt;/button&gt;
+&lt;button href="#" theme="info-outline"&gt;Info&lt;/button&gt;
+&lt;button href="#" theme="info-subtle"&gt;Info&lt;/button&gt;
+&lt;button href="#" theme="info-text"&gt;Info&lt;/button&gt;
+&lt;button href="#" theme="accent"&gt;Accent&lt;/button&gt;
+&lt;button href="#" theme="accent-outline"&gt;Accent&lt;/button&gt;
+&lt;button href="#" theme="accent-subtle"&gt;Accent&lt;/button&gt;
+&lt;button href="#" theme="accent-text"&gt;Accent&lt;/button&gt;
+&lt;button href="#" theme="inverse"&gt;Inverse&lt;/button&gt;
+&lt;button href="#" theme="inverse-outline"&gt;Inverse&lt;/button&gt;
+&lt;button href="#" theme="inverse-subtle"&gt;Inverse&lt;/button&gt;
+&lt;button href="#" theme="inverse-text"&gt;Inverse&lt;/button&gt;</codeblock>
       </section>
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
@@ -284,26 +284,26 @@
         variables.</p>
     </section>
     <example>
-      <button href="#" color="primary" gradient="yes">Primary</button>
-      <button href="#" color="secondary" gradient="yes">Secondary</button>
-      <button href="#" color="success" gradient="yes">Success</button>
-      <button href="#" color="danger" gradient="yes">Danger</button>
-      <button href="#" color="warning" gradient="yes">Warning</button>
-      <button href="#" color="info" gradient="yes">Info</button>
-      <button href="#" color="accent" gradient="yes">Accent</button>
-      <button href="#" color="inverse" gradient="yes">Inverse</button>
+      <button href="#" theme="primary-styled">Primary</button>
+      <button href="#" theme="secondary-styled">Secondary</button>
+      <button href="#" theme="success-styled">Success</button>
+      <button href="#" theme="danger-styled">Danger</button>
+      <button href="#" theme="warning-styled">Warning</button>
+      <button href="#" theme="info-styled">Info</button>
+      <button href="#" theme="accent-styled">Accent</button>
+      <button href="#" theme="inverse-styled">Inverse</button>
     </example>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;button href="#" color="primary" gradient="yes"&gt;Primary&lt;/button&gt;
-&lt;button href="#" color="secondary" gradient="yes"&gt;Secondary&lt;/button&gt;
-&lt;button href="#" color="success" gradient="yes"&gt;Success&lt;/button&gt;
-&lt;button href="#" color="danger" gradient="yes"&gt;Danger&lt;/button&gt;
-&lt;button href="#" color="warning" gradient="yes"&gt;Warning&lt;/button&gt;
-&lt;button href="#" color="info" gradient="yes"&gt;Info&lt;/button&gt;
-&lt;button href="#" color="accent" gradient="yes"&gt;Accent&lt;/button&gt;
-&lt;button href="#" color="inverse" gradient="yes"&gt;Inverse&lt;/button&gt;</codeblock>
+        <codeblock>&lt;button href="#" theme="primary-styled"&gt;Primary&lt;/button&gt;
+&lt;button href="#" theme="secondary-styled"&gt;Secondary&lt;/button&gt;
+&lt;button href="#" theme="success-styled"&gt;Success&lt;/button&gt;
+&lt;button href="#" theme="danger-styled"&gt;Danger&lt;/button&gt;
+&lt;button href="#" theme="warning-styled"&gt;Warning&lt;/button&gt;
+&lt;button href="#" theme="info-styled"&gt;Info&lt;/button&gt;
+&lt;button href="#" theme="accent-styled"&gt;Accent&lt;/button&gt;
+&lt;button href="#" theme="inverse-styled"&gt;Inverse&lt;/button&gt;</codeblock>
       </section>
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
@@ -325,26 +325,26 @@
         and colors on any button.</p>
     </section>
     <example>
-      <button href="#" style="outline">Primary</button>
-      <button href="#" color="secondary" style="outline">Secondary</button>
-      <button href="#" color="success" style="outline">Success</button>
-      <button href="#" color="danger" style="outline">Danger</button>
-      <button href="#" color="warning" style="outline">Warning</button>
-      <button href="#" color="info" style="outline">Info</button>
-      <button href="#" color="accent" style="outline">Light</button>
-      <button href="#" color="inverse" style="outline">Dark</button>
+      <button href="#" theme="primary-outline">Primary</button>
+      <button href="#" theme="secondary-outline">Secondary</button>
+      <button href="#" theme="success-outline">Success</button>
+      <button href="#" theme="danger-outline">Danger</button>
+      <button href="#" theme="warning-outline">Warning</button>
+      <button href="#" theme="info-outline">Info</button>
+      <button href="#" theme="accent-outline">Light</button>
+      <button href="#" theme="inverse-outline">Dark</button>
     </example>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
-          <codeblock>&lt;button href="#" style="outline"&gt;Primary&lt;/button&gt;
-&lt;button href="#" color="secondary" style="outline"&gt;Secondary&lt;/button&gt;
-&lt;button href="#" color="success" style="outline"&gt;Success&lt;/button&gt;
-&lt;button href="#" color="danger" style="outline"&gt;Danger&lt;/button&gt;
-&lt;button href="#" color="warning" style="outline"&gt;Warning&lt;/button&gt;
-&lt;button href="#" color="info" style="outline"&gt;Info&lt;/button&gt;
-&lt;button href="#" color="accent" style="outline"&gt;Accent&lt;/button&gt;
-&lt;button href="#" color="inverse" style="outline"&gt;Inverse&lt;/button&gt;</codeblock>
+          <codeblock>&lt;button href="#" theme="primary-outline"&gt;Primary&lt;/button&gt;
+&lt;button href="#" theme="secondary-outline"&gt;Secondary&lt;/button&gt;
+&lt;button href="#" theme="success-outline"&gt;Success&lt;/button&gt;
+&lt;button href="#" theme="danger-outline"&gt;Danger&lt;/button&gt;
+&lt;button href="#" theme="warning-outline"&gt;Warning&lt;/button&gt;
+&lt;button href="#" theme="info-outline"&gt;Info&lt;/button&gt;
+&lt;button href="#" theme="accent-outline"&gt;Accent&lt;/button&gt;
+&lt;button href="#" theme="inverse-outline"&gt;Inverse&lt;/button&gt;</codeblock>
         </section>
          <section>
           <title><xmlatt>outputclass</xmlatt></title>
@@ -365,14 +365,14 @@
     </section>
     <example>
       <button href="#" size="large">Large button</button>
-      <button href="#" color="secondary" size="large">Large button</button>
+      <button href="#" theme="secondary" size="large">Large button</button>
     </example>
 
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
           <codeblock>&lt;button href="#" size="large"&gt;Large button&lt;/button&gt;
-&lt;button href="#" color="secondary" size="large"&gt;Large button&lt;/button&gt;</codeblock>
+&lt;button href="#" theme="secondary" size="large"&gt;Large button&lt;/button&gt;</codeblock>
         </section>
          <section>
           <title><xmlatt>outputclass</xmlatt></title>
@@ -383,14 +383,14 @@
 
     <example>
       <button href="#" size="small">Small button</button>
-      <button href="#" color="secondary" size="small">Small button</button>
+      <button href="#" theme="secondary" size="small">Small button</button>
     </example>
 
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
           <codeblock>&lt;button href="#" size="small"&gt;Small button&lt;/button&gt;
-&lt;button href="#" color="secondary" size="small"&gt;Small button&lt;/button&gt;</codeblock>
+&lt;button href="#" theme="secondary" size="small"&gt;Small button&lt;/button&gt;</codeblock>
         </section>
          <section>
           <title><xmlatt>outputclass</xmlatt></title>
@@ -401,14 +401,14 @@
 
     <example>
       <button href="#" size="xs">Extra small button</button>
-      <button href="#" color="secondary" size="xs">Extra small button</button>
+      <button href="#" theme="secondary" size="xs">Extra small button</button>
     </example>
 
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
           <codeblock>&lt;button href="#" size="xs"&gt;Extra small button&lt;/button&gt;
-&lt;button href="#" color="secondary" size="xs"&gt;Extra small button&lt;/button&gt;</codeblock>
+&lt;button href="#" theme="secondary" size="xs"&gt;Extra small button&lt;/button&gt;</codeblock>
         </section>
          <section>
           <title><xmlatt>outputclass</xmlatt></title>

@@ -31,7 +31,7 @@
       <p>Alerts are available for any length of text, as well as an optional close button. Alerts are designed to be
         used with theme colors, but have neutral fallback colors for when no theme color is applied.</p>
     </section>
-    <bodydiv border="yes" padding="3">
+    <bodydiv border="1" padding="3">
       <alert>A simple alert — check it out!</alert>
     </bodydiv>
     <tabbed-dialog style="pills" margin="t3">
@@ -52,43 +52,43 @@
     <section id="variants">
       <title>Variants</title>
       <p>Use any of the eight variant theme classes for color mode adaptive, contextual styling (e.g., set
-          <xmlatt>color</xmlatt> to <codeph>success</codeph>).</p>
+          <xmlatt>theme</xmlatt> to <codeph>success</codeph>).</p>
     </section>
-    <bodydiv border="yes" padding="3">
-      <alert color="primary">A simple primary alert—check it out!</alert>
-      <alert color="secondary">A simple secondary alert—check it out!</alert>
-      <alert color="success">A simple success alert—check it out!</alert>
-      <alert color="danger">A simple danger alert—check it out!</alert>
-      <alert color="warning">A simple warning alert—check it out!</alert>
-      <alert color="info">A simple info alert—check it out!</alert>
-      <alert color="accent">A simple accent alert—check it out!</alert>
-      <alert color="inverse">A simple inverse alert—check it out!</alert>
+    <bodydiv border="1" padding="3">
+      <alert theme="primary-subtle-border">A simple primary alert—check it out!</alert>
+      <alert theme="secondary-subtle-border">A simple secondary alert—check it out!</alert>
+      <alert theme="success-subtle-border">A simple success alert—check it out!</alert>
+      <alert theme="danger-subtle-border">A simple danger alert—check it out!</alert>
+      <alert theme="warning-subtle-border">A simple warning alert—check it out!</alert>
+      <alert theme="info-subtle-border">A simple info alert—check it out!</alert>
+      <alert theme="accent-subtle-border">A simple accent alert—check it out!</alert>
+      <alert theme="inverse-subtle-border">A simple inverse alert—check it out!</alert>
     </bodydiv>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;alert color="primary"&gt;
+        <codeblock>&lt;alert theme="primary-subtle-border"&gt;
   A simple primary alert — check it out!
 &lt;/alert&gt;
-&lt;alert color="secondary"&gt;
+&lt;alert theme="secondary-subtle-border"&gt;
   A simple secondary alert — check it out!
 &lt;/alert&gt;
-&lt;alert color="success"&gt;
+&lt;alert theme="success-subtle-border"&gt;
   A simple success alert — check it out!
 &lt;/alert&gt;
-&lt;alert color="danger"&gt;
+&lt;alert theme="danger-subtle-border"&gt;
   A simple danger alert — check it out!
 &lt;/alert&gt;
-&lt;alert color="warning"&gt;
+&lt;alert theme="warning-subtle-border"&gt;
   A simple warning alert — check it out!
 &lt;/alert&gt;
-&lt;alert color="info"&gt;
+&lt;alert theme="info-subtle-border"&gt;
   A simple info alert — check it out!
 &lt;/alert&gt;
-&lt;alert color="accent"&gt;
+&lt;alert theme="accent-subtle-border"&gt;
   A simple accent alert — check it out!
 &lt;/alert&gt;
-&lt;alert color="inverse"&gt;
+&lt;alert theme="inverse-subtle-border"&gt;
   A simple inverse alert — check it out!
 &lt;/alert&gt;</codeblock>
       </section>
@@ -125,8 +125,8 @@
       <title>Additional content</title>
       <p>Alerts can also contain additional HTML elements like headings, paragraphs, icons and links.</p>
     </section>
-    <bodydiv border="yes" padding="3">
-      <alert color="success">
+    <bodydiv border="1" padding="3">
+      <alert theme="success-contrast">
         <title><icon outputclass="bi-emoji-smile" padding="e2"/>Well done!</title>
         <p>Aww yeah, you successfully read this important alert message. This example text with a
           <xref href="#">link</xref> is going to run a bit longer so that you can see how spacing within an alert works
@@ -137,7 +137,7 @@
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;alert color="success" outputclass="vstack"&gt;
+        <codeblock>&lt;alert theme="success-contrast" outputclass="vstack"&gt;
   &lt;title&gt;&lt;icon outputclass="bi-emoji-smile" padding="e2"/&gt;Well done!&lt;/title&gt;
   &lt;p&gt;
     Aww yeah, you successfully read this important alert message. This example text with a
@@ -151,7 +151,7 @@
       </section>
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;section outputclass="alert theme-success vstack"&gt;
+        <codeblock>&lt;section outputclass="alert theme-success theme-contrast vstack"&gt;
   &lt;title&gt;&lt;i outputclass="bi bi-emoji-smile pe-2"/&gt;Well done!&lt;/title&gt;
   &lt;p&gt;
     Aww yeah, you successfully read this important alert message. This example text with a
@@ -170,8 +170,8 @@
       <p>Similarly, you can use flexbox utilities and Bootstrap Icons to create alerts with icons. Depending on your
         icons and content, you may want to add more utilities or custom styles.</p>
     </section>
-    <bodydiv border="yes" padding="3">
-      <alert color="primary">
+    <bodydiv border="1" padding="3">
+      <alert theme="primary-subtle-border">
         <div>
           <icon outputclass="bi-exclamation-triangle-fill flex-shrink-0" padding="e2"/>An example alert with an icon
         </div>
@@ -180,7 +180,7 @@
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;alert color="primary"&gt;
+        <codeblock>&lt;alert theme="primary-subtle-border"&gt;
   &lt;div&gt;
     &lt;icon outputclass="bi-exclamation-triangle-fill flex-shrink-0" padding="e2"/&gt;An example alert with an icon
   &lt;/div&gt;
@@ -249,38 +249,38 @@
     <p>The default colors can be overridden by using a <xmlatt>color</xmlatt> attribute or an <xmlatt
       >outputclass</xmlatt>.</p>
     <example>
-      <note color="primary">This is a primary note.</note>
-      <note color="secondary">This is a secondary note.</note>
-      <note color="accent">This is accent note.</note>
-      <note color="inverse">This is inverse note.</note>
+      <note theme="primary-contrast">This is a high contrast primary note.</note>
+      <note theme="secondary-contrast">This is a high contrast secondary note.</note>
+      <note theme="accent-contrast">This is a high contrast accent note.</note>
+      <note theme="inverse-contrast">This is a high contrast inverse note.</note>
     </example>
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;note color="primary"&gt;
-  This is a primary note.
+        <codeblock>&lt;note theme="primary-contrast"&gt;
+  This is a high contrast primary note.
 &lt;/note&gt;
-&lt;note color="secondary"&gt;
-  This is a secondary note.
+&lt;note theme="secondary-contrast"&gt;
+  This is a high contrast secondary note.
 &lt;/note&gt;
-&lt;note color="accent"&gt;
-  This is accent note.
+&lt;note theme="accent-contrast"&gt;
+  This is a high contrast accent note.
 &lt;/note&gt;
-&lt;note color="inverse"&gt;
-  This is inverse note.
+&lt;note theme="inverse-contrast"&gt;
+  This is a high contrast inverse note.
 &lt;/note&gt;</codeblock>
       </section>
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
-        <codeblock>&lt;note type="note" outputclass="theme-primary"&gt;
-  This is a primary note.&lt;/note&gt;
-&lt;note type="note" outputclass="theme-secondary"&gt;
-  This is a secondary note.&lt;/note&gt;
-&lt;note type="note" outputclass="theme-accent"&gt;
-  This is accent note.
+        <codeblock>&lt;note type="note" outputclass="theme-primary theme-contrast"&gt;
+  This is a high contrast primary note.&lt;/note&gt;
+&lt;note type="note" outputclass="theme-secondary theme-contrast"&gt;
+  This is a high contrast secondary note.&lt;/note&gt;
+&lt;note type="note" outputclass="theme-accent theme-contrast"&gt;
+  This is a high contrast accent note.
 &lt;/note&gt;
-&lt;note type="note" outputclass="theme-inverse"&gt;
-  This is inverse note.
+&lt;note type="note" outputclass="theme-inverse theme-contrast"&gt;
+  This is a high contrast inverse note.
 &lt;/note&gt;</codeblock>
       </section>
     </tabbed-dialog>

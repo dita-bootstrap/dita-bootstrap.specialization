@@ -31,9 +31,9 @@
           <xmlatt>props="collapse-toggle"</xmlatt> to an <xmlelement>xref</xmlelement> element to associate a button to
         a collapse</p>
     </section>
-    <bodydiv deliveryTarget="html" border="yes" padding="3">
+    <bodydiv deliveryTarget="html" border="1" padding="3">
       <p>
-        <button props="collapse-toggle" href="#collapse1">Toggle Collapse</button>
+        <button theme="primary" props="collapse-toggle" href="#collapse1">Toggle Collapse</button>
       </p>
       <collapse id="collapse1">
         <card outputclass="card-body">
@@ -46,7 +46,7 @@
       <section>
         <title>Specialization</title>
           <codeblock>&lt;p&gt;
-  &lt;button props="collapse-toggle" href="#collapse1"&gt;
+  &lt;button theme="primary" props="collapse-toggle" href="#collapse1"&gt;
     Toggle Collapse
   &lt;/button&gt;
 &lt;/p&gt;
@@ -76,9 +76,9 @@
         to transition the width instead of height and set an <xmlatt>otherprops="style(width: ...)</xmlatt> on the
         immediate child <xmlelement>div</xmlelement> element.</p>
     </section>
-    <bodydiv deliveryTarget="html" border="yes" padding="3">
+    <bodydiv deliveryTarget="html" border="1" padding="3">
       <p>
-        <button props="collapse-toggle" href="#collapse2">Toggle Width Collapse</button>
+        <button theme="primary" props="collapse-toggle" href="#collapse2">Toggle Width Collapse</button>
       </p>
       <collapse outputclass="collapse-horizontal" id="collapse2" otherprops="style(min-height: 120px;)">
       <bodydiv outputclass="card card-body" otherprops="style(width: 300px;)">

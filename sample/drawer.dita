@@ -48,7 +48,7 @@
           <xmlatt>props="drawer-toggle"</xmlatt> to an <xmlelement>xref</xmlelement> element to associate a button to
         a drawer</p>
     </section>
-    <bodydiv deliveryTarget="html" border="yes" padding="3">
+    <bodydiv deliveryTarget="html" border="1" padding="3">
             <button props="drawer-toggle" href="#drawer1">Click here to display drawer</button>
       <drawer id="drawer1" position="start">
         <title>Drawer</title>
@@ -100,7 +100,7 @@
           the viewport</li>
       </ul>
     </section>
-    <bodydiv deliveryTarget="html" border="yes" padding="3">
+    <bodydiv deliveryTarget="html" border="1" padding="3">
             <button props="drawer-toggle" href="#drawer2">Toggle right drawer</button>
       <drawer position="end" id="drawer2">
         <title>Drawer</title>
@@ -121,7 +121,7 @@
 &lt;/section&gt;</codeblock>
         </section>
       </tabbed-dialog>
-    <bodydiv deliveryTarget="html" border="yes" padding="3">
+    <bodydiv deliveryTarget="html" border="1" padding="3">
             <button props="drawer-toggle" href="#drawer3">Toggle bottom drawer</button>
       <drawer position="bottom" id="drawer3">
         <title>Drawer</title>
@@ -149,9 +149,9 @@
         >outputclass="drawer-lg"</xmlatt> hides content in a drawer below the <codeph
         >lg</codeph> breakpoint, but shows the content above the <codeph>lg</codeph> breakpoint.</p>
     </section>
-    <bodydiv deliveryTarget="html" border="yes" padding="3">
+    <bodydiv deliveryTarget="html" border="1" padding="3">
       <note
-        color="info"
+        theme="info-contrast"
         outputclass="d-none lg:d-block"
       >Resize your browser to show the responsive drawer toggle.</note>
             <button outputclass="lg:d-none" props="drawer-toggle" href="#drawer4">Toggle drawer</button>
@@ -172,7 +172,7 @@
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
-          <codeblock>&lt;note color="info" outputclass="d-none lg:d-block"&gt;
+          <codeblock>&lt;note theme="info" outputclass="d-none lg:d-block"&gt;
   Resize your browser to show the responsive drawer toggle.
 &lt;/note&gt;
 &lt;button outputclass="lg:d-none" props="drawer-toggle" href="#drawer4"&gt;

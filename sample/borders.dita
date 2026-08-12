@@ -53,17 +53,17 @@
         >rounded</xmlatt> attributes provide a semantic way to add borders and rounded corners.</p>
     </section>
 
-    <bodydiv border="yes" padding="3">
-      <section id="bordered-section" border="yes" padding="2">
+    <bodydiv border="1" padding="3">
+      <section id="bordered-section" border="1" padding="2">
         <title>Bordered Section</title>
         <p>This section has a border.</p>
       </section>
 
-      <div border="yes" rounded="yes" padding="2" margin="2">
+      <div border="1" rounded="yes" padding="2" margin="2">
         <p>This div has a border and rounded corners.</p>
       </div>
 
-      <carousel border="yes" rounded="yes" margin="2" width="50">
+      <carousel border="1" rounded="yes" margin="2" width="50">
         <carousel-item>
           <image scope="external" href="https://picsum.photos/600/400?1"/>
         </carousel-item>
@@ -76,15 +76,15 @@
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;section border="yes" padding="2"&gt;
+        <codeblock>&lt;section border="1" padding="2"&gt;
   ...
 &lt;/section&gt;
 
-&lt;div border="yes" rounded="yes" padding="2" margin="2"&gt;
+&lt;div border="1" rounded="yes" padding="2" margin="2"&gt;
   ...
 &lt;/div&gt;
 
-&lt;carousel border="yes" rounded="yes" margin="2" width="50"&gt;
+&lt;carousel border="1" rounded="yes" margin="2" width="50"&gt;
   &lt;carousel-item&gt;
     &lt;image href="..."/&gt;
   &lt;/carousel-item&gt;
@@ -113,7 +113,8 @@
       <p>The <xmlatt>border</xmlatt> attribute also accepts numeric values 1-5 for width. The <xmlatt
         >rounded</xmlatt> attribute 
         supports values 0-5, <codeph>circle</codeph> and <codeph>pill</codeph>.
-        The <xmlatt>bordercolor</xmlatt> attribute can be used to set the color of the border.</p>
+        The <codeph>-border</codeph> theme suffix (e.g. <codeph>theme="primary-border"</codeph>) can be used to set
+        the color of the border.</p>
     </section>
 
     <example>
@@ -146,19 +147,19 @@
 
     <example margin="t3">
       <div margin="b3">
-        <ph bordercolor="primary" padding="2" margin="e2">Primary</ph>
-        <ph bordercolor="primary-subtle" padding="2" margin="e2">Primary subtle</ph>
-        <ph bordercolor="success" padding="2" margin="e2">Success</ph>
-        <ph bordercolor="danger" padding="2" margin="e2">Danger</ph>
+        <ph theme="primary-border" padding="2" margin="e2">Primary</ph>
+        <ph theme="primary-subtle-border" padding="2" margin="e2">Primary subtle</ph>
+        <ph theme="success-border" padding="2" margin="e2">Success</ph>
+        <ph theme="danger-border" padding="2" margin="e2">Danger</ph>
       </div>
     </example>
     <tabbed-dialog margin="t3" style="pills">
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;ph bordercolor="primary"&gt;Primary&lt;/ph&gt;
-&lt;ph bordercolor="primary-subtle"&gt;Primary subtle&lt;/ph&gt;
-&lt;ph bordercolor="success"&gt;Success&lt;/ph&gt;
-&lt;ph bordercolor="danger"&gt;Danger&lt;/ph&gt;</codeblock>
+        <codeblock>&lt;ph theme="primary-border"&gt;Primary&lt;/ph&gt;
+&lt;ph theme="primary-subtle-border"&gt;Primary subtle&lt;/ph&gt;
+&lt;ph theme="success-border"&gt;Success&lt;/ph&gt;
+&lt;ph theme="danger-border"&gt;Danger&lt;/ph&gt;</codeblock>
       </section>
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
@@ -171,23 +172,23 @@
 
     <example margin="t3">
       <div margin="b3">
-        <ph border="yes" rounded="0" padding="2" margin="e2">Rounded 0</ph>
-        <ph border="yes" rounded="1" padding="2" margin="e2">Rounded 1</ph>
-        <ph border="yes" rounded="2" padding="2" margin="e2">Rounded 2</ph>
-        <ph border="yes" rounded="3" padding="2" margin="e2">Rounded 3</ph>
-        <ph border="yes" rounded="4" padding="2" margin="e2">Rounded 4</ph>
-        <ph border="yes" rounded="5" padding="2" margin="e2">Rounded 5</ph>
+        <ph border="1" rounded="0" padding="2" margin="e2">Rounded 0</ph>
+        <ph border="1" rounded="1" padding="2" margin="e2">Rounded 1</ph>
+        <ph border="1" rounded="2" padding="2" margin="e2">Rounded 2</ph>
+        <ph border="1" rounded="3" padding="2" margin="e2">Rounded 3</ph>
+        <ph border="1" rounded="4" padding="2" margin="e2">Rounded 4</ph>
+        <ph border="1" rounded="5" padding="2" margin="e2">Rounded 5</ph>
       </div>
     </example>
     <tabbed-dialog margin="t3" style="pills">
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;ph border="yes" rounded="0"&gt;Rounded 0&lt;/ph&gt;
-&lt;ph border="yes" rounded="1"&gt;Rounded 1&lt;/ph&gt;
-&lt;ph border="yes" rounded="2"&gt;Rounded 2&lt;/ph&gt;
-&lt;ph border="yes" rounded="3"&gt;Rounded 3&lt;/ph&gt;
-&lt;ph border="yes" rounded="4"&gt;Rounded 4&lt;/ph&gt;
-&lt;ph border="yes" rounded="5"&gt;Rounded 5&lt;/ph&gt;</codeblock>
+        <codeblock>&lt;ph border="1" rounded="0"&gt;Rounded 0&lt;/ph&gt;
+&lt;ph border="1" rounded="1"&gt;Rounded 1&lt;/ph&gt;
+&lt;ph border="1" rounded="2"&gt;Rounded 2&lt;/ph&gt;
+&lt;ph border="1" rounded="3"&gt;Rounded 3&lt;/ph&gt;
+&lt;ph border="1" rounded="4"&gt;Rounded 4&lt;/ph&gt;
+&lt;ph border="1" rounded="5"&gt;Rounded 5&lt;/ph&gt;</codeblock>
       </section>
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
@@ -202,15 +203,15 @@
 
     <example margin="t3">
       <div margin="b3" padding="t3">
-        <ph border="yes" rounded="circle" padding="4" margin="e5" bordercolor="info">Circle</ph>
-        <ph border="yes" rounded="pill" padding="x4 y2" margin="e2" bordercolor="inverse">Pill</ph>
+        <ph border="1" rounded="circle" padding="4" margin="e5" theme="info-border">Circle</ph>
+        <ph border="1" rounded="pill" padding="x4 y2" margin="e2" theme="inverse-border">Pill</ph>
       </div>
     </example>
     <tabbed-dialog margin="t3" style="pills">
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;ph border="yes" rounded="circle" bordercolor="info"&gt;Circle&lt;/ph&gt;
-&lt;ph border="yes" rounded="pill" bordercolor="warning"&gt;Pill&lt;/ph&gt;</codeblock>
+        <codeblock>&lt;ph border="1" rounded="circle" theme="info-border"&gt;Circle&lt;/ph&gt;
+&lt;ph border="1" rounded="pill" theme="warning-border"&gt;Pill&lt;/ph&gt;</codeblock>
       </section>
       <section>
         <title><xmlatt>outputclass</xmlatt></title>

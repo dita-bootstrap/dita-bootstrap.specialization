@@ -111,7 +111,7 @@
       <p>Use contextual classes to color tables, table rows or individual cells.</p>
     </section>
     <example>
-      <table color="primary" padding="1" width="100">
+      <table theme="primary" padding="1" width="100">
         <tgroup cols="2">
           <thead>
             <row>
@@ -120,17 +120,17 @@
             </row>
           </thead>
           <tbody>
-            <row color="info">
+            <row theme="info">
               <entry>Elephant (African and Asian)</entry>
               <entry>19-22 months</entry>
             </row>
-            <row color="success">
+            <row theme="success">
               <entry>Giraffe</entry>
               <entry>15 months</entry>
             </row>
             <row>
               <entry>Rhinoceros</entry>
-              <entry color="danger">14-16 months</entry>
+              <entry theme="danger">14-16 months</entry>
             </row>
             <row>
               <entry>Hippopotamus</entry>
@@ -144,7 +144,7 @@
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;table color="primary" padding="1" width="100"&gt;
+        <codeblock>&lt;table theme="primary" padding="1" width="100"&gt;
   &lt;tgroup cols="2"&gt;
     &lt;thead&gt;
       &lt;row&gt;
@@ -153,17 +153,17 @@
       &lt;/row&gt;
     &lt;/thead&gt;
     &lt;tbody&gt;
-      &lt;row color="info"&gt;
+      &lt;row theme="info"&gt;
         &lt;entry&gt;Elephant (African and Asian)&lt;/entry&gt;
         &lt;entry&gt;19-22 months&lt;/entry&gt;
       &lt;/row&gt;
-      &lt;row color="success"&gt;
+      &lt;row theme="success"&gt;
         &lt;entry&gt;Giraffe&lt;/entry&gt;
         &lt;entry&gt;15 months&lt;/entry&gt;
       &lt;/row&gt;
       &lt;row&gt;
         &lt;entry&gt;Rhinoceros&lt;/entry&gt;
-        &lt;entry color="danger"&gt;14-16 months&lt;/entry&gt;
+        &lt;entry theme="danger"&gt;14-16 months&lt;/entry&gt;
       &lt;/row&gt;
       &lt;row&gt;
         &lt;entry&gt;Hippopotamus&lt;/entry&gt;
@@ -627,8 +627,8 @@
     </tabbed-dialog>
     <section id="table-head">
       <title>Table head</title>
-      <p>Similar to tables and dark tables, use the modifier <xmlatt>color="accent"</xmlatt> or
-          <xmlatt>color="inverse"</xmlatt> to make <xmlelement>thead</xmlelement> elements appear light or dark
+      <p>Similar to tables and dark tables, use the modifier <xmlatt>theme="accent"</xmlatt> or
+          <xmlatt>theme="inverse"</xmlatt> to make <xmlelement>thead</xmlelement> elements appear light or dark
         gray.</p>
     </section>
     <example>
@@ -636,7 +636,7 @@
         <tgroup cols="2">
           <colspec colname="COLSPEC0"/>
           <colspec colname="COLSPEC1"/>
-          <thead color="accent">
+          <thead theme="accent">
             <row>
               <entry colname="COLSPEC0" valign="top">Animal</entry>
               <entry colname="COLSPEC1" valign="top">Gestation</entry>
@@ -668,7 +668,7 @@
         <title>Specialization</title>
         <codeblock>&lt;table&gt;
   &lt;tgroup&gt;
-    &lt;thead color="secondary"&gt;
+    &lt;thead theme="secondary"&gt;
       ...etc
     &lt;/thead&gt;
   &lt;/tgroup&gt;
@@ -690,7 +690,7 @@
         <tgroup cols="2">
           <colspec colname="COLSPEC0"/>
           <colspec colname="COLSPEC1"/>
-          <thead color="inverse">
+          <thead theme="inverse">
             <row>
               <entry colname="COLSPEC0" valign="top">Animal</entry>
               <entry colname="COLSPEC1" valign="top">Gestation</entry>
@@ -722,7 +722,7 @@
         <title>Specialization</title>
         <codeblock>&lt;table&gt;
   &lt;tgroup&gt;
-    &lt;thead color="inverse"&gt;
+    &lt;thead theme="inverse"&gt;
       ...etc
     &lt;/thead&gt;
   &lt;/tgroup&gt;

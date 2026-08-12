@@ -28,25 +28,25 @@
     </section>
 
     <example>
-      <div color="primary" margin="0" padding="2">Margin 0</div>
-      <div color="secondary" margin="1" padding="2">Margin 1</div>
-      <div color="success" margin="2" padding="2">Margin 2</div>
-      <div color="danger" margin="3" padding="2">Margin 3</div>
-      <div color="warning" margin="4" padding="2">Margin 4</div>
-      <div color="info" margin="5" padding="2">Margin 5</div>
-      <div color="accent" margin="auto" padding="2" width="50">Margin Auto</div>
+      <div theme="primary-contrast" margin="0" padding="2">Margin 0</div>
+      <div theme="secondary-contrast" margin="1" padding="2">Margin 1</div>
+      <div theme="success-contrast" margin="2" padding="2">Margin 2</div>
+      <div theme="danger-contrast" margin="3" padding="2">Margin 3</div>
+      <div theme="warning-contrast" margin="4" padding="2">Margin 4</div>
+      <div theme="info-contrast" margin="5" padding="2">Margin 5</div>
+      <div theme="accent-contrast" margin="auto" padding="2" width="50">Margin Auto</div>
     </example>
 
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;div color="primary" margin="0" padding="2"&gt;Margin 0&lt;/div&gt;
-&lt;div color="secondary" margin="1" padding="2"&gt;Margin 1&lt;/div&gt;
-&lt;div color="success" margin="2" padding="2"&gt;Margin 2&lt;/div&gt;
-&lt;div color="danger" margin="3" padding="2"&gt;Margin 3&lt;/div&gt;
-&lt;div color="warning" margin="4" padding="2"&gt;Margin 4&lt;/div&gt;
-&lt;div color="info" margin="5" padding="2"&gt;Margin 5&lt;/div&gt;
-&lt;div color="light" margin="auto" padding="2" width="50"&gt;Margin Auto&lt;/div&gt;</codeblock>
+        <codeblock>&lt;div theme="primary-contrast" margin="0" padding="2"&gt;Margin 0&lt;/div&gt;
+&lt;div theme="secondary-contrast" margin="1" padding="2"&gt;Margin 1&lt;/div&gt;
+&lt;div theme="success-contrast" margin="2" padding="2"&gt;Margin 2&lt;/div&gt;
+&lt;div theme="danger-contrast" margin="3" padding="2"&gt;Margin 3&lt;/div&gt;
+&lt;div theme="warning-contrast" margin="4" padding="2"&gt;Margin 4&lt;/div&gt;
+&lt;div theme="info-contrast" margin="5" padding="2"&gt;Margin 5&lt;/div&gt;
+&lt;div theme="light-contrast" margin="auto" padding="2" width="50"&gt;Margin Auto&lt;/div&gt;</codeblock>
       </section>
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
@@ -67,24 +67,24 @@
     </section>
 
     <example>
-      <div color="primary" padding="0">Padding 0</div>
-      <div color="secondary" padding="1" margin="1"><div
+      <div theme="primary-contrast" padding="0">Padding 0</div>
+      <div theme="secondary-contrast" padding="1" margin="1"><div
           width="100"
           outputclass="bg-secondary-subtle text-inverse"
         >Padding 1</div></div>
-      <div color="success" padding="2" margin="1"><div
+      <div theme="success-contrast" padding="2" margin="1"><div
           width="100"
           outputclass="bg-success-subtle text-inverse"
         >Padding 2</div></div>
-      <div color="danger" padding="3" margin="1"><div
+      <div theme="danger-contrast" padding="3" margin="1"><div
           width="100"
           outputclass="bg-danger-subtle text-inverse"
         >Padding 3</div></div>
-      <div color="warning" padding="4" margin="1"><div
+      <div theme="warning-contrast" padding="4" margin="1"><div
           width="100"
           outputclass="bg-warning-subtle text-inverse"
         >Padding 4</div></div>
-      <div color="info" padding="5" margin="1"><div
+      <div theme="info-contrast" padding="5" margin="1"><div
           width="100"
           outputclass="bg-info-subtle text-inverse"
         >Padding 5</div></div>
@@ -93,12 +93,12 @@
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;div color="primary" padding="0"&gt;Padding 0&lt;/div&gt;
-&lt;div color="secondary" padding="1" margin="1"&gt;Padding 1&lt;/div&gt;
-&lt;div color="success" padding="2" margin="1"&gt;Padding 2&lt;/div&gt;
-&lt;div color="danger" padding="3" margin="1"&gt;Padding 3&lt;/div&gt;
-&lt;div color="warning" padding="4" margin="1"&gt;Padding 4&lt;/div&gt;
-&lt;div color="info" padding="5" margin="1"&gt;Padding 5&lt;/div&gt;</codeblock>
+        <codeblock>&lt;div theme="primary-contrast" padding="0"&gt;Padding 0&lt;/div&gt;
+&lt;div theme="secondary-contrast" padding="1" margin="1"&gt;Padding 1&lt;/div&gt;
+&lt;div theme="success-contrast" padding="2" margin="1"&gt;Padding 2&lt;/div&gt;
+&lt;div theme="danger-contrast" padding="3" margin="1"&gt;Padding 3&lt;/div&gt;
+&lt;div theme="warning-contrast" padding="4" margin="1"&gt;Padding 4&lt;/div&gt;
+&lt;div theme="info-contrast" padding="5" margin="1"&gt;Padding 5&lt;/div&gt;</codeblock>
       </section>
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
@@ -127,13 +127,13 @@
     </section>
 
     <example>
-      <div color="primary" margin="t5 b0">Margin Top 5, Bottom 0</div>
-      <div color="secondary" margin="x3">Margin Horizontal 3</div>
-      <div color="success" padding="y5"><div
+      <div theme="primary-contrast" margin="t5 b0">Margin Top 5, Bottom 0</div>
+      <div theme="secondary-contrast" margin="x3">Margin Horizontal 3</div>
+      <div theme="success-contrast" padding="y5"><div
           width="100"
           outputclass="bg-success-subtle text-inverse"
         >Padding Vertical 5</div></div>
-      <div color="danger" padding="s3 e1"><div
+      <div theme="danger-contrast" padding="s3 e1"><div
           width="100"
           outputclass="bg-danger-subtle text-inverse"
         >Padding Start 3, End 1</div></div>
@@ -142,10 +142,10 @@
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
-        <codeblock>&lt;div color="primary" margin="t5 b0"&gt;Margin Top 5, Bottom 0&lt;/div&gt;
-&lt;div color="secondary" margin="x3"&gt;Margin Horizontal 3&lt;/div&gt;
-&lt;div color="success" padding="y5"&gt;Padding Vertical 5&lt;/div&gt;
-&lt;div color="danger" padding="s3 e1"&gt;Padding Start 3, End 1&lt;/div&gt;</codeblock>
+        <codeblock>&lt;div theme="primary-contrast" margin="t5 b0"&gt;Margin Top 5, Bottom 0&lt;/div&gt;
+&lt;div theme="secondary-contrast" margin="x3"&gt;Margin Horizontal 3&lt;/div&gt;
+&lt;div theme="success-contrast" padding="y5"&gt;Padding Vertical 5&lt;/div&gt;
+&lt;div theme="danger-contrast" padding="s3 e1"&gt;Padding Start 3, End 1&lt;/div&gt;</codeblock>
       </section>
       <section>
         <title><xmlatt>outputclass</xmlatt></title>
