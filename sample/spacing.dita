@@ -53,7 +53,7 @@
         <codeblock>&lt;div outputclass="theme-primary theme-contrast m-0 p-2"&gt;Margin 0&lt;/div&gt;
 &lt;div outputclass="theme-secondary theme-contrast m-1 p-2"&gt;Margin 1&lt;/div&gt;
 &lt;div outputclass="theme-success theme-contrast m-2 p-2"&gt;Margin 2&lt;/div&gt;
-&lt;div outputclass="theme-danger theme-contrastm-3 p-2"&gt;Margin 3&lt;/div&gt;
+&lt;div outputclass="theme-danger theme-contrast m-3 p-2"&gt;Margin 3&lt;/div&gt;
 &lt;div outputclass="theme-warning theme-contrast m-4 p-2"&gt;Margin 4&lt;/div&gt;
 &lt;div outputclass="theme-info theme-contrast m-5 p-2"&gt;Margin 5&lt;/div&gt;
 &lt;div outputclass="theme-accent theme-contrast m-auto p-2 w-50"&gt;Margin Auto&lt;/div&gt;</codeblock>
