@@ -1,4 +1,6 @@
-<div class="mt-4 bg-subtle-secondary justify-content-center p-2">
+<div
+  class="mt-4 theme-secondary theme-border theme-subtle justify-content-center p-2"
+>
   <div class="align-self-center">
     <p class="text-center mb-0">
       <span class="badge theme-inverse small m-0">Specialization</span>
