@@ -244,7 +244,7 @@
         <li>A second item</li>
       </list-group>
 
-      <carousel theme="inverse" width="50" indicators="yes" margin="t2">
+      <carousel theme="inverse-muted" width="50" indicators="yes" margin="t2">
         <carousel-item>
           <image scope="external" href="https://picsum.photos/1200/600?a"/>
         </carousel-item>
@@ -279,7 +279,7 @@
   &lt;li&gt;A second item&lt;/li&gt;
 &lt;/list-group&gt;
 
-&lt;carousel theme="inverse" width="50" indicators="yes"&gt;
+&lt;carousel theme="inverse-muted" width="50" indicators="yes"&gt;
   &lt;carousel-item&gt;
     &lt;image href="..."/&gt;
   &lt;/carousel-item&gt;
@@ -307,7 +307,7 @@
   ...
 &lt;/ul&gt;
 
-&lt;ul outputclass="carousel theme-inverse w-50"&gt;
+&lt;ul outputclass="carousel theme-inverse theme-muted w-50"&gt;
   ...
 &lt;/ul&gt;</codeblock>
       </section>
