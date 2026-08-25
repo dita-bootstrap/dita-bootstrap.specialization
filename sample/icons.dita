@@ -57,42 +57,42 @@
   <p>Icons placed within an <xmlelement>xref</xmlelement> element are colorized appropriately:</p>
   <example>
     <p>
-      <xref href="#" theme="primary-contrast">
+      <xref href="#" theme="primary">
         <icon outputclass="bi-link"/> Primary link
       </xref>
     </p>
     <p>
-      <xref href="#" theme="secondary-contrast">
+      <xref href="#" theme="secondary">
         <icon outputclass="bi-link"/> Secondary link
       </xref>
     </p>
     <p>
-      <xref href="#" theme="success-contrast">
+      <xref href="#" theme="success">
         <icon outputclass="bi-link"/> Success link
       </xref>
     </p>
     <p>
-      <xref href="#" theme="danger-contrast">
+      <xref href="#" theme="danger">
         <icon outputclass="bi-link"/> Danger link
       </xref>
     </p>
     <p>
-      <xref href="#" theme="warning-contrast">
+      <xref href="#" theme="warning">
         <icon outputclass="bi-link"/> Warning link
       </xref>
     </p>
     <p>
-      <xref href="#" theme="info-contrast">
+      <xref href="#" theme="info">
         <icon outputclass="bi-link"/> Info link
       </xref>
     </p>
     <p>
-      <xref href="#" theme="accent-contrast">
+      <xref href="#" theme="accent">
         <icon outputclass="bi-link"/> Light link
       </xref>
     </p>
     <p>
-      <xref href="#" theme="inverse-contrast">
+      <xref href="#" theme="inverse">
         <icon outputclass="bi-link"/> Dark link
       </xref>
     </p>
@@ -100,28 +100,28 @@
     <tabbed-dialog style="pills" margin="t3">
       <section>
         <title>Specialization</title>
-          <codeblock>&lt;xref theme="primary-contrast" href="#"&gt;
+          <codeblock>&lt;xref theme="primary" href="#"&gt;
   &lt;icon outputclass="bi-link"/&gt; Primary link
 &lt;/xref&gt;
-&lt;xref theme="secondary-contrast" href="#"&gt;
+&lt;xref theme="secondary" href="#"&gt;
   &lt;icon outputclass="bi-link"/&gt; Secondary link
 &lt;/xref&gt;
-&lt;xref theme="success-contrast" href="#"&gt;
+&lt;xref theme="success" href="#"&gt;
   &lt;icon outputclass="bi-link"/&gt; Success link
 &lt;/xref&gt;
-&lt;xref theme="danger-contrast" href="#"&gt;
+&lt;xref theme="danger" href="#"&gt;
   &lt;icon outputclass="bi-link"/&gt; Danger link
 &lt;/xref&gt;
-&lt;xref theme="warning-contrast" href="#"&gt;
+&lt;xref theme="warning" href="#"&gt;
   &lt;icon outputclass="bi-link"/&gt; Warning link
 &lt;/xref&gt;
-&lt;xref theme="info-contrast" href="#"&gt;
+&lt;xref theme="info" href="#"&gt;
   &lt;icon outputclass="bi-link"/&gt; Info link
 &lt;/xref&gt;
-&lt;xref theme="accent-contrast" href="#"&gt;
+&lt;xref theme="accent" href="#"&gt;
   &lt;icon outputclass="bi-link"/&gt; Accent link
 &lt;/xref&gt;
-&lt;xref theme="inverse-contrast" href="#"&gt;
+&lt;xref theme="inverse" href="#"&gt;
   &lt;icon outputclass="bi-link"/&gt; Inverse link
 &lt;/xref&gt;</codeblock>
         </section>

@@ -84,7 +84,9 @@
 <!ATTLIST image %bootstrap-decoration-atts;>
 <!ATTLIST lq %bootstrap-decoration-atts;>
 <!ATTLIST codeblock %bootstrap-decoration-atts;>
-<!ATTLIST xref %bootstrap-decoration-atts;>
+<!ATTLIST xref
+  theme (%bootstrap-theme-and-color-values;) #IMPLIED
+>
 <!ATTLIST ph %bootstrap-decoration-atts;>
 
 <!ATTLIST dl
