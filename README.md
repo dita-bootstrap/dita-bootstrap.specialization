@@ -27,7 +27,7 @@ The plug-in includes DTD handling for the following DITA Bootstrap components:
 - [Icons](https://dita-bootstrap.github.io/icons.html) (`<icon>`)
 - [Grid layout](https://dita-bootstrap.github.io/grid.html) (`<grid-row>`, `<grid-col>`)
 - [List groups](https://dita-bootstrap.github.io/list-group.html) (`<list-group>`)
-- [Offcanvas](https://dita-bootstrap.github.io/offcanvas.html) (`<offcanvas>`)
+- [Drawer](https://dita-bootstrap.github.io/drawer.html) (`<drawer>`)
 - [Pagination](https://dita-bootstrap.github.io/pagination.html) (`<pagination>`)
 - [Popovers](https://dita-bootstrap.github.io/popovers.html) (`<popover>`)
 - [Tabs](https://dita-bootstrap.github.io/tabs.html) (`<tabbed-dialog>`)
@@ -57,8 +57,8 @@ Most DITA Bootstrap Specializations, as well as many base DITA elements, support
 
 [Apache 2.0](LICENSE) © 2026 Jason Fox
 
-Within the sample documentation, where necessary, the texts describing the usage of each component have been copied directly from the official [Bootstrap 5.3 documentation][3], however DITA markup is used throughout the examples describing how to implement these components correctly using DITA specializations or `outputclass`. The text is therefore a derivative of "Bootstrap 5.3 docs" by Twitter, Inc. and the Bootstrap Authors, and used under CC BY 3.0.
+Within the sample documentation, where necessary, the texts describing the usage of each component have been copied directly from the official [Bootstrap 6.0 documentation][3], however DITA markup is used throughout the examples describing how to implement these components correctly using DITA specializations or `outputclass`. The text is therefore a derivative of "Bootstrap 6.0 docs" by Twitter, Inc. and the Bootstrap Authors, and used under CC BY 3.0.
 
 [1]: http://www.dita-ot.org
 [2]: https://dita-bootstrap.github.io/
-[3]: https://getbootstrap.com/docs/5.3
+[3]: https://getbootstrap.com/docs/6.0

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
   Within the sample documentation, where necessary, the texts describing the usage of each component have been copied
-  directly from the official Bootstrap 5.3 documentation (found at https://getbootstrap.com/docs/5.3), however DITA
+  directly from the official Bootstrap 6.0 documentation (found at https://getbootstrap.com/docs/6.0), however DITA
   markup is used throughout the examples describing how to implement these components correctly using outputclass.
 
-  This work is a derivative of "Bootstrap 5.3 docs" by Twitter, Inc. and the Bootstrap Authors,
+  This work is a derivative of "Bootstrap 6.0 docs" by Twitter, Inc. and the Bootstrap Authors,
   and used under CC BY 3.0. See the accompanying LICENSE file for applicable licenses.
 -->
 <!DOCTYPE topic PUBLIC "-//DITA Bootstrap//DTD DITA Bootstrap Topic//EN" "bootstrap-topic.dtd">
@@ -25,13 +25,13 @@
     </metadata>
   </prolog>
   <body outputclass="language-markup">
-    <section>
+    <section id="basic-example">
       <title>Basic example</title>
       <p>The following example shows a simple tabbed dialog using a <xmlelement>tabbed-dialog
           style="tabs"</xmlelement> element containing a series of <xmlelement>section</xmlelement> elements
       </p>
     </section>
-    <bodydiv border="yes" padding="3">
+    <bodydiv border="1" padding="3">
       <tabbed-dialog style="tabs" margin="t3">
         <section>
           <title>Home</title>
@@ -97,7 +97,7 @@
       </tabbed-dialog>
     <p>The tabs plugin also works with pills using <xmlatt>style="pills"</xmlatt>
     </p>
-    <bodydiv border="yes" padding="3">
+    <bodydiv border="1" padding="3">
       <tabbed-dialog style="pills" margin="t3">
         <section>
           <title>Home</title>
@@ -163,7 +163,7 @@
       </tabbed-dialog>
     <p>And with vertical pills using <xmlatt>style="vertical-pills"</xmlatt>
     </p>
-    <bodydiv border="yes" padding="3">
+    <bodydiv border="1" padding="3">
       <tabbed-dialog style="vertical-pills" margin="t3">
         <section>
           <title>Home</title>
