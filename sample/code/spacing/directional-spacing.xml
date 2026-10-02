@@ -1,0 +1,4 @@
+<div color="primary" margin="t5 b0">Margin Top 5, Bottom 0</div>
+<div color="secondary" margin="x3">Margin Horizontal 3</div>
+<div color="success" padding="y5">Padding Vertical 5</div>
+<div color="danger" padding="s3 e1">Padding Start 3, End 1</div>

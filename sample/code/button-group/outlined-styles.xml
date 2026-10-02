@@ -1,0 +1,5 @@
+<button-group>
+  <button outline="yes" href="#">Left</button>
+  <button outline="yes" href="#">Middle</button>
+  <button outline="yes" href="#">Right</button>
+</button-group>

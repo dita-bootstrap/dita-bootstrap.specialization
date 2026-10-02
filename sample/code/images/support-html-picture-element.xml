@@ -1,0 +1,7 @@
+<picture>
+  <image media="min-width: 700px" href="..."/>
+  <image media="min-width: 450px" href="..."/>
+  <image type="image/jpeg" href="..."/>
+  <image type="image/webp" href="..."/>
+  <image href="..."/>
+</picture>

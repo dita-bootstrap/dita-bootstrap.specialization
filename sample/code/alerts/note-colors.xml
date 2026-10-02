@@ -1,0 +1,12 @@
+<note color="primary">
+  This is a primary note.
+</note>
+<note color="secondary">
+  This is a secondary note.
+</note>
+<note color="light">
+  This is light note.
+</note>
+<note color="dark">
+  This is dark note.
+</note>

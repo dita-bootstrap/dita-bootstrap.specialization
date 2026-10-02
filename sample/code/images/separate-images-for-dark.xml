@@ -1,0 +1,5 @@
+<fig>
+  <thumbnail outputclass="d-auto" href="..."/>
+  <thumbnail outputclass="d-light" href="..." deliveryTarget="html"/>
+  <thumbnail outputclass="d-dark" href="..." deliveryTarget="html"/>
+</fig>

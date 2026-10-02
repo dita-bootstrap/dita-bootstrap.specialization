@@ -1,0 +1,17 @@
+<carousel>
+  <carousel-item>
+    <image href="..."/>
+    <image href="..."/>
+    <image href="..."/>
+  </carousel-item>
+  <carousel-item>
+    <image href="..."/>
+    <image href="..."/>
+    <image href="..."/>
+  </carousel-item>
+  <carousel-item>
+    <image href="..."/>
+    <image href="..."/>
+    <image href="..."/>
+  </carousel-item>
+</carousel>

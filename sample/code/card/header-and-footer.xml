@@ -1,0 +1,7 @@
+<card>
+  <card-header>Featured</card-header>
+  <title>Special title treatment</title>
+  <p>With supporting text below as a natural lead-in to additional content.</p>
+  <button href="#">Go somewhere</button>
+  <card-footer>2 days ago</card-footer>
+</card>

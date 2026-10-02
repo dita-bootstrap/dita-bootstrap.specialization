@@ -1,0 +1,4 @@
+<div shadow="none" margin="3" padding="3" color="light">No shadow</div>
+<div shadow="sm" margin="3" padding="3" color="light">Small shadow</div>
+<div shadow="yes" margin="3" padding="3" color="light">Regular shadow</div>
+<div shadow="lg" margin="3" padding="3" color="light">Larger shadow</div>

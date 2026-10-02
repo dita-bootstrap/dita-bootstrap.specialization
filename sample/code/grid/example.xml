@@ -1,0 +1,11 @@
+<grid-row>
+  <grid-col breakpoint="sm" colspan="3">
+    <p>One of three columns</p>
+  </grid-col>
+  <grid-col breakpoint="sm" colspan="3">
+    <p>One of three columns</p>
+  </grid-col>
+  <grid-col breakpoint="sm" colspan="3">
+    <p>One of three columns</p>
+  </grid-col>
+</grid-row>

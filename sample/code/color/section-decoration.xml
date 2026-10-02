@@ -1,0 +1,46 @@
+<section color="primary">
+  <title>Section Decoration</title>
+  <p>This section has a primary color background.</p>
+</section>
+
+<div color="success" padding="3">
+  <p>This div has a success color background.</p>
+</div>
+
+<pre color="warning">
+  This pre has a warning color background.
+</pre>
+
+<lq color="danger" padding="1">
+  This is a long quote with a danger color background.
+</lq>
+
+<table color="primary" padding="1" width="100">
+  <tgroup cols="2">
+    <thead>
+      <row>
+        <entry>Animal</entry>
+        <entry>Gestation</entry>
+      </row>
+    </thead>
+    <tbody>
+      <row color="info">
+        ...
+      </row>
+      <row color="success">
+        ...
+      </row>
+      <row>
+        <entry>...</entry>
+        <entry color="danger">...</entry>
+      </row>
+      <row>
+        ...
+      </row>
+    </tbody>
+  </tgroup>
+</table>
+
+<note color="primary">
+  This is a note with a primary color theme.
+</note>

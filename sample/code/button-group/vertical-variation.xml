@@ -1,0 +1,5 @@
+<button-group vertical="yes">
+  <button href="#">Top</button>
+  <button href="#">Middle</button>
+  <button href="#">Bottom</button>
+</button-group>

@@ -71,59 +71,6 @@
     <topicref href="shadows.dita"/>
     <topicref href="spacing.dita"/>
   </chapter>
-  <chapter>
-    <topicmeta>
-      <navtitle>Extend</navtitle>
-      <othermeta name="icon" content="bi-tools"/>
-      <othermeta name="icon-style" content="color: var(--bs-blue)"/>
-    </topicmeta>
-    <topicref navtitle="Icons" href="icons.dita">
-      <topicmeta>
-        <othermeta name="icon" content="bi-images"/>
-      </topicmeta>
-    </topicref>
-    <topicref href="dark-mode.dita">
-      <topicmeta>
-        <othermeta name="icon" content="bi-moon-stars"/>
-      </topicmeta>
-    </topicref>
-    <topicref href="extension-points.dita">
-      <topicmeta>
-        <othermeta name="icon" content="bi-wrench-adjustable"/>
-      </topicmeta>
-    </topicref>
-    <topicref href="search-box.dita">
-      <topicmeta>
-        <othermeta name="icon" content="bi-search"/>
-        <othermeta name="divider" content="Additional Plug&#8209;ins"/>
-      </topicmeta>
-    </topicref>
-    <topicref href="offline.dita">
-      <topicmeta>
-        <othermeta name="icon" content="bi-wifi-off"/>
-      </topicmeta>
-    </topicref>
-    <topicref href="component.dita">
-      <topicmeta>
-        <othermeta name="icon" content="bi-puzzle"/>
-      </topicmeta>
-    </topicref>
-    <topicref href="sass.dita">
-      <topicmeta>
-        <othermeta name="icon" content="bi-filetype-sass"/>
-      </topicmeta>
-    </topicref>
-    <topicref href="bootstrap-table.dita">
-      <topicmeta>
-        <othermeta name="icon" content="bi-table"/>
-      </topicmeta>
-    </topicref>
-    <topicref href="bootstrap-extension.dita">
-      <topicmeta>
-        <othermeta name="icon" content="bi-bootstrap"/>
-      </topicmeta>
-    </topicref>
-  </chapter>
   <backmatter deliveryTarget="pdf">
     <booklists>
       <indexlist/>

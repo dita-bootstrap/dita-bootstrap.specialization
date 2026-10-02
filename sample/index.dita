@@ -12,7 +12,7 @@
   <title>DITA Bootstrap</title>
   <shortdesc>A series of plug-ins for
     <xref href="http://www.dita-ot.org" format="html" scope="external">DITA Open Toolkit</xref> that extends the default
-    HTML5 and PDF outputs with a
+    HTML5 output with a
     <xref href="https://getbootstrap.com/docs/5.3" format="html" scope="external">Bootstrap 5.3</xref> template and
     components.
   </shortdesc>
@@ -35,7 +35,7 @@
         <title>DITA-OT 3.5 and newer</title>
           <ol>  
             <li>
-              <p><b>Optional:</b> install the specialization plug-in to add support for new DITA elements that
+              <p>Install the specialization plug-in to add support for new DITA elements that
                generate Bootstrap components:
               </p>
               <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
@@ -49,14 +49,6 @@
 <cmdname>dita</cmdname> <parmname>install</parmname> org.dita-bootstrap.html</codeblock>
             </li>
             <li>
-              <p>For PDF generation, install the PDF plug-in, and then <b
-              >optionally</b> add the PDF theme plug-in as shown:
-              </p>
-              <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
-              >install</parmname> org.dita-bootstrap.pdf
-<cmdname>dita</cmdname> <parmname>install</parmname> org.dita-bootstrap.pdf.theme</codeblock>
-            </li>
-            <li>
               <p>To add syntax highlighting using the Bootstrap color scheme, install the Prism.js plug-in if required:
               </p>
               <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
@@ -68,7 +60,7 @@
         <title>DITA-OT 3.3 and newer</title>
           <ol>  
             <li>
-              <p><b>Optional:</b> install the specialization plug-in to add support for new DITA elements that
+              <p>Install the specialization plug-in to add support for new DITA elements that
                generate Bootstrap components:
               </p>
               <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
@@ -81,13 +73,6 @@
               >--install</parmname> fox.jason.extend.css
 <cmdname>dita</cmdname> <parmname>--install</parmname> org.dita-bootstrap.html</codeblock>
           </li>
-          <li>
-          <p>For PDF generation, install the PDF plug-in, and then <b>optionally</b> add the PDF theme plug-in as shown:
-          </p>
-          <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
-              >--install</parmname> org.dita-bootstrap.pdf
-<cmdname>dita</cmdname> <parmname>--install</parmname> org.dita-bootstrap.pdf.theme</codeblock>
-            </li>
             <li>
               <p>To add syntax highlighting using the bootstrap color scheme, install the Prism.js plug-in if required:
               </p>
@@ -100,7 +85,7 @@
         <title>DITA-OT 3.2 and older</title>
           <ol>  
             <li>
-              <p><b>Optional:</b> install the specialization plug-in to add support for new DITA elements that
+              <p>Install the specialization plug-in to add support for new DITA elements that
                generate Bootstrap components:
               </p>
               <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
@@ -115,15 +100,6 @@
               >--install</parmname> https://github.com/dita-bootstrap/dita-bootstrap.html/archive/master.zip</codeblock>
             </li>
             <li>
-              <p>For PDF generation, install the PDF plug-in, and then <b
-              >optionally</b> add the PDF theme plug-in as shown:
-              </p>
-              <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
-              >--install</parmname> https://github.com/dita-bootstrap/dita-bootstrap.pdf/archive/master.zip
-<cmdname>dita</cmdname> <parmname
-              >--install</parmname> https://github.com/dita-bootstrap/dita-bootstrap.pdf.theme/archive/master.zip</codeblock>
-            </li>
-            <li>
               <p>To add syntax highlighting using the bootstrap color scheme, install the Prism.js plug-in if required:
               </p>
               <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
@@ -134,39 +110,21 @@
     </accordion>
     <section>
       <title>Using</title>
-    </section>
-    <accordion>
-        <accordion-item open="yes">
-        <title>HTML</title>
-        <p>If using DITA-Bootstrap specialization, ensure that the <codeph
-          >*.dita</codeph> files are using the following <codeph>DOCTYPE</codeph> declaration:</p>
+      <p>Ensure that the <codeph>*.dita</codeph> files are using the following <codeph>DOCTYPE</codeph> declaration:</p>
         <codeblock
-          outputclass="language-xml"
-        >&lt;!DOCTYPE topic PUBLIC "-//DITA Bootstrap//DTD DITA Bootstrap Topic//EN" "bootstrap-topic.dtd"&gt;</codeblock>
+        outputclass="language-xml"
+      >&lt;!DOCTYPE topic PUBLIC "-//DITA Bootstrap//DTD DITA Bootstrap Topic//EN" "bootstrap-topic.dtd"&gt;</codeblock>
         <p>Specify the <option>html5-bootstrap</option> format when building output with the <cmdname>dita</cmdname>
         command:</p>
       <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
-          >--input</parmname>=path/to/your.ditamap <parmname>--format</parmname>=html5-bootstrap</codeblock>
-        </accordion-item>
-          <accordion-item>
-        <title>PDF</title>
-         <p>If using DITA-Bootstrap specialization, ensure that the <codeph
-          >*.dita</codeph> files are using the following <codeph>DOCTYPE</codeph> declaration:</p>
-         <codeblock
-          outputclass="language-xml"
-        >&lt;!DOCTYPE topic PUBLIC "-//DITA Bootstrap//DTD DITA Bootstrap Topic//EN" "bootstrap-topic.dtd"&gt;</codeblock>
-        <p>Specify the <option>pdf-bootstrap</option> format when building output with the <cmdname>dita</cmdname>
-        command:</p>
-      <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname
-          >--input</parmname>=path/to/your.ditamap <parmname>--format</parmname>=pdf-bootstrap</codeblock>
-        </accordion-item>
-    </accordion>
+        >--input</parmname>=path/to/your.ditamap <parmname>--format</parmname>=html5-bootstrap</codeblock>
+    </section>
     <section>
       <title>Bootswatch themes</title>
       <indexterm><parmname>--bootstrap.theme</parmname></indexterm>
       <p>Alternate Bootstrap themes can be downloaded directly from
         <xref href="https://bootswatch.com/" format="html" scope="external">Bootswatch</xref>.
-        To override the default appearance with a Bootswatch theme (either HTML or PDF), pass a theme name to the <cmdname
+        To override the default appearance with a Bootswatch theme, pass a theme name to the <cmdname
         >dita</cmdname> command via the <parmname>--bootstrap.theme</parmname> parameter:
       </p>
       <codeblock outputclass="language-bash"><cmdname>dita</cmdname> <parmname>--input</parmname>=<filepath
@@ -578,9 +536,7 @@
       <p>The default header file <filepath>includes/hdr.navbar.default.xml</filepath> uses the Bootstrap primary
         (blue) background color for the
         <xref href="https://getbootstrap.com/docs/5.3/examples/navbars/" format="html" scope="external">navbar
-          component</xref>, and provides a theme menu to toggle <xref
-          href="./dark-mode.dita"
-        >dark mode</xref>.  Bootstrap itself offers additional <xref
+          component</xref>, and provides a theme menu to toggle dark mode.  Bootstrap itself offers additional <xref
           href="https://getbootstrap.com/docs/5.3/examples/headers/"
           format="html"
           scope="external"
@@ -1075,12 +1031,12 @@
       <indexterm><parmname>--menubar-toc.include</parmname></indexterm>
       <indexterm><parmname>--bidi.include</parmname></indexterm>
       <indexterm><parmname>--toc-spacer.padding</parmname></indexterm>
-      <p>Bootstrap <xref href="./icons.dita" format="dita">icons</xref>,
+      <p>Bootstrap icons,
         <xref href="./popovers.dita" format="dita">popovers</xref>,
-        <xref href="./tooltips.dita" format="dita">tooltips</xref> and the <xref
-          href="./dark-mode.dita"
+        <xref
+          href="./tooltips.dita"
           format="dita"
-        >dark mode toggler</xref> are enabled by default, but for performance reasons they can be disabled by setting
+        >tooltips</xref> and the dark mode toggler are enabled by default, but for performance reasons they can be disabled by setting
         the following command line parameters to <option>no</option>:</p>
       <parml otherprops="cols(4)">
         <plentry>
@@ -1088,7 +1044,7 @@
             <parmname>--icons.include</parmname>
           </pt>
           <pd>Enable Bootstrap
-            <xref href="./icons.dita" format="dita">icons</xref>
+            icons
           </pd>
         </plentry>
         <plentry>

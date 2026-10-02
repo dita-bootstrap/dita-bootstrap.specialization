@@ -1,0 +1,19 @@
+<grid-row>
+  <grid-col>
+    <p>One of two columns</p>
+  </grid-col>
+  <grid-col>
+    <p>One of two columns</p>
+  </grid-col>
+</grid-row>
+<grid-row>
+  <grid-col>
+    <p>One of three columns</p>
+  </grid-col>
+  <grid-col>
+    <p>One of three columns</p>
+  </grid-col>
+  <grid-col>
+    <p>One of three columns</p>
+  </grid-col>
+</grid-row>

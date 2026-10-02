@@ -1,0 +1,16 @@
+<section border="yes" padding="2">
+  ...
+</section>
+
+<div border="yes" rounded="yes" padding="2" margin="2">
+  ...
+</div>
+
+<carousel border="yes" rounded="yes" margin="2" width="50">
+  <carousel-item>
+    <image href="..."/>
+  </carousel-item>
+  <carousel-item>
+    <image href="..."/>
+  </carousel-item>
+</carousel>

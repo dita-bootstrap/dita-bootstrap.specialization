@@ -1,0 +1,6 @@
+<card shadow="lg" margin="3" color="light">
+  <title>Shadowed Card</title>
+  <p>This card has a large shadow.</p>
+</card>
+
+<alert shadow="sm" color="light">Alert with small shadow</alert>

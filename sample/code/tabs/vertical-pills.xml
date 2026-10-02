@@ -1,0 +1,14 @@
+<tabbed-dialog style="vertical-pills">
+  <section>
+    <title>Home</title>
+    ...etc
+  </section>
+  <section>
+    <title>Profile</title>
+    ...etc
+  </section>
+  <section>
+    <title>Contact</title>
+    ...etc
+  </section>
+</tabbed-dialog>

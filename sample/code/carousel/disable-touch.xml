@@ -1,0 +1,11 @@
+<carousel touch="no">
+  <carousel-item>
+    <image href="..."/>
+  </carousel-item>
+  <carousel-item>
+    <image href="..."/>
+  </carousel-item>
+  <carousel-item>
+    <image href="..."/>
+  </carousel-item>
+</carousel>

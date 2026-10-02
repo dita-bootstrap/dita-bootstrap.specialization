@@ -1,0 +1,8 @@
+<button href="#">Primary</button>
+<button href="#" color="secondary">Secondary</button>
+<button href="#" color="success">Success</button>
+<button href="#" color="danger">Danger</button>
+<button href="#" color="warning">Warning</button>
+<button href="#" color="info">Info</button>
+<button href="#" color="light">Light</button>
+<button href="#" color="dark">Dark</button>

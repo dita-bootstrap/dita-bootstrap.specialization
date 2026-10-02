@@ -1,0 +1,8 @@
+<badge>Primary</badge>
+<badge color="secondary">Secondary</badge>
+<badge color="success">Success</badge>
+<badge color="danger">Danger</badge>
+<badge color="warning">Warning</badge>
+<badge color="info">Info</badge>
+<badge color="light">Light</badge>
+<badge color="dark">Dark</badge>

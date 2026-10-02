@@ -1,0 +1,5 @@
+<button-group>
+  <button color="danger" href="#">Left</button>
+  <button color="warning" href="#">Middle</button>
+  <button color="success" href="#">Right</button>
+</button-group>

@@ -1,0 +1,11 @@
+<carousel indicators="yes">
+  <carousel-item>
+    <image href="..."/>
+  </carousel-item>
+  <carousel-item>
+    <image href="..."/>
+  </carousel-item>
+  <carousel-item>
+    <image href="..."/>
+  </carousel-item>
+</carousel>

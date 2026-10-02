@@ -1,0 +1,9 @@
+<button props="offcanvas-toggle" href="#offcanvas1">
+  Click here
+</button>
+<offcanvas id="offcanvas1" position="start">
+  <title>Offcanvas</title>
+  <p>
+    Content for the offcanvas goes here. You can place just about any section elements here.
+  </p>
+</offcanvas>

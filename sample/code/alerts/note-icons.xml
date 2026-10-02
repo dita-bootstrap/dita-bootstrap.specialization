@@ -1,0 +1,6 @@
+<note icon="bi-search" type="other" othertype="Search">
+  This note has a search icon.
+</note>
+<note icon="bi bi-emoji-smile" style="font-size: 2rem; color: cornflowerblue;" type="note">
+  This note uses a styled smile emoji.
+</note>

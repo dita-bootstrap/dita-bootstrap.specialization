@@ -1,0 +1,4 @@
+<tooltip outputclass="btn-secondary">
+  <desc><b>Tooltip</b> <u>with</u> <b>DITA</b> elements</desc>
+  Tooltip with embedded DITA
+</tooltip>

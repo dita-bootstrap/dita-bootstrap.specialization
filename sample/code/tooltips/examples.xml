@@ -1,0 +1,16 @@
+<tooltip outputclass="btn-secondary" position="top">
+  <desc>Tooltip on top</desc>
+  Tooltip on top
+</tooltip>
+<tooltip outputclass="btn-secondary" position="right">
+  <desc>Tooltip on right</desc>
+  Tooltip on right
+</tooltip>
+<tooltip outputclass="btn-secondary" position="bottom">
+  <desc>Tooltip on bottom</desc>
+  Tooltip on bottom
+</tooltip>
+<tooltip outputclass="btn-secondary" position="left">
+  <desc>Tooltip on left</desc>
+  Tooltip on left
+</tooltip>

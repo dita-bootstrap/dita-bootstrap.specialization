@@ -1,0 +1,26 @@
+<carousel>
+  <carousel-item>
+    <grid-row>
+      <grid-col colspan="1"/>
+      <grid-col colspan="10">
+      ...
+      </grid-col>
+    </grid-row>
+  </carousel-item>
+  <carousel-item>
+    <grid-row>
+      <grid-col colspan="1"/>
+      <grid-col colspan="10">
+      ...
+      </grid-col>
+    </grid-row>
+  </carousel-item>
+  <carousel-item>
+    <grid-row>
+      <grid-col colspan="1"/>
+      <grid-col colspan="10">
+      ...
+      </grid-col>
+    </grid-row>
+  </carousel-item>
+</carousel>

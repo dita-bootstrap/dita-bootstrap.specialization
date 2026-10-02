@@ -1,0 +1,20 @@
+<carousel>
+  <carousel-item>
+    <fig>
+      <title>The First Slide</title>
+      <image href="..."/>
+    </fig>
+  </carousel-item>
+  <carousel-item>
+    <fig>
+      <title>The Second Slide</title>
+      <image href="..."/>
+    </fig>
+  </carousel-item>
+  <carousel-item>
+    <fig>
+      <title>The Third Slide</title>
+      <image href="..."/>
+    </fig>
+  </carousel-item>
+</carousel>

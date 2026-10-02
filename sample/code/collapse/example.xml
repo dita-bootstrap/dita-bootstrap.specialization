@@ -1,0 +1,10 @@
+<p>
+  <button props="collapse-toggle" href="#collapse1">
+    Toggle Collapse
+  </button>
+</p>
+<collapse id="collapse1">
+  <card outputclass="card-body">
+      <p>Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.</p>
+  </card>
+</collapse>

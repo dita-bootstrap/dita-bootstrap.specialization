@@ -1,0 +1,11 @@
+<carousel>
+  <carousel-item interval="2000">
+    <image href="..."/>
+  </carousel-item>
+  <carousel-item interval="1000">
+    <image href="..."/>
+  </carousel-item>
+  <carousel-item interval="3000">
+    <image href="..."/>
+  </carousel-item>
+</carousel>
